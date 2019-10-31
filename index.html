@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-
 <html lang="da">
 
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-
     <link rel="stylesheet" href="">
     <title>KOGA</title>
 
@@ -18,20 +15,29 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo eaque, soluta voluptatibus velit eius delectus ipsum non cupiditate, quos, unde tempore officia odio! Quisquam recusandae quis non tenetur voluptatem id.</p>
 
     <section id="forside">
+       <h1 class="overskrift"></h1>
         <section class="video"></section>
     </section>
 
     <h2>Hej</h2>
 
+    <script>
+        const url = "https://kvikea.dk/babushkaWP/wordpress/wp-json/wp/v2/pages"
+    let side;
+        document.addEventListener("DOMContentLoaded", start);
 
+        function start() {
+            hentJson();
+        }
 
+        async function hentJson(){
+            const response = await fetch(url);
+            console.log(response);
+            side = await response.json();
+            console.log(side);
+        }
 
-    <h1></h1>
-    <script src=""></script>
-
-
-    <h1></h1>
-    <script src=""></script>
+    </script>
 
 </body>
 
