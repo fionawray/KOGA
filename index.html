@@ -19,13 +19,14 @@
     <section id="forside">
        <h1 class="overskrift"></h1>
         <section class="video"></section>
+        <article class="side"></article>
     </section>
 
     <h2>Hej</h2>
 
     <script>
-        const url = "https://kvikea.dk/babushkaWP/wordpress/wp-json/wp/v2/pages"
-    let side;
+        const url = "https://kvikea.dk/babushkaWP/wordpress/wp-json/wp/v2/pages/29";
+        let side = {};
         document.addEventListener("DOMContentLoaded", start);
 
         function start() {
@@ -37,6 +38,12 @@
             console.log(response);
             side = await response.json();
             console.log(side);
+            vis();
+        }
+
+        function vis() {
+            document.querySelector(".overskrift").textContent = side.title.rendered;
+            document.querySelector(".side").innerHTML = side.content.rendered;
         }
 
 
