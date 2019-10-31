@@ -38,20 +38,23 @@
            </li>
        </ul>
    </nav>
-    <h1>KOGA</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo eaque, soluta voluptatibus velit eius delectus ipsum non cupiditate, quos, unde tempore officia odio! Quisquam recusandae quis non tenetur voluptatem id.</p>
 
-    <section id="forside">
-       <h1 class="overskrift"></h1>
-        <section class="video"></section>
-        <article class="side"></article>
+
+
+    <section class="liste">
+     <h1 class="overskrift"></h1>
     </section>
 
-    <h2>Hej</h2>
+    <template>
+        <article class="ret">
+            <h2 class="title"></h2>
+            <div class="beskrivelse"></div>
+        </article>
+    </template>
 
     <script>
-        const url = "https://kvikea.dk/babushkaWP/wordpress/wp-json/wp/v2/pages/29";
-        let side = {};
+        const url = "https://kvikea.dk/babushkaWP/wordpress/wp-json/wp/v2/posts";
+        let posts = [];
         document.addEventListener("DOMContentLoaded", start);
 
         function start() {
@@ -61,14 +64,24 @@
         async function hentJson(){
             const response = await fetch(url);
             console.log(response);
-            side = await response.json();
-            console.log(side);
+            posts = await response.json();
+            console.log(posts);
             vis();
         }
 
         function vis() {
-            document.querySelector(".overskrift").textContent = side.title.rendered;
-            document.querySelector(".side").innerHTML = side.content.rendered;
+
+
+            const skabelon = document.querySelector("template");
+            const liste = document.querySelector(".liste");
+
+            posts.forEach(post =>{
+                const klon = skabelon.cloneNode(true).content;
+                klon.querySelector(".title").textContent = post.title.rendered;
+                klon.querySelector(".beskrivelse").innerHTML = post.content.rendered;
+                liste.appendChild(klon);
+            });
+
         }
 
 
