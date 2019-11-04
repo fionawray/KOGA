@@ -4,11 +4,6 @@ body {
 
 }
 
-h1 {
-    text-align: center;
-    color: white;
-}
-
 #side_menu {
     padding: 10px 16px;
     color: #3580c2;
@@ -237,8 +232,31 @@ a:hover {
 
 /* Blog start */
 
+#splash {
+    width: 100vw;
+    height: 40vw;
+    background-image: url(images/josh-nuttall-uNQ-TTg_qNY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#splash h1,
+h3 {
+    color: #ffffff;
+    text-align: center;
+    padding-top: 3.5em;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+
 #blog p {
-    color: black;
+    background-color: #000000;
+    color: #cecece;
+    margin: 2em;
+    padding: 2em;
+    font-family: 'Judson', serif;
 }
 
 
@@ -279,7 +297,6 @@ a:hover {
 #footer .icons {
     font-size: 60px;
     text-align: center;
-
 }
 
 .icons img {
@@ -287,6 +304,4 @@ a:hover {
     height: 35px;
 }
 
-<<<<<<< HEAD
 /* Footer end */
-======= > > > > > > > origin/master
