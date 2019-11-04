@@ -1,0 +1,142 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+
+}
+
+#side_menu {
+    padding: 10px 16px;
+    color: #3580c2;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #3580c2;
+    width: 100%;
+    z-index: 2;
+    justify-content: space-around;
+    margin-bottom: 3vw;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 102px;
+}
+
+
+#menu_billede {
+    position: absolute;
+    left: 0vw;
+    margin: 0;
+    top: 6px;
+}
+
+#menu_billede:hover {
+    transform: scale(0.9);
+}
+
+#menu_billede img {
+    height: 55px;
+    float: left;
+}
+
+nav {
+    float: right;
+    padding: 0px 36px 0px 36px;
+}
+
+li {
+    font-size: 16px;
+    text-transform: none;
+    color: #525252;
+}
+
+a {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0px 14px 0px 14px;
+}
+
+a:hover {
+    color: black;
+}
+
+.hidden {
+    /*    display: none;*/
+    /*    transform: scale(0);*/
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#menuknap {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    align-content: flex-end;
+    color: white;
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top left;
+}
+
+/* visited link */
+#side_menu header nav a:visited {
+    color: #ffffff;
+}
+
+/* mouse over link */
+#side_menu header nav a:hover {
+    color: #070505;
+}
+
+/* selected link */
+#side_menu header nav a:active {
+    color: #000000;
+}
+
+#side_menu header nav {
+    display: flex;
+    margin: 1rem 1.5rem;
+    justify-content: center;
+}
+
+#side_menu header nav a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    margin: 0 0.2rem;
+    padding: 0 1rem 0 0;
+    /*border-right: 1px solid black;*/
+}
+
+#side_menu #menuknap {
+    position: absolute;
+    left: 85vw;
+}
+
+@media only screen and (min-width: 1000px) {
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+}
+
+/*menu færdig*/
