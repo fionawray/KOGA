@@ -247,21 +247,15 @@ a:hover {
 
 /* Blog start */
 
-<<<<<<< HEAD
 #splash {
     width: 100vw;
-=======
-<<<<<<< HEAD
-#splash {
     width: 100%;
->>>>>>> origin/master
     height: 40vw;
     background-image: url(images/josh-nuttall-uNQ-TTg_qNY-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-<<<<<<< HEAD
 #splash h1,
 h3 {
     color: #ffffff;
@@ -278,7 +272,8 @@ h3 {
     padding: 2em;
     font-family: 'Judson', serif;
     color: #ffffff;
-=======
+}
+
 #splash h1 {
     color: #ffffff;
     text-align: center;
@@ -289,16 +284,15 @@ h3 {
     background-color: #000000;
     font-family: 'Judson', serif;
     color: #ffffff;
-=======
+}
+
 #blog p {
     color: black;
->>>>>>> origin/master
 }
 
 #blog h1 {
     font-family: 'Poppins', sans-serif;
     color: white;
->>>>>>> origin/master
 }
 
 .blog_1 {
