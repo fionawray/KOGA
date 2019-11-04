@@ -243,10 +243,6 @@ a:hover {
     flex-wrap: wrap;
     background-color: white;
     padding: 4rem;
-    /*    background-image: url(images/f.jpg); */
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 4rem;
 }
 
 #footer .col {
@@ -256,9 +252,7 @@ a:hover {
     flex-direction: column;
     background: #ffffff;
     margin: 1em;
-    background: #ECEDEE;
-    margin: 1em;
-    padding: 2em;
+    background: #ffffff;
 }
 
 #footer .top {
@@ -271,7 +265,6 @@ a:hover {
 }
 
 #footer p {
-
     color: black;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
