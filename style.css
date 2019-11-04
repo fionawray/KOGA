@@ -240,30 +240,34 @@ a:hover {
 /* Blog start */
 
 #splash {
-    width: 100vw;
+    width: 100%;
     height: 40vw;
     background-image: url(images/josh-nuttall-uNQ-TTg_qNY-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#splash h1,
-h3 {
+#splash h1 {
     color: #ffffff;
     text-align: center;
-    padding-top: 3.5em;
     font-family: 'Poppins', sans-serif;
 }
 
 #blog p {
     background-color: #000000;
-    color: #cecece;
-    margin: 2em;
-    padding: 2em;
     font-family: 'Judson', serif;
     color: #ffffff;
 }
 
+#blog h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.blog_1 {
+    padding: 2em;
+    margin: 2em;
+}
 
 /* Footer start */
 
