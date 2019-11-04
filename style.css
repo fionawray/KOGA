@@ -269,18 +269,11 @@ a:hover {
 
 #blog p {
     color: #ffffff;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
-
-#bloge p {
-    background-color: #000000;
-    color: #cecece;
     font-family: 'Judson', serif;
-    color: #ffffff;
 }
 
 #blog h1 {
+    font-family: 'Poppins', sans-serif;
     color: white;
 }
 
