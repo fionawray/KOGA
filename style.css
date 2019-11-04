@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: black;
     margin: 0;
 
 }
@@ -32,12 +32,12 @@ h1 {
     padding-top: 102px;
 }
 
-
 #menu_billede {
     position: absolute;
     left: 0vw;
     margin: 0;
     top: 6px;
+    color: aqua;
 }
 
 #menu_billede:hover {
@@ -45,8 +45,9 @@ h1 {
 }
 
 #menu_billede img {
-    height: 55px;
+    height: 30px;
     float: left;
+    padding-top: 12px;
 }
 
 nav {
@@ -245,7 +246,7 @@ a:hover {
 /* Blog start */
 
 #blog p {
-    color: aqua;
+    color: black;
 }
 
 
