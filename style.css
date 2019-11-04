@@ -1,7 +1,12 @@
 body {
-    background-color: #000000;
+    background-color: black;
     margin: 0;
 
+}
+
+h1 {
+    text-align: center;
+    color: white;
 }
 
 #side_menu {
@@ -27,12 +32,12 @@ body {
     padding-top: 102px;
 }
 
-
 #menu_billede {
     position: absolute;
     left: 0vw;
     margin: 0;
     top: 6px;
+    color: aqua;
 }
 
 #menu_billede:hover {
@@ -40,8 +45,9 @@ body {
 }
 
 #menu_billede img {
-    height: 55px;
+    height: 30px;
     float: left;
+    padding-top: 12px;
 }
 
 nav {
@@ -239,6 +245,7 @@ a:hover {
 
 /* Blog start */
 
+<<<<<<< HEAD
 #splash {
     width: 100%;
     height: 40vw;
@@ -257,6 +264,10 @@ a:hover {
     background-color: #000000;
     font-family: 'Judson', serif;
     color: #ffffff;
+=======
+#blog p {
+    color: black;
+>>>>>>> origin/master
 }
 
 #blog h1 {
@@ -306,6 +317,7 @@ a:hover {
 #footer .icons {
     font-size: 60px;
     text-align: center;
+
 }
 
 .icons img {
