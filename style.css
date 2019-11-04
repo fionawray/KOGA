@@ -228,15 +228,19 @@ a:hover {
 }
 
 .forside3 h1 {
-    color: white;
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .forside3 p {
-    line-height: 1.5em;
-    letter-spacing: 0.5px;
-    color: white;
-    width: 400px;
-    justify-content: center;
+    color: black;
+    background-color: #000000;
+    color: #cecece;
+    margin: 2em;
+    padding: 2em;
+    font-family: 'Judson', serif;
+    color: #ffffff;
 }
 
 .læs_mere {
@@ -280,7 +284,7 @@ h3 {
     font-family: 'Poppins', sans-serif;
 }
 
-#blog p {
+#bloge p {
     background-color: #000000;
     font-family: 'Judson', serif;
     color: #ffffff;
