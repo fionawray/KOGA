@@ -216,13 +216,19 @@ a:hover {
     color: white;
 }
 
+/* Blog start */
+
+#blog p {
+    color: aqua;
+}
+
 
 /* Footer start */
 
 #footer .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: #434b59;
     padding: 4rem;
 }
 
@@ -231,9 +237,8 @@ a:hover {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    background: #ffffff;
     margin: 1em;
-    background: #ffffff;
+    background: #434b59;
 }
 
 #footer .top {
@@ -241,6 +246,7 @@ a:hover {
 }
 
 #footer h2 {
+    color: black;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
@@ -252,17 +258,9 @@ a:hover {
 }
 
 #footer .icons {
-    font-size: 25px;
-    padding: 0.5em;
-    color: #434b59;
-    font-family: 'Work Sans', sans-serif;
-    line-height: 1.4;
-}
-
-#footer .icons {
     font-size: 60px;
-    color: black;
     text-align: center;
+
 }
 
 .icons img {
@@ -270,4 +268,4 @@ a:hover {
     height: 35px;
 }
 
-/* section_1 end */
+/* Footer end */
