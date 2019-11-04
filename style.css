@@ -231,8 +231,15 @@ a:hover {
 .forside3 p {
     line-height: 1.5em;
     letter-spacing: 0.5px;
-    margin: 0px 350px 0px 350px;
     color: white;
+    width: 400px;
+    justify-content: center;
+}
+
+.læs_mere {
+    color: #ea2222;
+    background-color: #000000;
+    align-content: center;
 }
 
 /* Blog start */
@@ -286,8 +293,5 @@ a:hover {
     width: 35px;
     height: 35px;
 }
-<<<<<<< HEAD
 
 /* Footer end */
-=======
->>>>>>> origin/master
