@@ -256,8 +256,7 @@ a:hover {
     background-repeat: no-repeat;
 }
 
-#splash h1,
-h3 {
+#splash h1 {
     color: #ffffff;
     text-align: center;
     padding-top: 3.5em;
@@ -265,33 +264,14 @@ h3 {
 }
 
 #blog p {
-    color: black;
+    color: #ffffff;
     background-color: #000000;
     color: #cecece;
-    margin: 2em;
-    padding: 2em;
     font-family: 'Judson', serif;
     color: #ffffff;
-}
-
-#splash h1 {
-    color: #ffffff;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
-
-#blog p {
-    background-color: #000000;
-    font-family: 'Judson', serif;
-    color: #ffffff;
-}
-
-#blog p {
-    color: black;
 }
 
 #blog h1 {
-    font-family: 'Poppins', sans-serif;
     color: white;
 }
 
