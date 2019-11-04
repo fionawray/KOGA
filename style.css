@@ -270,6 +270,7 @@ a:hover {
 #blog p {
     color: #ffffff;
     font-family: 'Judson', serif;
+    line-height: 1.3em;
 }
 
 #blog h1 {
@@ -277,7 +278,7 @@ a:hover {
     color: white;
 }
 
-.blog_1 {
+.blog_post {
     padding: 2em;
     margin: 2em;
 }
@@ -314,11 +315,22 @@ a:hover {
     color: black;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
+    line-height: 0.89rem;
 }
 
 #footer .icons {
     font-size: 60px;
     text-align: center;
+}
+
+#footer .icon_flex {
+    display: flex;
+    vertical-align: middle;
+
+}
+
+#footer .icon_flex .align {
+    padding-top: 12px
 }
 
 .icons img {
