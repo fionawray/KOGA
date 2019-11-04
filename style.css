@@ -253,21 +253,15 @@ h3 {
     text-align: center;
     padding-top: 3.5em;
     font-family: 'Poppins', sans-serif;
-
-
 }
 
-
 #blog p {
-<<<<<<< HEAD
     background-color: #000000;
     color: #cecece;
     margin: 2em;
     padding: 2em;
     font-family: 'Judson', serif;
-=======
-    color: aqua;
->>>>>>> origin/master
+    color: #ffffff;
 }
 
 
