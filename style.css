@@ -245,8 +245,7 @@ a:hover {
 
 /* Blog start */
 
-<<<<<<< HEAD
-#splash {
+<<<<<<< HEAD #splash {
     width: 100%;
     height: 40vw;
     background-image: url(images/josh-nuttall-uNQ-TTg_qNY-unsplash.jpg);
@@ -264,10 +263,10 @@ a:hover {
     background-color: #000000;
     font-family: 'Judson', serif;
     color: #ffffff;
-=======
+}
+
 #blog p {
     color: black;
->>>>>>> origin/master
 }
 
 #blog h1 {
