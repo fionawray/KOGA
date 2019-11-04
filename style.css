@@ -17,7 +17,6 @@ h1 {
     width: 100%;
     z-index: 2;
     justify-content: space-around;
-    margin-bottom: 3vw;
 }
 
 
@@ -145,6 +144,26 @@ a:hover {
 
 /*menu færdig*/
 
+/*FORSIDE */
+
+#home {
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+#home_picture {
+    background: url(images/forside.jpg);
+    background-size: cover;
+    min-width: 100vh;
+    min-height: 100vh;
+}
+
+
+
 /* Footer start */
 
 #info .sectionwrapper {
@@ -267,5 +286,8 @@ a:hover {
     width: 35px;
     height: 35px;
 }
+<<<<<<< HEAD
 
 /* Footer end */
+=======
+>>>>>>> origin/master
