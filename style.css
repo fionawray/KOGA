@@ -168,7 +168,10 @@ a:hover {
     background: #ECEDEE;
     margin: 1em;
     padding: 2em;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 }
 
 #info .top {
@@ -181,6 +184,10 @@ a:hover {
 }
 
 #info p {
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/master
     color: black;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
@@ -205,4 +212,68 @@ a:hover {
     height: 35px;
 }
 
+<<<<<<< HEAD
+=======
+
+/* Footer start */
+
+#footer .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 4rem;
+    /*    background-image: url(images/f.jpg); */
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4rem;
+}
+
+#footer .col {
+    flex-basis: 250px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    margin: 1em;
+    background: #ECEDEE;
+    margin: 1em;
+    padding: 2em;
+}
+
+#footer .top {
+    flex-grow: 1;
+}
+
+#footer h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#footer p {
+
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+
+#footer .icons {
+    font-size: 25px;
+    padding: 0.5em;
+    color: #434b59;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.4;
+}
+
+#footer .icons {
+    font-size: 60px;
+    color: black;
+    text-align: center;
+}
+
+.icons img {
+    width: 35px;
+    height: 35px;
+}
+
+>>>>>>> origin/master
 /* section_1 end */
