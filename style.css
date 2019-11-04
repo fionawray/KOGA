@@ -167,7 +167,7 @@ a:hover {
     flex-wrap: wrap;
     background-color: white;
     padding: 4rem;
-    background-image: url(images/f.jpg);
+    background-image: url(images/bike_info.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding: 4rem;
@@ -202,10 +202,10 @@ a:hover {
 }
 
 #info p {
-
     color: black;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
+    line-height: 1.3em;
 }
 
 #info .icons {
@@ -227,26 +227,30 @@ a:hover {
     height: 35px;
 }
 
+.forside_om {
+    padding: 2em;
+    margin: 2em;
+}
+
 .forside3 h1 {
-    color: #ffffff;
-    text-align: center;
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
 
 .forside3 p {
-    color: black;
-    background-color: #000000;
-    color: #cecece;
-    margin: 2em;
-    padding: 2em;
-    font-family: 'Judson', serif;
     color: #ffffff;
+    font-family: 'Judson', serif;
+    line-height: 1.3em;
 }
 
 .læs_mere {
-    color: #ea2222;
     background-color: #000000;
-    align-content: center;
+    border: none;
+    padding: 0;
+}
+
+.læs_mere a {
+    padding: 0;
 }
 
 /* Blog start */
