@@ -1,11 +1,12 @@
 body {
-    background-color: #ffffff;
+    background-color: #000000;
     margin: 0;
 
 }
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 #side_menu {
@@ -13,7 +14,6 @@ h1 {
     color: #3580c2;
     display: flex;
     flex-wrap: wrap;
-    background-color: #3580c2;
     width: 100%;
     z-index: 2;
     justify-content: space-around;
@@ -147,6 +147,78 @@ a:hover {
 
 /* Footer start */
 
+#info .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 4rem;
+    background-image: url(images/f.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4rem;
+}
+
+#info .col {
+    flex-basis: 250px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    margin: 1em;
+    background: #ECEDEE;
+    margin: 1em;
+    padding: 2em;
+}
+
+#info .top {
+    flex-grow: 1;
+}
+
+#info h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#info p {
+
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+
+#info .icons {
+    font-size: 25px;
+    padding: 0.5em;
+    color: #434b59;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.4;
+}
+
+#info .icons {
+    font-size: 60px;
+    color: black;
+    text-align: center;
+}
+
+.icons img {
+    width: 35px;
+    height: 35px;
+}
+
+.forside3 h1 {
+    color: white;
+}
+
+.forside3 p {
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
+    margin: 0px 350px 0px 350px;
+    color: white;
+}
+
+
+/* Footer start */
+
 #footer .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -197,3 +269,5 @@ a:hover {
     width: 35px;
     height: 35px;
 }
+
+/* section_1 end */
