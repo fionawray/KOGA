@@ -140,3 +140,49 @@ a:hover {
 }
 
 /*menu færdig*/
+
+/* Footer start */
+
+#info .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 4rem;
+
+}
+
+#info .col {
+    flex-basis: 250px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    margin: 1em;
+}
+
+#info .top {
+    flex-grow: 1;
+}
+
+#info h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#info p {
+    color: black;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+
+#info .icons {
+    font-size: 25px;
+    padding: 0.5em;
+    color: black;
+    text-align: center;
+}
+
+.icons img {
+    width: 35px;
+    height: 35px;
+}
