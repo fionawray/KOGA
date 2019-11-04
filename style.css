@@ -145,24 +145,17 @@ a:hover {
 
 /*menu færdig*/
 
-<<<<<<< HEAD
 /* Footer start */
-=======
->>>>>>> origin/master
 
 #info .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
-<<<<<<< HEAD
     padding: 4rem;
-
-=======
     background-image: url(images/f.jpg);
     background-size: cover;
     background-attachment: fixed;
     padding: 4rem;
->>>>>>> origin/master
 }
 
 #info .col {
@@ -170,14 +163,12 @@ a:hover {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-<<<<<<< HEAD
     background: #ffffff;
     margin: 1em;
-=======
     background: #ECEDEE;
     margin: 1em;
     padding: 2em;
->>>>>>> origin/master
+
 }
 
 #info .top {
@@ -190,7 +181,6 @@ a:hover {
 }
 
 #info p {
-<<<<<<< HEAD
     color: black;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
@@ -199,7 +189,6 @@ a:hover {
 #info .icons {
     font-size: 25px;
     padding: 0.5em;
-=======
     color: #434b59;
     font-family: 'Work Sans', sans-serif;
     line-height: 1.4;
@@ -207,16 +196,13 @@ a:hover {
 
 #info .icons {
     font-size: 60px;
->>>>>>> origin/master
     color: black;
     text-align: center;
 }
 
-<<<<<<< HEAD
 .icons img {
     width: 35px;
     height: 35px;
 }
-=======
+
 /* section_1 end */
->>>>>>> origin/master
