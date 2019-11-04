@@ -343,3 +343,13 @@ a:hover {
 }
 
 /* Footer end */
+
+/* Cykler start */
+
+.article_cykel {
+    color: white;
+}
+
+.cykelside {
+    cursor: pointer;
+}

@@ -25,25 +25,15 @@
 </head>
 
 <body>
-
-    <section id="oversigt">
-        <section class="kategori1"></section>
-        <section class="kategori2"></section>
-        <section class="kategori3"></section>
-        <section class="kategori4"></section>
-        <section class="kategori5"></section>
-        <section class="kategori6"></section>
-        <section class="kategori7"></section>
-    </section>
-
     <main>
+        <button class="luk">Tilbage</button>
         <section class="liste">
             <h1 class="overskrift"></h1>
         </section>
     </main>
 
-    <template>
-        <article class="article_cykel cykelside">
+    <template id="temp">
+        <article class="article_cykel">
             <h2 class="navn"></h2>
             <div class="kort"></div>
             <p class="pris"></p>
@@ -53,9 +43,15 @@
     </template>
 
 
+
     <script>
-        const url = "https://uwei.eu/kea/2_semester/tema9/koga/wordpress/wp-json/wp/v2/cykler";
-        let cykler = [];
+        let urlParams = new URLSearchParams(window.location.search);
+        let myID = urlParams.get("id");
+        console.log("myID", myID);
+        let cykler;
+        const liste = document.querySelector(".liste");
+        const url = "https://uwei.eu/kea/2_semester/tema9/koga/wordpress/wp-json/wp/v2/cykler/" + myID;
+
         document.addEventListener("DOMContentLoaded", start);
 
         function start() {
@@ -68,28 +64,23 @@
             cykler = await response.json();
             console.log(cykler);
             vis();
+
+            document.querySelector(".luk").addEventListener("click", () => {
+                history.back();
+            })
         }
 
         function vis() {
-            const skabelon = document.querySelector("template");
-            const liste = document.querySelector(".liste");
+            const skabelon = document.querySelector("#temp");
 
-            cykler.forEach(cykel => {
-                console.log("loop okay");
-                const klon = skabelon.cloneNode(true).content;
-                klon.querySelector(".navn").textContent = cykel.title.rendered;
-                klon.querySelector(".kort").textContent = cykel.kort;
-                klon.querySelector(".pris").textContent = cykel.pris;
-                klon.querySelector(".front_billede").src = cykel.front_billede.guid;
-                klon.querySelector(".article_cykel").addEventListener("click", (() => {
-
-
-                    window.location.href = "singlesite.html?id=" + cykel.id;
-                }))
-
-                liste.appendChild(klon);
-            });
+            const klon = skabelon.cloneNode(true).content;
+            klon.querySelector(".navn").textContent = cykler.title.rendered;
+            klon.querySelector(".kort").textContent = cykler.kort;
+            klon.querySelector(".pris").textContent = cykler.pris;
+            klon.querySelector(".front_billede").src = cykler.front_billede.guid;
+            liste.appendChild(klon);
         }
+
     </script>
 
 </body>
