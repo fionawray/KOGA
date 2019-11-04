@@ -1,5 +1,5 @@
 body {
-    background-color: #000000;
+    background-color: black;
     margin: 0;
 
 }
@@ -32,12 +32,12 @@ h1 {
     padding-top: 102px;
 }
 
-
 #menu_billede {
     position: absolute;
     left: 0vw;
     margin: 0;
     top: 6px;
+    color: aqua;
 }
 
 #menu_billede:hover {
@@ -238,7 +238,7 @@ a:hover {
 /* Blog start */
 
 #blog p {
-    color: aqua;
+    color: black;
 }
 
 
@@ -286,8 +286,7 @@ a:hover {
     width: 35px;
     height: 35px;
 }
-<<<<<<< HEAD
 
+<<<<<<< HEAD
 /* Footer end */
-=======
->>>>>>> origin/master
+======= > > > > > > > origin/master
