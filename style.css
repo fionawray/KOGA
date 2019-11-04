@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #000000;
     margin: 0;
 
 }
@@ -27,12 +27,12 @@ body {
     padding-top: 102px;
 }
 
+
 #menu_billede {
     position: absolute;
     left: 0vw;
     margin: 0;
     top: 6px;
-    color: aqua;
 }
 
 #menu_billede:hover {
@@ -226,8 +226,15 @@ a:hover {
 .forside3 p {
     line-height: 1.5em;
     letter-spacing: 0.5px;
-    margin: 0px 350px 0px 350px;
     color: white;
+    width: 400px;
+    justify-content: center;
+}
+
+.læs_mere {
+    color: #ea2222;
+    background-color: #000000;
+    align-content: center;
 }
 
 /* Blog start */
@@ -252,11 +259,15 @@ h3 {
 
 
 #blog p {
+<<<<<<< HEAD
     background-color: #000000;
     color: #cecece;
     margin: 2em;
     padding: 2em;
     font-family: 'Judson', serif;
+=======
+    color: aqua;
+>>>>>>> origin/master
 }
 
 
