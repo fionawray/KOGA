@@ -341,9 +341,31 @@ a:hover {
     font-family: 'Poppins', sans-serif;
 }
 
+.blog_post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #252a33;
+}
+
+.blog_img{
+    flex-basis: 400px;
+}
+
+.blog_post img{
+    width: 100%;
+    height: auto;
+}
+
+.blog_txt {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
 #blog p {
     color: #ffffff;
     font-family: 'Judson', serif;
+    line-height: 1.3em;
 }
 
 #blog h1 {
@@ -351,10 +373,36 @@ a:hover {
     color: white;
 }
 
-.blog_1 {
+.blog_post {
     padding: 2em;
     margin: 2em;
 }
+
+.button {
+    background-color: #20384d;
+    color: #ffffff;
+    border: 2px solid #b9b9b9;
+    padding: 12px 75px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: #859aa8;
+}
+
+@media only screen and (min-width: 600px) {
+  .blog_txt {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    padding-right: 16rem;
+  }
+}
+
+
 
 /* Footer start */
 
@@ -388,11 +436,22 @@ a:hover {
     color: black;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
+    line-height: 0.89rem;
 }
 
 #footer .icons {
     font-size: 60px;
     text-align: center;
+}
+
+#footer .icon_flex {
+    display: flex;
+    vertical-align: middle;
+
+}
+
+#footer .icon_flex .align {
+    padding-top: 12px
 }
 
 .icons img {
@@ -401,3 +460,13 @@ a:hover {
 }
 
 /* Footer end */
+
+/* Cykler start */
+
+.article_cykel {
+    color: white;
+}
+
+.cykelside {
+    cursor: pointer;
+}
