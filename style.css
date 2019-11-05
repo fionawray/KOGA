@@ -11,7 +11,7 @@ body {
     flex-wrap: wrap;
     width: 100%;
     z-index: 2;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 
@@ -141,14 +141,12 @@ a:hover {
 /*menu færdig*/
 
 /*FORSIDE */
-
 #home {
     min-width: 100%;
     min-height: 100%;
     height: 100%;
     width: 100%;
     display: block;
-
 }
 
 #home_picture {
@@ -158,6 +156,78 @@ a:hover {
     min-height: 100vh;
 }
 
+#home_video {
+    position: relative;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#videobcg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    width: auto;
+    z-index: -100;
+}
+
+#home_video h1 {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 2em;
+    margin-right: 2em;
+    margin-bottom: 0;
+    margin-top: 3em;
+    font-size: 2em;
+}
+
+#home_video p {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 2em;
+    margin: 2em;
+    margin-top: 0;
+    line-height: 1.8em;
+}
+
+.navBottom a span.arrow {
+    background: url(https://d2zxu9tg022395.cloudfront.net/img/btnArrowDown.png) center center no-repeat;
+    background-size: 92px 47px;
+    width: 92px;
+    height: 47px;
+    text-align: center;
+    display: inline-block;
+    animation: arrowMove 3s infinite linear;
+    -webkit-animation: arrowMove 3s infinite linear;
+}
+
+#parallax .navBottom {
+    width: 100%;
+    position: absolute;
+    bottom: 70px;
+    left: 0;
+    text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .forside3 p {
+        padding-left: 10rem;
+        padding-right: 35rem;
+    }
+
+    .forside3 h1 {
+        padding-left: 10rem;
+        padding-right: 30rem;
+    }
+
+    .læs_mere a {
+        padding-left: 10rem;
+        padding-right: 35rem;
+    }
+}
 
 
 /* Footer start */
