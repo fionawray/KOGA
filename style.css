@@ -348,11 +348,11 @@ a:hover {
     background-color: #252a33;
 }
 
-.blog_img{
+.blog_img {
     flex-basis: 400px;
 }
 
-.blog_post img{
+.blog_post img {
     width: 100%;
     height: auto;
 }
@@ -390,17 +390,26 @@ a:hover {
     cursor: pointer;
 }
 
-.button:hover{
+.button:hover {
     background-color: #859aa8;
 }
 
 @media only screen and (min-width: 600px) {
-  .blog_txt {
-    margin-left: 3rem;
-    margin-right: 3rem;
-    padding-right: 16rem;
-  }
+    .splash_txt {
+        text-align: center;
+        font-size: 40px;
+    }
 }
+
+@media only screen and (min-width: 600px) {
+    .blog_txt {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding-right: 16rem;
+    }
+}
+
+
 
 
 
