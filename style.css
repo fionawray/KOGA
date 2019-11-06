@@ -1,15 +1,14 @@
 body {
-    background-color: black;
+    background-color: #000000;
     margin: 0;
 
 }
 
 #side_menu {
-    padding: 10px 16px;
+    padding-top: 10px;
     color: #3580c2;
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
     z-index: 2;
     justify-content: flex-end;
 }
@@ -36,7 +35,6 @@ img {
     left: 0vw;
     margin: 0;
     top: 6px;
-    color: aqua;
 }
 
 #menu_billede:hover {
@@ -45,13 +43,12 @@ img {
 
 #menu_billede img {
     height: 30px;
-    float: left;
-    padding-top: 12px;
+    padding: 12px;
 }
 
 nav {
     float: right;
-    padding: 0px 36px 0px 36px;
+    padding-right: 20px;
 }
 
 li {
@@ -63,7 +60,7 @@ li {
 a {
     font-size: 16px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: black;
     text-decoration: none;
     padding: 0px 14px 0px 14px;
 }
@@ -84,7 +81,7 @@ a:hover {
     cursor: pointer;
     font-size: 1.8rem;
     align-content: flex-end;
-    color: white;
+    color: #ffffff;
 }
 
 #menu {
@@ -95,7 +92,7 @@ a:hover {
 
 /* visited link */
 #side_menu header nav a:visited {
-    color: #ffffff;
+    color: black;
 }
 
 /* mouse over link */
@@ -235,7 +232,6 @@ a:hover {
 }
 
 
-/* Footer start */
 
 #info .sectionwrapper {
     display: flex;
@@ -333,24 +329,29 @@ a:hover {
 #splash {
     width: 100vw;
     width: 100%;
-    height: 40vw;
-    background-image: url(images/josh-nuttall-uNQ-TTg_qNY-unsplash.jpg);
+    height: 50vw;
+    background-image: url(images/john-gough-hiIa41IoVZs-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    filter: grayscale(70%);
 }
 
 #splash h1 {
     color: #ffffff;
     text-align: center;
-    padding-top: 3.5em;
     font-family: 'Poppins', sans-serif;
 }
 
 .blog_post {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    background-color: #252a33;
+    background-color: #b6b8ba;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
 }
 
 .blog_img {
@@ -368,7 +369,7 @@ a:hover {
 }
 
 #blog p {
-    color: #ffffff;
+    color: #000000;
     font-family: 'Judson', serif;
     line-height: 1.3em;
 }
@@ -381,6 +382,12 @@ a:hover {
 .blog_post {
     padding: 2em;
     margin: 2em;
+}
+
+.blog_post:hover,
+.blog_post:focus,
+.blog_post:active {
+    transform: scale(1.03);
 }
 
 .button {
@@ -400,6 +407,13 @@ a:hover {
 }
 
 @media only screen and (min-width: 600px) {
+<<<<<<< HEAD
+
+    .splash_txt {
+        text-align: center;
+        font-size: 40px;
+
+=======
     .splash_txt {
         text-align: center;
         font-size: 40px;
@@ -409,6 +423,7 @@ a:hover {
         margin-left: 3rem;
         margin-right: 3rem;
         padding-right: 16rem;
+>>>>>>> origin/master
     }
 }
 
@@ -421,6 +436,8 @@ a:hover {
 }
 
 
+<<<<<<< HEAD
+=======
 /*Kotant side start */
 * {
     box-sizing: border-box;
@@ -484,12 +501,13 @@ input[type=submit]:hover {
 
 
 
+>>>>>>> origin/master
 /* Footer start */
 
 #footer .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    background-color: #434b59;
+    background-color: #ffffff;
     padding: 4rem;
 }
 
@@ -499,7 +517,7 @@ input[type=submit]:hover {
     display: flex;
     flex-direction: column;
     margin: 1em;
-    background: #434b59;
+    background: #ffffff;
 }
 
 #footer .top {
@@ -507,13 +525,13 @@ input[type=submit]:hover {
 }
 
 #footer h2 {
-    color: black;
+    color: #5f5f5f;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
 }
 
 #footer p {
-    color: black;
+    color: #525252;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     line-height: 0.89rem;
@@ -527,7 +545,6 @@ input[type=submit]:hover {
 #footer .icon_flex {
     display: flex;
     vertical-align: middle;
-
 }
 
 #footer .icon_flex .align {
