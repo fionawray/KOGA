@@ -345,26 +345,6 @@ a:hover {
 #splash {
     width: 100vw;
     width: 100%;
-    height: 40vw;
-    background-image: url(images/josh-nuttall-uNQ-TTg_qNY-unsplash.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-#splash h1 {
-    color: #ffffff;
-    text-align: center;
-    padding-top: 3.5em;
-    font-family: 'Poppins', sans-serif;
-}
-
-.blog_post {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #252a33;
-    width: 100vw;
-    width: 100%;
     height: 50vw;
     background-image: url(images/john-gough-hiIa41IoVZs-unsplash.jpg);
     background-size: cover;
@@ -388,6 +368,8 @@ a:hover {
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform;
+    padding: 2em;
+    margin: 2em;
 }
 
 .blog_img {
@@ -412,12 +394,13 @@ a:hover {
 
 #blog h1 {
     font-family: 'Poppins', sans-serif;
-    color: white;
-    =======color: #000000;
+    color: #000000;
     font-family: 'Judson', serif;
     line-height: 1.3em;
 }
 
+<<<<<<< HEAD
+=======
 #blog h1 {
     font-family: 'Poppins', sans-serif;
     color: #000000;
@@ -436,7 +419,13 @@ a:hover {
 
 }
 
+<<<<<<< HEAD
 =======.blog_post:hover,
+=======
+=======
+>>>>>>> origin/master
+.blog_post:hover,
+>>>>>>> origin/master
 .blog_post:focus,
 .blog_post:active {
     transform: scale(1.03);
@@ -469,7 +458,6 @@ a:hover {
         margin-right: 3rem;
         padding-right: 16rem;
     }
-}
 }
 
 @media only screen and (min-width: 600px) {
