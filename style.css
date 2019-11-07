@@ -355,6 +355,12 @@ a:hover {
     transition-property: transform;
 }
 
+.blog_post:hover,
+.blog_post:focus,
+.blog_post:active {
+    transform: scale(1.03);
+}
+
 .blog_img {
     flex-basis: 400px;
 }
@@ -387,15 +393,6 @@ a:hover {
     margin: 2em;
 }
 
-.blog_post:hover,
-.blog_post:hover,
-.blog_post:focus,
-.blog_post:hover,
-.blog_post:hover,
-.blog_post:focus,
-.blog_post:active {
-    transform: scale(1.03);
-}
 
 .button {
     background-color: #20384d;
@@ -431,6 +428,7 @@ a:hover {
 /*Kontakt side start */
 #kontakt {
     background-color: black;
+    margin: 4vw;
 }
 
 
@@ -442,15 +440,20 @@ a:hover {
 }
 
 #kontakt .col {
-
     flex-basis: 200px;
     flex-grow: 1;
     color: white;
-
     flex-basis: 400px;
     flex-grow: 1;
     color: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+    color: white;
+    margin-top: 7vw;
+}
 
+#kontakt li {
+    color: white;
 }
 
 
@@ -459,7 +462,7 @@ a:hover {
 input[type=text],
 select,
 textarea {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
@@ -637,6 +640,31 @@ input[type=submit]:hover {
     }
 }
 
+/*Kontakt side start */
+#kontakt {
+    background-color: black;
+    margin: 4vw;
+}
+
+
+#kontakt .sectionwrapper {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#kontakt .col {
+    padding: 2vw;
+    margin-top: 0vw;
+
+}
+
+#kontakt li {
+    color: white;
+}
+
+
 /* Footer start */
 
 #footer .sectionwrapper {
@@ -698,13 +726,21 @@ input[type=submit]:hover {
 
 .article_cykel {
     color: white;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translateZ(0);
 }
 
-.cykelside {
-    cursor: pointer;
+.cykelside:hover,
+.cykelside:focus,
+.cykelside:active {
+    transform: scale(1.03);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-
+.article_cykel img {
+    width: 100%;
+}
 
 .cykelside {
     cursor: pointer;
@@ -758,10 +794,14 @@ input[type=submit]:hover {
 }
 
 .om_os_tekst {
+<<<<<<< HEAD
     display: flex;
     background-color: rgba(0, 0, 0, 0.58);
     height: 250px;
 
+=======
+    background-color: #434b59;
+>>>>>>> origin/master
     width: 400px;
     color: white;
     margin-right: 50px;
