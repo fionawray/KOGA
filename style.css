@@ -450,7 +450,10 @@ a:hover {
     flex-grow: 1;
     color: white;
     margin-top: 7vw;
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 }
 
 #kontakt li {
@@ -723,10 +726,131 @@ input[type=submit]:hover {
 
 /* Footer end */
 
+/*	Om os start*/
+
+#om_os {
+    background-image: url(images/chepe-nicoli-if0K7iBBDxw-unsplash.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.om_os_tekst {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.58);
+    height: 250px;
+    background-color: #434b59;
+    width: 400px;
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    vertical-align: center;
+}
+
+.om_os_tekst1 {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.58);
+    height: 250px;
+    width: 400px;
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    vertical-align: center;
+}
+
+.om_os_tekst_boks {
+    align-self: center;
+}
+
+.om_os_tekst h1 {
+    margin: 20px;
+}
+
+.om_os_tekst p {
+    margin: 20px;
+    line-height: 1.4rem;
+}
+
+.om_os_tekst1 h1 {
+    margin: 20px;
+}
+
+.om_os_tekst1 p {
+    margin: 20px;
+    line-height: 1.4rem;
+}
+
 /* Cykler start */
 
-.article_cykel {
+/*Splash + bokse*/
+
+#splash_cykler {
+    background-image: url(images/f.jpg);
+    background-size: cover;
+    background-position: 100% 56%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cykler_tekst {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.58);
+    height: 250px;
+    width: 400px;
     color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    vertical-align: center;
+}
+
+.cykler_tekst_boks {
+    align-self: center;
+}
+
+.cykler_tekst h1 {
+    margin: 20px;
+}
+
+.cykler_tekst p {
+    margin: 20px;
+    line-height: 1.4rem;
+}
+
+/*De forskellige cykler vises*/
+
+.liste {
+    background-color: #f1f1f1;
+}
+
+.article_cykel {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translateZ(0);
+}
+
+.cykelside:hover,
+.cykelside:focus,
+.cykelside:active {
+    transform: scale(1.03);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .article_cykel img {
@@ -735,6 +859,14 @@ input[type=submit]:hover {
 
 .cykelside {
     cursor: pointer;
+    background-color: white;
+    margin-left: 0.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.cykelside p,
+h2 {
+    margin-left: 2rem;
 }
 
 .cykelside img {
@@ -752,6 +884,20 @@ input[type=submit]:hover {
     font-size: .85em;
 }
 
+/* Singlesite */
+
+.singlesite p,
+h2 {
+    margin-left: 0;
+}
+
+.luk {
+    position: absolute;
+    left: 39px;
+    top: 90px;
+}
+
+
 /* Media */
 
 @media screen and (min-width: 501px) {
@@ -767,24 +913,4 @@ input[type=submit]:hover {
         grid-template-columns: repeat(3, 1fr);
     }
 
-}
-
-/*	Om os start*/
-
-#om_os {
-    background-image: url(images/chepe-nicoli-if0K7iBBDxw-unsplash.jpg);
-    background-size: cover;
-    height: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.om_os_tekst {
-    background-color: #434b59;
-    width: 400px;
-    color: white;
 }

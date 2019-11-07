@@ -26,25 +26,77 @@
 
 <body>
 
+    <section id="splash_cykler">
+        <div class="cykler_tekst">
+            <div class="cykler_tekst_boks">
+                <h1>Cykler</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus molestias blanditiis deleniti minus veritatis, nam, quisquam est provident porro, ullam nostrum error reprehenderit, omnis ex dicta nisi totam impedit illo.</p>
+            </div>
+        </div>
+    </section>
+
     <main>
         <section class="liste">
         </section>
     </main>
 
-    <template>
+    <template id="temp">
         <article class="article_cykel cykelside">
-            <h2 class="navn"></h2>
-            <div class="kort"></div>
-            <p class="pris"></p>
             <img class="front_billede" src="">
+            <h2 class="navn"></h2>
+            <p class="kort"></p>
+            <p class="pris"></p>
         </article>
     </template>
 
+    <footer id="footer">
+        <div class="sectionwrapper">
+            <div class="col">
+                <div class="top">
+                    <h2>Kontakt</h2>
+                    <div class="icons icon_flex">
+                        <img src="icons/place.svg" alt="Location">
+                        <div>
+                            <p>Peter Bangsvej 18</p>
+                            <p>2000 Frederiksberg</p>
+                        </div>
+                    </div>
+                    <div class="icons icon_flex">
+                        <img src="icons/call-answer.svg" alt="Location">
+                        <p class="align">+45 38 86 43 25</p>
+                    </div>
+                    <div class="icons icon_flex">
+                        <img src="icons/email.svg" alt="Location">
+                        <p class="align">info@kogacenter.dk</p>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="top">
+                    <h2>KOGA</h2>
+                    <div class="icons">
+                        <img src="icons/facebook-logo.svg" alt="facebook">
+                        <img src="icons/instagram.svg" alt="instagram">
+                        <img src="icons/twitter.svg" alt="instagram">
+                        <img src="icons/youtube.svg" alt="instagram">
+                    </div>
 
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="top">
+                    <h2>Andet info</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script>
-        //Det er vigtigt at man sætter "?per_page=100" efter sit link. Det er nemlig default, at den kun viser 10 pr. Side.
+        //"?per_page=100";" skal skrives efter linket. Ellers vises der kun 10, som er default
         const url = "https://uwei.eu/kea/2_semester/tema9/koga/wordpress/wp-json/wp/v2/cykler?per_page=100";
         let cykler = [];
         document.addEventListener("DOMContentLoaded", start);
@@ -110,10 +162,11 @@
             cykler.forEach(cykel => {
                 console.log("loop okay");
                 const klon = skabelon.cloneNode(true).content;
+                klon.querySelector(".front_billede").src = cykel.front_billede.guid;
                 klon.querySelector(".navn").textContent = cykel.title.rendered;
                 klon.querySelector(".kort").textContent = cykel.kort;
                 klon.querySelector(".pris").textContent = cykel.pris;
-                klon.querySelector(".front_billede").src = cykel.front_billede.guid;
+
                 klon.querySelector(".article_cykel").addEventListener("click", (() => {
 
 
@@ -124,48 +177,7 @@
             });
         }
     </script>
-    <footer id="footer">
-        <div class="sectionwrapper">
-            <div class="col">
-                <div class="top">
-                    <h2>Kontakt</h2>
-                    <div class="icons icon_flex">
-                        <img src="icons/place.svg" alt="Location">
-                        <div>
-                            <p>Peter Bangsvej 18</p>
-                            <p>2000 Frederiksberg</p>
-                        </div>
-                    </div>
-                    <div class="icons icon_flex">
-                        <img src="icons/call-answer.svg" alt="Location">
-                        <p class="align">+45 38 86 43 25</p>
-                    </div>
-                    <div class="icons icon_flex">
-                        <img src="icons/email.svg" alt="Location">
-                        <p class="align">info@kogacenter.dk</p>
-                    </div>
-                    <p></p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="top">
-                    <h2>KOGA</h2>
-                    <div class="icons">
-                        <img src="icons/facebook-logo.svg" alt="facebook">
-                        <img src="icons/instagram.svg" alt="instagram">
-                        <img src="icons/twitter.svg" alt="instagram">
-                        <img src="icons/youtube.svg" alt="instagram">
-                    </div>
 
-                </div>
-            </div>
+</body>
 
-            <div class="col">
-                <div class="top">
-                    <h2>Andet info</h2>
-                    <p></p>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body></html>
+</html>
