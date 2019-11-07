@@ -415,16 +415,8 @@ a:hover {
 
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======.blog_post:hover,
-=======
-=======
->>>>>>> origin/master
->>>>>>> origin/master
 .blog_post:hover,
->>>>>>> origin/master
+.blog_post:hover,
 .blog_post:focus,
 .blog_post:active {
     transform: scale(1.03);
@@ -503,11 +495,6 @@ a:hover {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-=======
-> > > > > > > origin/master
-
->>>>>>> origin/master
 /* Style inputs */
 input[type=text],
 select,
@@ -520,11 +507,8 @@ textarea {
     resize: vertical;
 }
 
-<<<<<<< HEAD
 input[type=send] {
-=======
-<<<<<<< HEAD input[type=send] {
->>>>>>> origin/master
+
     background-color: #000;
     color: white;
     padding: 12px 0px;
@@ -534,8 +518,6 @@ input[type=send] {
 }
 
 input[type=send]:hover {
-<<<<<<< HEAD
-
     background-color: black;
     color: white;
     padding: 12px 20px;
@@ -668,8 +650,7 @@ input[type=submit]:hover {
         height: 35px;
     }
 
-=======
-    =======input[type=submit] {
+    input[type=submit] {
         background-color: black;
         color: white;
         padding: 12px 20px;
@@ -687,7 +668,7 @@ input[type=submit]:hover {
         resize: vertical;
     }
 
-    <<<<<<< HEAD=======input[type=submit] {
+    input[type=submit] {
         background-color: black;
         color: white;
         padding: 12px 20px;
@@ -696,22 +677,19 @@ input[type=submit]:hover {
     }
 
     input[type=submit]:hover {
-        > > > > > > > origin/master background-color: grey;
+        background-color: grey;
     }
-
-    > > > > > > > origin/master
 
     /* Style the container/contact section */
     .container {
         border-radius: 5px;
-        <<<<<<< HEAD background-color: #f2f2f2;
+        background-color: #f2f2f2;
         padding: 10px;
-        =======background-color: #f2f2f2;
+        background-color: #f2f2f2;
         padding: 10px;
         border-radius: 5px;
         background-color: #f2f2f2;
         padding: 10px;
-        > > > > > > > origin/master
     }
 
     /* Create two columns that float next to eachother */
@@ -720,11 +698,10 @@ input[type=submit]:hover {
         width: 50%;
         margin-top: 6px;
         padding: 20px;
-        <<<<<<< HEAD=======float: left;
+        float: left;
         width: 50%;
         margin-top: 6px;
         padding: 20px;
-        > > > > > > > origin/master
     }
 
     /* Clear floats after the columns */
@@ -732,19 +709,18 @@ input[type=submit]:hover {
         content: "";
         display: table;
         clear: both;
-        <<<<<<< HEAD=======content: "";
+        content: "";
         display: table;
         clear: both;
-        > > > > > > > origin/master
     }
 
     /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
 
         .column,
-        <<<<<<< HEAD input[type=send] {
-            =======input[type=submit] {
-                > > > > > > > origin/master width: 100%;
+        input[type=send] {
+                {
+                width: 100%;
                 margin-top: 0;
             }
         }
@@ -810,7 +786,6 @@ input[type=submit]:hover {
             margin-top: 0;
         }
     }
->>>>>>> origin/master
 
     /* Footer start */
 
