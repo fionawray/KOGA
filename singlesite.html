@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+
+    <header id="side_menu">
+        <nav>
+            <div id="menu_billede">
+                <a href="forside_2.html">
+                    <img src="img/logo.png" alt="logo_profil"></a>
+            </div>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="cykler.html">cykler</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="om_os.html">om os</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+
+<body>
+    <main>
+        <button class="luk">Tilbage</button>
+        <section class="liste">
+            <h1 class="overskrift"></h1>
+        </section>
+    </main>
+
+    <template id="temp">
+        <article class="article_cykel">
+            <h2 class="navn"></h2>
+            <div class="kort"></div>
+            <p class="pris"></p>
+            <img class="front_billede" src="">
+        </article>
+        <section class="liste"></section>
+    </template>
+
+
+
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let myID = urlParams.get("id");
+        console.log("myID", myID);
+        let cykler;
+        const liste = document.querySelector(".liste");
+        const url = "https://uwei.eu/kea/2_semester/tema9/koga/wordpress/wp-json/wp/v2/cykler/" + myID;
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentJson();
+        }
+
+        async function hentJson() {
+            const response = await fetch(url);
+            console.log(response);
+            cykler = await response.json();
+            console.log(cykler);
+            vis();
+
+            document.querySelector(".luk").addEventListener("click", () => {
+                history.back();
+            })
+        }
+
+        function vis() {
+            const skabelon = document.querySelector("#temp");
+
+            const klon = skabelon.cloneNode(true).content;
+            klon.querySelector(".navn").textContent = cykler.title.rendered;
+            klon.querySelector(".kort").textContent = cykler.kort;
+            klon.querySelector(".pris").textContent = cykler.pris;
+            klon.querySelector(".front_billede").src = cykler.front_billede.guid;
+            liste.appendChild(klon);
+        }
+
+    </script>
+
+</body>
+
+</html>

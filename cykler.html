@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="da">
 
 <head>
     <meta charset="utf-8">
@@ -11,7 +11,7 @@
         <nav>
             <div id="menu_billede">
                 <a href="forside_2.html">
-                    <img src="img/logo.png" alt="logo_profil"></a>
+                    <img src="images/KOGA_LYB_WHITE.svg" alt="logo_profil"></a>
             </div>
             <div id="menuknap">☰</div>
             <ul id="menu" class="hidden">
@@ -26,16 +26,145 @@
 
 <body>
 
-    <section id="oversigt">
-        <section class="kategori1"></section>
-        <section class="kategori2"></section>
-        <section class="kategori3"></section>
-        <section class="kategori4"></section>
-        <section class="kategori5"></section>
-        <section class="kategori6"></section>
-        <section class="kategori7"></section>
-    </section>
+    <main>
+        <section class="liste">
+        </section>
+    </main>
 
-</body>
+    <template>
+        <article class="article_cykel cykelside">
+            <h2 class="navn"></h2>
+            <div class="kort"></div>
+            <p class="pris"></p>
+            <img class="front_billede" src="">
+        </article>
+    </template>
 
-</html>
+
+
+
+    <script>
+        const url = "https://uwei.eu/kea/2_semester/tema9/koga/wordpress/wp-json/wp/v2/cykler";
+        let cykler = [];
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            hentJson();
+            console.log("sidenVises");
+
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+        }
+
+        function toggleMenu() {
+            console.log("toggleMenu");
+            document.querySelector("#menu").classList.toggle("hidden");
+
+            let erSkjult =
+                document.querySelector("#menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap").textContent = "X";
+            }
+        }
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {
+            fastHeader()
+        };
+
+        // Get the header
+        var header = document.getElementById("side_menu");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function fastHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+
+        async function hentJson() {
+            const response = await fetch(url);
+            console.log(response);
+            cykler = await response.json();
+            console.log(cykler);
+            vis();
+        }
+
+        function vis() {
+            const skabelon = document.querySelector("template");
+            const liste = document.querySelector(".liste");
+
+            cykler.forEach(cykel => {
+                console.log("loop okay");
+                const klon = skabelon.cloneNode(true).content;
+                klon.querySelector(".navn").textContent = cykel.title.rendered;
+                klon.querySelector(".kort").textContent = cykel.kort;
+                klon.querySelector(".pris").textContent = cykel.pris;
+                klon.querySelector(".front_billede").src = cykel.front_billede.guid;
+                klon.querySelector(".article_cykel").addEventListener("click", (() => {
+
+
+                    window.location.href = "singlesite.html?id=" + cykel.id;
+                }))
+
+                liste.appendChild(klon);
+            });
+        }
+    </script>
+    <footer id="footer">
+        <div class="sectionwrapper">
+            <div class="col">
+                <div class="top">
+                    <h2>Kontakt</h2>
+                    <div class="icons icon_flex">
+                        <img src="icons/place.svg" alt="Location">
+                        <div>
+                            <p>Peter Bangsvej 18</p>
+                            <p>2000 Frederiksberg</p>
+                        </div>
+                    </div>
+                    <div class="icons icon_flex">
+                        <img src="icons/call-answer.svg" alt="Location">
+                        <p class="align">+45 38 86 43 25</p>
+                    </div>
+                    <div class="icons icon_flex">
+                        <img src="icons/email.svg" alt="Location">
+                        <p class="align">info@kogacenter.dk</p>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="top">
+                    <h2>KOGA</h2>
+                    <div class="icons">
+                        <img src="icons/facebook-logo.svg" alt="facebook">
+                        <img src="icons/instagram.svg" alt="instagram">
+                        <img src="icons/twitter.svg" alt="instagram">
+                        <img src="icons/youtube.svg" alt="instagram">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="top">
+                    <h2>Andet info</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body></html>
