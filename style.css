@@ -804,6 +804,10 @@ input[type=submit]:hover {
     cursor: pointer;
 }
 
+.cykelside img {
+    width: 100%;
+}
+
 .liste {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
