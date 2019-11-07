@@ -1,9 +1,6 @@
 body {
     background-color: black;
     margin: 0;
-    background-color: #000000;
-    margin: 0;
-
 }
 
 #side_menu {
@@ -15,11 +12,6 @@ body {
     z-index: 2;
     justify-content: flex-end;
     padding-top: 10px;
-    color: #3580c2;
-    display: flex;
-    flex-wrap: wrap;
-    z-index: 2;
-    justify-content: flex-end;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -37,13 +29,8 @@ body {
 #menu_billede {
     position: absolute;
     left: 0vw;
-    margin: 0;
     top: 6px;
-    color: aqua;
-    position: absolute;
-    left: 0vw;
-    margin: 0;
-    top: 6px;
+    padding-left: 2rem;
 }
 
 #menu_billede:hover {
@@ -51,9 +38,9 @@ body {
 }
 
 #menu_billede img {
-    height: 30px;
+    height: 9.5vw;
     float: left;
-    padding-top: 12px;
+    padding-top: 1rem;
 }
 
 nav {
@@ -455,7 +442,7 @@ a:hover {
 
 }
 
-* {
+#kontakt * {
     box-sizing: border-box;
 }
 
@@ -666,6 +653,7 @@ input[type=submit]:hover {
     #footer .top {
         flex-grow: 1;
     }
+
     #footer h2 {
         color: #5f5f5f;
         text-align: center;
