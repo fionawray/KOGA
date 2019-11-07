@@ -747,18 +747,62 @@ input[type=submit]:hover {
 #om_os {
     background-image: url(images/chepe-nicoli-if0K7iBBDxw-unsplash.jpg);
     background-size: cover;
-    height: 400px;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    margin-top: 30px;
 }
 
 .om_os_tekst {
-    background-color: #434b59;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.58);
+    height: 250px;
 
     width: 400px;
     color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    vertical-align: center;
+}
+
+.om_os_tekst1 {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.58);
+    height: 250px;
+
+    width: 400px;
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    vertical-align: center;
+}
+
+.om_os_tekst_boks {
+    align-self: center;
+}
+
+.om_os_tekst h1 {
+    margin: 20px;
+}
+
+.om_os_tekst p {
+    margin: 20px;
+    line-height: 1.4rem;
+}
+
+.om_os_tekst1 h1 {
+    margin: 20px;
+}
+
+.om_os_tekst1 p {
+    margin: 20px;
+    line-height: 1.4rem;
 }
