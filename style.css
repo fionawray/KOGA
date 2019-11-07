@@ -412,8 +412,6 @@ a:hover {
     line-height: 1.3em;
 }
 
-<<<<<<< HEAD
-=======
 #blog h1 {
     font-family: 'Poppins', sans-serif;
     color: #000000;
@@ -424,16 +422,12 @@ a:hover {
     margin: 2em;
 }
 
-<<<<<<< HEAD
-
 /*Kontakt side start */
 #kontakt {
     background-color: black;
 
 }
 
-=======
->>>>>>> origin/master
 .blog_post:hover,
 .blog_post:focus,
 .blog_post:active {
@@ -479,13 +473,10 @@ a:hover {
 
 
 /*Kotant side start */
->>>>>>> origin/master
 * {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-=======
 .splash_txt {
     text-align: center;
     font-size: 40px;
@@ -516,7 +507,6 @@ a:hover {
     box-sizing: border-box;
 }
 
->>>>>>> origin/master
 /* Style inputs */
 input[type=text],
 select,
@@ -529,7 +519,6 @@ textarea {
     resize: vertical;
 }
 
-<<<<<<< HEAD
 input[type=send] {
     background-color: #000;
     color: white;
@@ -540,8 +529,7 @@ input[type=send] {
 }
 
 input[type=send]:hover {
-=======
-input[type=submit] {
+
     background-color: black;
     color: white;
     padding: 12px 20px;
@@ -568,22 +556,20 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
->>>>>>> origin/master
     background-color: grey;
 }
 
 /* Style the container/contact section */
 .container {
     border-radius: 5px;
-<<<<<<< HEAD
-    background-color: #f2f2f2;    padding: 10px;
-=======
+    background-color: #f2f2f2;
+    padding: 10px;
     background-color: #f2f2f2;
     padding: 10px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
->>>>>>> origin/master
+
 }
 
 /* Create two columns that float next to eachother */
@@ -592,13 +578,11 @@ input[type=submit]:hover {
     width: 50%;
     margin-top: 6px;
     padding: 20px;
-<<<<<<< HEAD
-=======
     float: left;
     width: 50%;
     margin-top: 6px;
     padding: 20px;
->>>>>>> origin/master
+
 }
 
 /* Clear floats after the columns */
@@ -606,209 +590,198 @@ input[type=submit]:hover {
     content: "";
     display: table;
     clear: both;
-<<<<<<< HEAD
-=======
     content: "";
     display: table;
     clear: both;
->>>>>>> origin/master
+
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 
     .column,
-<<<<<<< HEAD
     input[type=send] {
-=======
-    input[type=submit] {
->>>>>>> origin/master
+            {
+            width: 100%;
+            margin-top: 0;
+        }
+    }
+
+    /* Footer start */
+
+    #footer .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #434b59;
+        padding: 4rem;
+    }
+
+    #footer .col {
+        flex-basis: 250px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        background: #434b59;
+    }
+
+    #footer .top {
+        flex-grow: 1;
+    }
+
+    #footer h2 {
+        color: black;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #footer p {
+        color: black;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        line-height: 0.89rem;
+    }
+
+    #footer .icons {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    #footer .icon_flex {
+        display: flex;
+        vertical-align: middle;
+
+    }
+
+    #footer .icon_flex .align {
+        padding-top: 12px
+    }
+
+    .icons img {
+        width: 35px;
+        height: 35px;
+    }
+
+
+    /* Footer start */
+
+    #footer .sectionwrapper {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ffffff;
+        padding: 4rem;
+    }
+
+    #footer .col {
+        flex-basis: 250px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        margin: 1em;
+        background: #ffffff;
+    }
+
+    #footer .top {
+        flex-grow: 1;
+    }
+
+    #footer h2 {
+        color: #5f5f5f;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #footer p {
+        color: #525252;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 16px;
+        line-height: 0.89rem;
+    }
+
+    #footer .icons {
+        font-size: 60px;
+        text-align: center;
+    }
+
+    #footer .icon_flex {
+        display: flex;
+        vertical-align: middle;
+    }
+
+    #footer .icon_flex .align {
+        padding-top: 12px
+    }
+
+    .icons img {
+        width: 35px;
+        height: 35px;
+    }
+
+    /* Footer end */
+
+    /* Cykler start */
+
+    .article_cykel {
+        color: white;
+    }
+
+    .cykelside {
+        cursor: pointer;
+    }
+
+    /*	Om os start*/
+
+    #om_os {
+        background-image: url(images/chepe-nicoli-if0K7iBBDxw-unsplash.jpg);
+        background-size: cover;
+        height: 400px;
         width: 100%;
-        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
     }
-}
 
-/* Footer start */
+    .om_os_tekst {
+        background-color: #434b59;
 
-#footer .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #434b59;
-    padding: 4rem;
-}
-
-#footer .col {
-    flex-basis: 250px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    margin: 1em;
-    background: #434b59;
-}
-
-#footer .top {
-    flex-grow: 1;
-}
-
-#footer h2 {
-    color: black;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#footer p {
-    color: black;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
-    line-height: 0.89rem;
-}
-
-#footer .icons {
-    font-size: 60px;
-    text-align: center;
-}
-
-#footer .icon_flex {
-    display: flex;
-    vertical-align: middle;
-
-}
-
-#footer .icon_flex .align {
-    padding-top: 12px
-}
-
-.icons img {
-    width: 35px;
-    height: 35px;
-}
-
-.column,
-input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-}
-}
-
-/* Footer start */
-
-#footer .sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #ffffff;
-    padding: 4rem;
-}
-
-#footer .col {
-    flex-basis: 250px;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    margin: 1em;
-    background: #ffffff;
-}
-
-#footer .top {
-    flex-grow: 1;
-}
-
-#footer h2 {
-    color: #5f5f5f;
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-}
-
-#footer p {
-    color: #525252;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 16px;
-    line-height: 0.89rem;
-}
-
-#footer .icons {
-    font-size: 60px;
-    text-align: center;
-}
-
-#footer .icon_flex {
-    display: flex;
-    vertical-align: middle;
-}
-
-#footer .icon_flex .align {
-    padding-top: 12px
-}
-
-.icons img {
-    width: 35px;
-    height: 35px;
-}
-
-/* Footer end */
-
-/* Cykler start */
-
-.article_cykel {
-    color: white;
-}
-
-.cykelside {
-    cursor: pointer;
-}
-
-/*	Om os start*/
-
-#om_os {
-    background-image: url(images/chepe-nicoli-if0K7iBBDxw-unsplash.jpg);
-    background-size: cover;
-    height: 400px;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.om_os_tekst {
-    background-color: #434b59;
-
-    width: 400px;
-    color: white;
-}
-
-.cykelside {
-    cursor: pointer;
-}
-
-.cykelside img {
-    width: 100%;
-}
-
-.liste {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    column-count: 4;
-    column-gap: 1em;
-    margin: 1.5em;
-    padding: 0;
-    column-gap: 1.5em;
-    font-size: .85em;
-}
-
-/* Media */
-
-@media screen and (min-width: 501px) {
-    .liste {
-        grid-template-columns: repeat(2, 1fr);
+        width: 400px;
+        color: white;
     }
-}
 
+    .cykelside {
+        cursor: pointer;
+    }
 
-@media screen and (min-width: 1000px) {
+    .cykelside img {
+        width: 100%;
+    }
 
     .liste {
-        grid-template-columns: repeat(3, 1fr);
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-count: 4;
+        column-gap: 1em;
+        margin: 1.5em;
+        padding: 0;
+        column-gap: 1.5em;
+        font-size: .85em;
     }
 
-}
+    /* Media */
+
+    @media screen and (min-width: 501px) {
+        .liste {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+
+    @media screen and (min-width: 1000px) {
+
+        .liste {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
