@@ -355,6 +355,12 @@ a:hover {
     transition-property: transform;
 }
 
+.blog_post:hover,
+.blog_post:focus,
+.blog_post:active {
+    transform: scale(1.03);
+}
+
 .blog_img {
     flex-basis: 400px;
 }
@@ -387,15 +393,6 @@ a:hover {
     margin: 2em;
 }
 
-.blog_post:hover,
-.blog_post:hover,
-.blog_post:focus,
-.blog_post:hover,
-.blog_post:hover,
-.blog_post:focus,
-.blog_post:active {
-    transform: scale(1.03);
-}
 
 .button {
     background-color: #20384d;
@@ -756,7 +753,6 @@ input[type=submit]:hover {
 
 .om_os_tekst {
     background-color: #434b59;
-
     width: 400px;
     color: white;
 }
