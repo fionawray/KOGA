@@ -49,7 +49,8 @@ nav {
 li {
     font-size: 16px;
     text-transform: none;
-    color: #525252;}
+    color: #525252;
+}
 
 a {
     font-size: 16px;
@@ -401,10 +402,6 @@ a:hover {
 }
 
 @media only screen and (min-width: 600px) {
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 
     .splash_txt {
         text-align: center;
@@ -420,10 +417,6 @@ a:hover {
         margin-left: 3rem;
         margin-right: 3rem;
         padding-right: 16rem;
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
     }
 }
 
@@ -435,10 +428,6 @@ a:hover {
     }
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 /*Kotant side start */
 #kontakt * {
     box-sizing: border-box;
@@ -500,10 +489,6 @@ input[type=submit]:hover {
     }
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
 /* Footer start */
 
 #footer .sectionwrapper {
