@@ -442,20 +442,15 @@ a:hover {
 }
 
 #kontakt .col {
-
-<<<<<<< HEAD
     flex-basis: 200px;
     flex-grow: 1;
     color: white;
     flex-basis: 400px;
     flex-grow: 1;
     color: white;
-=======
     flex-basis: 400px;
     flex-grow: 1;
     color: white;
-
->>>>>>> origin/master
 }
 
 
@@ -705,24 +700,16 @@ input[type=submit]:hover {
     color: white;
 }
 
-<<<<<<< HEAD
 .article_cykel img {
     width: 100%;
-=======
-.cykelside {
-    cursor: pointer;
->>>>>>> origin/master
 }
 
 .cykelside {
     cursor: pointer;
-<<<<<<< HEAD
-=======
 }
 
 .cykelside img {
     width: 100%;
->>>>>>> origin/master
 }
 
 .liste {
