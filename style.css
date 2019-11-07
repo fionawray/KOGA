@@ -442,9 +442,15 @@ a:hover {
 }
 
 #kontakt .col {
+<<<<<<< HEAD
 	flex-basis: 200px;
 	flex-grow: 1;
 	color: white;
+=======
+    flex-basis: 400px;
+    flex-grow: 1;
+    color: white;
+>>>>>>> origin/master
 }
 
 
