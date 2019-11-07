@@ -32,12 +32,15 @@
         </section>
     </main>
 
-    <template id="temp">
+    <template id="temp" class="singlesite">
         <article class="article_cykel">
             <h2 class="navn"></h2>
-            <div class="kort"></div>
+            <p class="lang"></p>
             <p class="pris"></p>
-            <img class="front_billede" src="">
+            <img class="billede_1" src="">
+            <img class="billede_2" src="">
+            <img class="billede_3" src="">
+
         </article>
         <section class="liste"></section>
     </template>
@@ -75,9 +78,15 @@
 
             const klon = skabelon.cloneNode(true).content;
             klon.querySelector(".navn").textContent = cykler.title.rendered;
-            klon.querySelector(".kort").textContent = cykler.kort;
+            klon.querySelector(".lang").innerHTML = cykler.beskrivelse;
             klon.querySelector(".pris").textContent = cykler.pris;
-            klon.querySelector(".front_billede").src = cykler.front_billede.guid;
+            klon.querySelector(".billede_1").src = cykler.billede_1.guid;
+            klon.querySelector(".billede_2").src = cykler.billede_2.guid;
+            klon.querySelector(".billede_3").src = cykler.billede_3.guid;
+
+
+
+
             liste.appendChild(klon);
         }
     </script>

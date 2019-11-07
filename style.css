@@ -450,6 +450,10 @@ a:hover {
     flex-grow: 1;
     color: white;
     margin-top: 7vw;
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/master
 }
 
 #kontakt li {
@@ -722,62 +726,6 @@ input[type=submit]:hover {
 
 /* Footer end */
 
-/* Cykler start */
-
-.article_cykel {
-    color: white;
-    transition-duration: 0.3s;
-    transition-property: transform;
-    transform: translateZ(0);
-}
-
-.cykelside:hover,
-.cykelside:focus,
-.cykelside:active {
-    transform: scale(1.03);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-}
-
-.article_cykel img {
-    width: 100%;
-}
-
-.cykelside {
-    cursor: pointer;
-}
-
-.cykelside img {
-    width: 100%;
-}
-
-.liste {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    column-count: 4;
-    column-gap: 1em;
-    margin: 1.5em;
-    padding: 0;
-    column-gap: 1.5em;
-    font-size: .85em;
-}
-
-/* Media */
-
-@media screen and (min-width: 501px) {
-    .liste {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-
-@media screen and (min-width: 1000px) {
-
-    .liste {
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-}
-
 /*	Om os start*/
 
 #om_os {
@@ -794,14 +742,10 @@ input[type=submit]:hover {
 }
 
 .om_os_tekst {
-<<<<<<< HEAD
     display: flex;
     background-color: rgba(0, 0, 0, 0.58);
     height: 250px;
-
-=======
     background-color: #434b59;
->>>>>>> origin/master
     width: 400px;
     color: white;
     margin-right: 50px;
@@ -815,7 +759,6 @@ input[type=submit]:hover {
     display: flex;
     background-color: rgba(0, 0, 0, 0.58);
     height: 250px;
-
     width: 400px;
     color: white;
     margin-right: 50px;
@@ -845,4 +788,129 @@ input[type=submit]:hover {
 .om_os_tekst1 p {
     margin: 20px;
     line-height: 1.4rem;
+}
+
+/* Cykler start */
+
+/*Splash + bokse*/
+
+#splash_cykler {
+    background-image: url(images/f.jpg);
+    background-size: cover;
+    background-position: 100% 56%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.cykler_tekst {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.58);
+    height: 250px;
+    width: 400px;
+    color: white;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    vertical-align: center;
+}
+
+.cykler_tekst_boks {
+    align-self: center;
+}
+
+.cykler_tekst h1 {
+    margin: 20px;
+}
+
+.cykler_tekst p {
+    margin: 20px;
+    line-height: 1.4rem;
+}
+
+/*De forskellige cykler vises*/
+
+.liste {
+    background-color: #f1f1f1;
+}
+
+.article_cykel {
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translateZ(0);
+}
+
+.cykelside:hover,
+.cykelside:focus,
+.cykelside:active {
+    transform: scale(1.03);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.article_cykel img {
+    width: 100%;
+}
+
+.cykelside {
+    cursor: pointer;
+    background-color: white;
+    margin-left: 0.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.cykelside p,
+h2 {
+    margin-left: 2rem;
+}
+
+.cykelside img {
+    width: 100%;
+}
+
+.liste {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-count: 4;
+    column-gap: 1em;
+    margin: 1.5em;
+    padding: 0;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+
+/* Singlesite */
+
+.singlesite p,
+h2 {
+    margin-left: 0;
+}
+
+.luk {
+    position: absolute;
+    left: 39px;
+    top: 90px;
+}
+
+
+/* Media */
+
+@media screen and (min-width: 501px) {
+    .liste {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .liste {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
