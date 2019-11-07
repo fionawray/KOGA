@@ -1,10 +1,16 @@
 body {
+<<<<<<< HEAD
 	background-color: black;
 	margin: 0;
+=======
+    background-color: #000000;
+    margin: 0;
+>>>>>>> origin/master
 
 }
 
 #side_menu {
+<<<<<<< HEAD
 	padding: 10px 16px;
 	color: #3580c2;
 	display: flex;
@@ -12,8 +18,15 @@ body {
 	width: 100%;
 	z-index: 2;
 	justify-content: flex-end;
+=======
+    padding-top: 10px;
+    color: #3580c2;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 2;
+    justify-content: flex-end;
+>>>>>>> origin/master
 }
-
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
@@ -28,11 +41,18 @@ body {
 }
 
 #menu_billede {
+<<<<<<< HEAD
 	position: absolute;
 	left: 0vw;
 	margin: 0;
 	top: 6px;
 	color: aqua;
+=======
+    position: absolute;
+    left: 0vw;
+    margin: 0;
+    top: 6px;
+>>>>>>> origin/master
 }
 
 #menu_billede:hover {
@@ -40,6 +60,7 @@ body {
 }
 
 #menu_billede img {
+<<<<<<< HEAD
 	height: 30px;
 	float: left;
 	padding-top: 12px;
@@ -48,6 +69,15 @@ body {
 nav {
 	float: right;
 	padding: 0px 36px 0px 36px;
+=======
+    height: 30px;
+    padding: 12px;
+}
+
+nav {
+    float: right;
+    padding-right: 20px;
+>>>>>>> origin/master
 }
 
 li {
@@ -76,11 +106,19 @@ a:hover {
 }
 
 #menuknap {
+<<<<<<< HEAD
 	display: inline-block;
 	cursor: pointer;
 	font-size: 1.8rem;
 	align-content: flex-end;
 	color: white;
+=======
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    align-content: flex-end;
+    color: #ffffff;
+>>>>>>> origin/master
 }
 
 #menu {
@@ -91,7 +129,11 @@ a:hover {
 
 /* visited link */
 #side_menu header nav a:visited {
+<<<<<<< HEAD
 	color: #ffffff;
+=======
+    color: black;
+>>>>>>> origin/master
 }
 
 /* mouse over link */
@@ -185,12 +227,22 @@ a:hover {
 }
 
 #home_video p {
+<<<<<<< HEAD
 	font-family: 'Poppins', sans-serif;
 	color: white;
 	padding: 2em;
 	margin: 2em;
 	margin-top: 0;
 	line-height: 1.8em;
+=======
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    padding: 2em;
+    margin: 2em;
+    margin-top: 0;
+    line-height: 1.8em;
+    font-size: 1.2rem;
+>>>>>>> origin/master
 }
 
 .navBottom a span.arrow {
@@ -230,7 +282,6 @@ a:hover {
 }
 
 
-/* Footer start */
 
 #info .sectionwrapper {
 	display: flex;
@@ -326,6 +377,7 @@ a:hover {
 /* Blog start */
 
 #splash {
+<<<<<<< HEAD
 	width: 100vw;
 	width: 100%;
 	height: 40vw;
@@ -346,6 +398,33 @@ a:hover {
 	flex-wrap: wrap;
 	justify-content: center;
 	background-color: #252a33;
+=======
+    width: 100vw;
+    width: 100%;
+    height: 50vw;
+    background-image: url(images/john-gough-hiIa41IoVZs-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: grayscale(70%);
+}
+
+#splash h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.blog_post {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #b6b8ba;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+>>>>>>> origin/master
 }
 
 .blog_img {
@@ -363,6 +442,7 @@ a:hover {
 }
 
 #blog p {
+<<<<<<< HEAD
 	color: #ffffff;
 	font-family: 'Judson', serif;
 	line-height: 1.3em;
@@ -371,11 +451,27 @@ a:hover {
 #blog h1 {
 	font-family: 'Poppins', sans-serif;
 	color: white;
+=======
+    color: #000000;
+    font-family: 'Judson', serif;
+    line-height: 1.3em;
+}
+
+#blog h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+>>>>>>> origin/master
 }
 
 .blog_post {
 	padding: 2em;
 	margin: 2em;
+}
+
+.blog_post:hover,
+.blog_post:focus,
+.blog_post:active {
+    transform: scale(1.03);
 }
 
 .button {
@@ -395,6 +491,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 600px) {
+<<<<<<< HEAD
 	<<<<<<< HEAD .splash_txt {
 		text-align: center;
 		font-size: 40px;
@@ -420,12 +517,44 @@ a:hover {
 /*Kotant side start */
 * {
 	box-sizing: border-box;
+=======
+
+    .splash_txt {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .splash_txt {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .blog_txt {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding-right: 16rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .blog_txt {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding-right: 16rem;
+    }
+}
+
+/*Kotant side start */
+#kontakt * {
+    box-sizing: border-box;
+>>>>>>> origin/master
 }
 
 /* Style inputs */
 input[type=text],
 select,
 textarea {
+<<<<<<< HEAD
 	width: 100%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -444,33 +573,73 @@ input[type=submit] {
 
 input[type=submit]:hover {
 	background-color: grey;
+=======
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: grey;
+>>>>>>> origin/master
 }
 
 /* Style the container/contact section */
 .container {
+<<<<<<< HEAD
 	border-radius: 5px;
 	background-color: #f2f2f2;
 	padding: 10px;
+=======
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+>>>>>>> origin/master
 }
 
 /* Create two columns that float next to eachother */
 .column {
+<<<<<<< HEAD
 	float: left;
 	width: 50%;
 	margin-top: 6px;
 	padding: 20px;
+=======
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+>>>>>>> origin/master
 }
 
 /* Clear floats after the columns */
 .row:after {
+<<<<<<< HEAD
 	content: "";
 	display: table;
 	clear: both;
+=======
+    content: "";
+    display: table;
+    clear: both;
+>>>>>>> origin/master
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 
+<<<<<<< HEAD
 	.column,
 	input[type=submit] {
 		width: 100%;
@@ -533,6 +702,67 @@ input[type=submit]:hover {
 .icons img {
 	width: 35px;
 	height: 35px;
+=======
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+/* Footer start */
+
+#footer .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    padding: 4rem;
+}
+
+#footer .col {
+    flex-basis: 250px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    background: #ffffff;
+}
+
+#footer .top {
+    flex-grow: 1;
+}
+
+#footer h2 {
+    color: #5f5f5f;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#footer p {
+    color: #525252;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+    line-height: 0.89rem;
+}
+
+#footer .icons {
+    font-size: 60px;
+    text-align: center;
+}
+
+#footer .icon_flex {
+    display: flex;
+    vertical-align: middle;
+}
+
+#footer .icon_flex .align {
+    padding-top: 12px
+}
+
+.icons img {
+    width: 35px;
+    height: 35px;
+>>>>>>> origin/master
 }
 
 /* Footer end */
@@ -540,6 +770,7 @@ input[type=submit]:hover {
 /* Cykler start */
 
 .article_cykel {
+<<<<<<< HEAD
 	color: white;
 }
 
@@ -565,4 +796,39 @@ input[type=submit]:hover {
 	background-color: #434b59;
 
 	width: 400px;
+=======
+    color: white;
+}
+
+.cykelside {
+    cursor: pointer;
+}
+
+.liste {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-count: 4;
+    column-gap: 1em;
+    margin: 1.5em;
+    padding: 0;
+    column-gap: 1.5em;
+    font-size: .85em;
+}
+
+/* Media */
+
+@media screen and (min-width: 501px) {
+    .liste {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .liste {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+>>>>>>> origin/master
 }

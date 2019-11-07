@@ -26,19 +26,8 @@
 
 <body>
 
-    <section id="oversigt">
-        <section class="kategori1"></section>
-        <section class="kategori2"></section>
-        <section class="kategori3"></section>
-        <section class="kategori4"></section>
-        <section class="kategori5"></section>
-        <section class="kategori6"></section>
-        <section class="kategori7"></section>
-    </section>
-
     <main>
         <section class="liste">
-            <h1 class="overskrift"></h1>
         </section>
     </main>
 
@@ -49,8 +38,9 @@
             <p class="pris"></p>
             <img class="front_billede" src="">
         </article>
-        <section class="liste"></section>
     </template>
+
+
 
 
     <script>
@@ -60,6 +50,48 @@
 
         function start() {
             hentJson();
+            console.log("sidenVises");
+
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+        }
+
+        function toggleMenu() {
+            console.log("toggleMenu");
+            document.querySelector("#menu").classList.toggle("hidden");
+
+            let erSkjult =
+                document.querySelector("#menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap").textContent = "X";
+            }
+        }
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {
+            fastHeader()
+        };
+
+        // Get the header
+        var header = document.getElementById("side_menu");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function fastHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
         }
 
         async function hentJson() {
