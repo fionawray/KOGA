@@ -860,9 +860,16 @@ input[type=submit]:hover {
     margin-bottom: 1.6rem;
 }
 
-.cykelside p,
-h2 {
+.cykelside h2 {
     margin-left: 2rem;
+}
+
+.cykelside p {
+    margin-left: 2rem;
+}
+
+.cykelside p {
+    margin-bottom: 1.3rem;
 }
 
 .cykelside img {
@@ -882,9 +889,12 @@ h2 {
 
 /* Singlesite */
 
-.singlesite p,
-h2 {
-    margin-left: 0;
+.singlesite h2 {
+    margin: 0;
+}
+
+.singlesite p {
+    margin: 1rem;
 }
 
 .luk {
