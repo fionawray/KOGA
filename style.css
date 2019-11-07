@@ -4,14 +4,18 @@ body {
 }
 
 #side_menu {
-    padding: 10px 16px;
     color: #3580c2;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     z-index: 2;
     justify-content: flex-end;
-    padding-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #side_menu {
+        height: 3rem;
+    }
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
@@ -29,8 +33,7 @@ body {
 #menu_billede {
     position: absolute;
     left: 0vw;
-    top: 6px;
-    padding-left: 2rem;
+    padding-left: 1rem;
 }
 
 #menu_billede:hover {
@@ -40,19 +43,25 @@ body {
 #menu_billede img {
     height: 9.5vw;
     float: left;
-    padding-top: 1rem;
+}
+
+@media only screen and (min-width: 600px) {
+    #menu_billede img {
+        height: 2rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
 }
 
 nav {
     float: right;
-    padding: 0px 36px 0px 36px;
-    height: 30px;
-    padding: 12px;
+    height: auto;
 }
 
-nav {
-    float: right;
-    padding-right: 20px;
+@media only screen and (max-width: 600px) {
+    nav {
+        padding-top: 0.8rem;
+    }
 }
 
 li {
@@ -82,11 +91,6 @@ a:hover {
 
 #menuknap {
     display: inline-block;
-    cursor: pointer;
-    font-size: 1.8rem;
-    align-content: flex-end;
-    color: white;
-    =======display: inline-block;
     cursor: pointer;
     font-size: 1.8rem;
     align-content: flex-end;
@@ -189,7 +193,7 @@ a:hover {
     margin: 2em;
     margin-top: 0;
     line-height: 1.8em;
-    =======font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: white;
     padding: 2em;
     margin: 2em;
@@ -372,7 +376,7 @@ a:hover {
 }
 
 #blog p {
-    color: #ffffff;
+    color: #000000;
     font-family: 'Judson', serif;
     line-height: 1.3em;
 }
@@ -384,36 +388,17 @@ a:hover {
     line-height: 1.3em;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD=======#blog h1 {
-    font-family: 'Poppins', sans-serif;
-    color: #000000;
-}
-
-=======
->>>>>>> origin/master
 .blog_post {
     padding: 2em;
     margin: 2em;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-/*Kontakt side start */
-#kontakt {
-    background-color: black;
-
-}
-
-<<<<<<< HEAD=======.blog_post:hover,
-============== > > > > > > > origin/master .blog_post:hover,
-> > > > > > > origin/master .blog_post:focus,
-=======
 .blog_post:hover,
 .blog_post:hover,
 .blog_post:focus,
->>>>>>> origin/master
+.blog_post:hover,
+.blog_post:hover,
+.blog_post:focus,
 .blog_post:active {
     transform: scale(1.03);
 }
@@ -447,18 +432,14 @@ a:hover {
     }
 }
 
-@media only screen and (min-width: 600px) {
-    .blog_txt {
-        margin-left: 3rem;
-        margin-right: 3rem;
-        padding-right: 16rem;
-    }
-}
-
 /* Blog end */
 
-
 /*Kontakt side start */
+#kontakt {
+    background-color: black;
+}
+
+
 #kontakt {
     background-color: black;
 
@@ -473,10 +454,7 @@ a:hover {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 /* Style inputs */
 input[type=text],
 select,
@@ -490,10 +468,6 @@ textarea {
 }
 
 input[type=send] {
-<<<<<<< HEAD
-=======
-
->>>>>>> origin/master
     background-color: #000;
     color: white;
     padding: 12px 0px;
@@ -503,8 +477,6 @@ input[type=send] {
 }
 
 input[type=send]:hover {
-<<<<<<< HEAD
-=======
     background-color: black;
     color: white;
     padding: 12px 20px;
@@ -582,7 +554,6 @@ input[type=submit]:hover {
         }
     }
 
->>>>>>> origin/master
     input[type=submit] {
         background-color: black;
         color: white;
