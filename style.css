@@ -412,6 +412,28 @@ a:hover {
     line-height: 1.3em;
 }
 
+<<<<<<< HEAD
+=======
+#blog h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+.blog_post {
+    padding: 2em;
+    margin: 2em;
+}
+
+<<<<<<< HEAD
+
+/*Kontakt side start */
+#kontakt {
+    background-color: black;
+
+}
+
+=======
+>>>>>>> origin/master
 .blog_post:hover,
 .blog_post:focus,
 .blog_post:active {
@@ -457,10 +479,13 @@ a:hover {
 
 
 /*Kotant side start */
+>>>>>>> origin/master
 * {
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
+=======
 .splash_txt {
     text-align: center;
     font-size: 40px;
@@ -491,6 +516,7 @@ a:hover {
     box-sizing: border-box;
 }
 
+>>>>>>> origin/master
 /* Style inputs */
 input[type=text],
 select,
@@ -503,6 +529,18 @@ textarea {
     resize: vertical;
 }
 
+<<<<<<< HEAD
+input[type=send] {
+    background-color: #000;
+    color: white;
+    padding: 12px 0px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=send]:hover {
+=======
 input[type=submit] {
     background-color: black;
     color: white;
@@ -530,17 +568,22 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
+>>>>>>> origin/master
     background-color: grey;
 }
 
 /* Style the container/contact section */
 .container {
     border-radius: 5px;
+<<<<<<< HEAD
+    background-color: #f2f2f2;    padding: 10px;
+=======
     background-color: #f2f2f2;
     padding: 10px;
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 10px;
+>>>>>>> origin/master
 }
 
 /* Create two columns that float next to eachother */
@@ -549,10 +592,13 @@ input[type=submit]:hover {
     width: 50%;
     margin-top: 6px;
     padding: 20px;
+<<<<<<< HEAD
+=======
     float: left;
     width: 50%;
     margin-top: 6px;
     padding: 20px;
+>>>>>>> origin/master
 }
 
 /* Clear floats after the columns */
@@ -560,16 +606,23 @@ input[type=submit]:hover {
     content: "";
     display: table;
     clear: both;
+<<<<<<< HEAD
+=======
     content: "";
     display: table;
     clear: both;
+>>>>>>> origin/master
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 
     .column,
+<<<<<<< HEAD
+    input[type=send] {
+=======
     input[type=submit] {
+>>>>>>> origin/master
         width: 100%;
         margin-top: 0;
     }
