@@ -434,19 +434,19 @@ a:hover {
 }
 
 
-#kontakt {
+#kontakt .sectionwrapper {
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
-#kontakt * {
-    box-sizing: border-box;
+#kontakt .col {
+    flex-basis: 200px;
+    flex-grow: 1;
+    color: white;
 }
 
-/*Kotant side start */
-#kontakt * {
-    box-sizing: border-box;
-}
 
 
 /* Style inputs */
