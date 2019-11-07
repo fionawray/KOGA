@@ -13,11 +13,6 @@ body {
     justify-content: flex-end;
 }
 
-img {
-    width: 100%;
-}
-
-
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: sticky;
@@ -54,13 +49,12 @@ nav {
 li {
     font-size: 16px;
     text-transform: none;
-    color: #525252;
-}
+    color: #525252;}
 
 a {
     font-size: 16px;
     text-transform: uppercase;
-    color: black;
+    color: #ffffff;
     text-decoration: none;
     padding: 0px 14px 0px 14px;
 }
@@ -407,13 +401,13 @@ a:hover {
 }
 
 @media only screen and (min-width: 600px) {
-<<<<<<< HEAD
+
 
     .splash_txt {
         text-align: center;
         font-size: 40px;
+    }
 
-=======
     .splash_txt {
         text-align: center;
         font-size: 40px;
@@ -423,7 +417,7 @@ a:hover {
         margin-left: 3rem;
         margin-right: 3rem;
         padding-right: 16rem;
->>>>>>> origin/master
+
     }
 }
 
@@ -436,10 +430,8 @@ a:hover {
 }
 
 
-<<<<<<< HEAD
-=======
 /*Kotant side start */
-* {
+#kontakt * {
     box-sizing: border-box;
 }
 
@@ -500,8 +492,6 @@ input[type=submit]:hover {
 }
 
 
-
->>>>>>> origin/master
 /* Footer start */
 
 #footer .sectionwrapper {
