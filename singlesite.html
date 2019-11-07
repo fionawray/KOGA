@@ -11,7 +11,7 @@
         <nav>
             <div id="menu_billede">
                 <a href="forside_2.html">
-                    <img src="img/logo.png" alt="logo_profil"></a>
+                    <img src="images/KOGA_LYB_WHITE.svg" alt="logo_profil"></a>
             </div>
             <div id="menuknap">☰</div>
             <ul id="menu" class="hidden">
@@ -35,9 +35,12 @@
     <template id="temp">
         <article class="article_cykel">
             <h2 class="navn"></h2>
-            <div class="kort"></div>
+            <div class="lang"></div>
             <p class="pris"></p>
-            <img class="front_billede" src="">
+            <img class="billede_1" src="">
+            <img class="billede_2" src="">
+            <img class="billede_3" src="">
+
         </article>
         <section class="liste"></section>
     </template>
@@ -75,12 +78,17 @@
 
             const klon = skabelon.cloneNode(true).content;
             klon.querySelector(".navn").textContent = cykler.title.rendered;
-            klon.querySelector(".kort").textContent = cykler.kort;
+            klon.querySelector(".lang").innerHTML = cykler.beskrivelse;
             klon.querySelector(".pris").textContent = cykler.pris;
-            klon.querySelector(".front_billede").src = cykler.front_billede.guid;
+            klon.querySelector(".billede_1").src = cykler.billede_1.guid;
+            klon.querySelector(".billede_2").src = cykler.billede_2.guid;
+            klon.querySelector(".billede_3").src = cykler.billede_3.guid;
+
+
+
+
             liste.appendChild(klon);
         }
-
     </script>
 
 </body>
