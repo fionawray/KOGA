@@ -698,6 +698,16 @@ input[type=submit]:hover {
 
 .article_cykel {
     color: white;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transform: translateZ(0);
+}
+
+.cykelside:hover,
+.cykelside:focus,
+.cykelside:active {
+    transform: scale(1.03);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
 .article_cykel img {
