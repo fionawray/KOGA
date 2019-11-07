@@ -431,6 +431,7 @@ a:hover {
 /*Kontakt side start */
 #kontakt {
     background-color: black;
+    margin: 4vw;
 }
 
 
@@ -446,7 +447,12 @@ a:hover {
     flex-basis: 400px;
     flex-grow: 1;
     color: white;
+    margin-top: 7vw;
 
+}
+
+#kontakt li {
+    color: white;
 }
 
 
@@ -455,7 +461,7 @@ a:hover {
 input[type=text],
 select,
 textarea {
-    width: 100%;
+    width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
@@ -632,6 +638,31 @@ input[type=submit]:hover {
         margin-top: 0;
     }
 }
+
+/*Kontakt side start */
+#kontakt {
+    background-color: black;
+    margin: 4vw;
+}
+
+
+#kontakt .sectionwrapper {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#kontakt .col {
+    padding: 2vw;
+    margin-top: 0vw;
+
+}
+
+#kontakt li {
+    color: white;
+}
+
 
 /* Footer start */
 
