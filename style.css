@@ -10,6 +10,7 @@ body {
     width: 100%;
     z-index: 2;
     justify-content: flex-end;
+    position: fixed;
 }
 
 @media only screen and (max-width: 600px) {
@@ -221,7 +222,7 @@ a:hover {
     text-align: center;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 800px) {
     .forside3 p {
         padding-left: 10rem;
         padding-right: 35rem;
@@ -233,22 +234,27 @@ a:hover {
     }
 
     .las_mere a {
-        padding-left: 10rem;
-        padding-right: 35rem;
+        padding-left: 160px;
+        padding-right: 0rem;
     }
 }
 
+#info {
+    background-image: url(images/bike_info.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 
+}
 
 #info .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
     padding: 4rem;
+    padding-top: 2rem;
     background-image: url(images/bike_info.jpg);
     background-size: cover;
     background-attachment: fixed;
-    padding: 4rem;
 }
 
 .sectionwrapper img {
@@ -256,6 +262,32 @@ a:hover {
     padding-top: 20px;
     padding-bottom: -10px;
     opacity: 0.6;
+}
+
+.button_forside {
+    background-color: #ECEDEE;
+    border: 2px solid #b9b9b9;
+    padding: 12px 75px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: -90px 0px 20px 130px;
+}
+
+.button_forside a {
+    color: black;
+}
+
+.button_forside:hover {
+    background-color: #859aa8;
+}
+
+@media only screen and (min-width: 600px) {
+    .button_forside {
+        justify-content: center;
+        margin: 0px 0px 25px 570px
+    }
 }
 
 #info .col {
@@ -274,9 +306,27 @@ a:hover {
     flex-grow: 1;
 }
 
+#info h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    padding-top: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
 #info h2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+.step {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 #info p {
@@ -321,9 +371,7 @@ a:hover {
     padding: 0;
 }
 
-.las_mere a {
-    padding: 0;
-}
+
 
 /* Blog start */
 
