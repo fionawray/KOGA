@@ -240,10 +240,10 @@ a:hover {
 }
 
 #info {
-    background-image: url(images/bike_info.jpg);
+    /* background-image: url(images/bike_info.jpg);
     background-size: cover;
-    background-attachment: fixed;
-
+    background-attachment: fixed;*/
+    background-color: white;
 }
 
 #info .sectionwrapper {
@@ -252,9 +252,9 @@ a:hover {
     background-color: white;
     padding: 4rem;
     padding-top: 2rem;
-    background-image: url(images/bike_info.jpg);
+    /*  background-image: url(images/bike_info.jpg);
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 }
 
 .sectionwrapper img {
@@ -309,7 +309,7 @@ a:hover {
 #info h1 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: white;
+    color: #000000;
     padding-top: 40px;
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -347,6 +347,12 @@ a:hover {
 .icons img {
     width: 35px;
     height: 35px;
+}
+
+.forside3 {
+    background-image: url(images/bike_info.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .forside_om {
