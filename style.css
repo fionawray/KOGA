@@ -19,6 +19,12 @@ body {
     }
 }
 
+@media only screen and (min-width: 871px) {
+    header {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 3%, rgba(0, 0, 0, 0) 100%);
+    }
+}
+
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
     position: sticky;
@@ -157,8 +163,6 @@ a:hover {
 /*menu færdig*/
 
 /*FORSIDE */
-
-
 #home_video {
     position: relative;
     height: 600px;
@@ -171,7 +175,7 @@ a:hover {
     top: 0;
     left: 0;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 00%;
     height: auto;
     width: auto;
     z-index: -100;
@@ -261,7 +265,7 @@ a:hover {
     padding-right: 10px;
     padding-top: 20px;
     padding-bottom: -10px;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 .button_forside {
@@ -295,9 +299,8 @@ a:hover {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    background: #ffffff;
+    background: #034a69;
     margin: 1em;
-    background: #ECEDEE;
     margin: 1em;
     padding: 2em;
 }
@@ -318,6 +321,12 @@ a:hover {
 #info h2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+#info h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
     color: #000000;
 }
 
@@ -330,7 +339,7 @@ a:hover {
 }
 
 #info p {
-    color: black;
+    color: #ffffff;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     line-height: 1.3em;
@@ -356,8 +365,7 @@ a:hover {
 }
 
 .forside_om {
-    padding: 2em;
-    margin: 2em;
+    padding: 4em;
 }
 
 .forside3 h1 {
