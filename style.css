@@ -164,7 +164,6 @@ a:hover {
 
 /*FORSIDE */
 #home_video {
-    position: relative;
     height: 600px;
     width: 100%;
     overflow: hidden;
@@ -207,24 +206,50 @@ a:hover {
     font-size: 1.2rem;
 }
 
-.navBottom a span.arrow {
-    background: url(https://d2zxu9tg022395.cloudfront.net/img/btnArrowDown.png) center center no-repeat;
-    background-size: 92px 47px;
-    width: 92px;
-    height: 47px;
-    text-align: center;
-    display: inline-block;
-    animation: arrowMove 3s infinite linear;
-    -webkit-animation: arrowMove 3s infinite linear;
+/* pil på forside der indikerer scroll */
+.box {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-#parallax .navBottom {
-    width: 100%;
-    position: absolute;
-    bottom: 70px;
-    left: 0;
-    text-align: center;
+.box span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-bottom: 2px solid #ffffff;
+    border-right: 2px solid #ffffff;
+    margin: -25px;
+    animation: animate 2s infinite;
+    transform: rotate(45deg);
 }
+
+.box span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.box span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+/* scroll slut */
 
 @media only screen and (min-width: 800px) {
     .forside3 p {
@@ -284,7 +309,7 @@ a:hover {
 }
 
 .button_forside:hover {
-    background-color: #859aa8;
+    background-color: #034a69;
 }
 
 @media only screen and (min-width: 600px) {
@@ -377,15 +402,25 @@ a:hover {
     color: #ffffff;
     font-family: 'Judson', serif;
     line-height: 1.3em;
+    font-size: 1.2rem;
 }
 
 .las_mere {
-    background-color: #000000;
     border: none;
     padding: 0;
+    background-color: #20384d;
+    color: #ffffff;
+    padding: 12px 75px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
-
+.las_mere:hover {
+    background-color: #859aa8;
+}
 
 /* Blog start */
 
