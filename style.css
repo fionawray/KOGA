@@ -11,11 +11,13 @@ body {
     z-index: 2;
     justify-content: flex-end;
     position: fixed;
+    background-color: rgba(23, 35, 52, 0.42);
+
 }
 
 @media only screen and (max-width: 600px) {
     #side_menu {
-        height: 3rem;
+        height: 4.5rem;
     }
 }
 
@@ -422,10 +424,10 @@ a:hover {
 
 #splash {
     width: 100vw;
-    width: 100%;
     height: 50vw;
     background-image: url(images/john-gough-hiIa41IoVZs-unsplash.jpg);
     background-size: cover;
+    background-color: blue;
     background-repeat: no-repeat;
     filter: grayscale(70%);
 }
@@ -434,6 +436,34 @@ a:hover {
     color: #ffffff;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    padding-top: 6.5rem;
+    margin: 0;
+}
+
+.hr_flex {
+    display: flex;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.hr_col {
+    flex-grow: 1;
+    padding-top: 1.3rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hr_col hr {
+    border: 1.5px solid #b9b9b9;
+}
+
+.hr_txt {
+    width: 20%;
+    text-align: center;
+}
+
+.hr_txt h1 {
+    margin: 0;
 }
 
 .blog_post {
@@ -443,7 +473,6 @@ a:hover {
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform;
 }
@@ -484,23 +513,24 @@ a:hover {
 .blog_post {
     padding: 2em;
     margin: 2em;
+    margin-top: 0;
 }
 
 
 .button {
-    background-color: #20384d;
+    background-color: #172334;
     color: #ffffff;
-    border: 2px solid #b9b9b9;
+    border: 2px solid #3e4c60;
     padding: 12px 75px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 0px;
     cursor: pointer;
 }
 
 .button:hover {
-    background-color: #859aa8;
+    background-color: #2f445d;
 }
 
 @media only screen and (min-width: 600px) {
@@ -763,52 +793,62 @@ input[type=submit]:hover {
 #footer .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    background-color: #ffffff;
-    padding: 4rem;
+    background-color: #172334;
 }
 
 #footer .col {
     flex-basis: 300px;
     flex-grow: 1;
-    display: flex;
     margin: 1em;
-    background: #ffffff;
+    background: #172334;
 }
 
-#footer .top {
-    flex-grow: 1;
+#footer .col_with_padding {
+    padding-left: 7rem;
 }
 
 #footer h2 {
-    color: #5f5f5f;
-    text-align: center;
+    color: #A2A7AE;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
 }
 
 #footer p {
-    color: #525252;
+    color: #A2A7AE;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     line-height: 0.89rem;
 }
 
 #footer .icons {
-    font-size: 60px;
     text-align: center;
+    font-size: 25px;
+    color: #A2A7AE;
 }
 
-#footer .icon_flex {
+#footer .icon_block {
     display: flex;
     vertical-align: middle;
 }
 
-#footer .icon_flex .align {
-    padding-top: 12px
+#footer .icon_block p {
+    padding-left: 30px;
 }
 
-.icons img {
-    width: 35px;
-    height: 35px;
+.fas {
+    color: #A2A7AE;
+    padding-top: 8px;
+    font-size: 30px;
+}
+
+.koga_logo {
+    text-align: center;
+}
+
+.koga_logo img {
+    width: 200px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 
