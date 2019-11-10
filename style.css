@@ -262,10 +262,6 @@ a:hover {
         padding-right: 30rem;
     }
 
-    .las_mere a {
-        padding-left: 160px;
-        padding-right: 0rem;
-    }
 }
 
 #info {
@@ -408,7 +404,7 @@ a:hover {
 .las_mere {
     border: none;
     padding: 0;
-    background-color: #20384d;
+    background-color: #000000;
     color: #ffffff;
     padding: 12px 75px;
     text-decoration: none;
@@ -419,7 +415,7 @@ a:hover {
 }
 
 .las_mere:hover {
-    background-color: #859aa8;
+    background-color: #034a69;
 }
 
 /* Blog start */
