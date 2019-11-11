@@ -534,7 +534,11 @@ a:hover {
 }
 
 @media only screen and (min-width: 600px) {
-    #splash {}
+    #splash {
+        width: 100vw;
+        height: 35vw;
+        background-position: 120% 40%;
+    }
 
     .blog_txt {
         margin-left: 3rem;
