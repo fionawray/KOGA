@@ -628,6 +628,25 @@ a:hover {
 /* Blog end */
 
 /*Kontakt side start */
+
+#splash_kontakt {
+    width: 100%;
+    height: 30vw;
+    background-image: url(images/findos.jpg);
+    background-size: cover;
+    background-color: blue;
+    background-repeat: no-repeat;
+    filter: grayscale(40%);
+}
+
+#splash_kontakt h1 {
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding-top: 6.5rem;
+    margin: 0;
+}
+
 #kontakt {
 
     background-color: #e3e3e3;
