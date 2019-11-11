@@ -9,6 +9,19 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+<header class="header">
+    <a href="index.html" class="logo">
+        <img src="images/KOGA_LYB_WHITE.svg" alt="KOGA Logo"></a>
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <ul class="menu">
+        <li><a href="cykler.html">CYKLER</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="om_os.html">OM OS</a></li>
+        <li><a href="kontakt.html">KONTAKT</a></li>
+    </ul>
+</header>
+<!--
 <header id="side_menu">
     <nav>
         <div id="menu_billede">
@@ -24,19 +37,22 @@
         </ul>
     </nav>
 </header>
+-->
 
 <body>
 
-
     <section id="home_video">
-        <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
-            <source src="video-1572945291.mp4"> <!-- "https://static.lumosity.com/resources/home_page_templates/574/neuralnetwork.mp4" type="video/mp4">-->
-            <source src="movie.webm" type="video/webm"></video>
-        <h1>Velkommen til Kogacenter Copenhagen</h1>
-        <p>Vi ligger i hjertet af Frederiksberg, få kilometer fra Københavns Rådhus. <br>
-            I vores Koga Shop kan du finde det store udvalg af mange forskellige koga cykler. <br>
-            Vores personale er speciallister i Koga, så hos os kan du finde de bedste råd og vejledning.</p>
 
+        <video id="videobcg" preload="auto" autoplay="true" loop="loop" muted="muted" volume="0">
+            <source src="cykler.mp4">
+            <source src="movie.webm" type="video/webm">
+        </video>
+        <div class="tekst_boks_forside">
+            <h1>Velkommen til Kogacenter Copenhagen</h1>
+            <p>Vi ligger i hjertet af Frederiksberg, få kilometer fra Københavns Rådhus. <br>
+                I vores Koga Shop kan du finde det store udvalg af mange forskellige koga cykler. <br>
+                Vores personale er speciallister i Koga, så hos os kan du finde de bedste råd og vejledning.</p>
+        </div>
 
         <a href="index.html#info">
             <div id="animation2">
