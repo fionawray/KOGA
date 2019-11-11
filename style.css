@@ -10,17 +10,26 @@ body {
     z-index: 2;
     justify-content: flex-end;
     position: fixed;
+<<<<<<< HEAD
     <<<<<<< HEAD background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     ;
     =======background-color: rgba(23, 35, 52, 0.42);
 
+=======
+    background-color: rgba(54, 125, 193, 0.47);
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(23, 35, 52, 0.42);
+>>>>>>> origin/master
 }
 
 .valgt {
     background-color: #f1f1f1;
     color: black;
+<<<<<<< HEAD
     > > > > > > > origin/master
+=======
+>>>>>>> origin/master
 }
 
 @media only screen and (max-width: 600px) {
@@ -202,7 +211,7 @@ a:hover {
 }
 
 #home_video h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'lato', sans-serif;
     color: white;
     padding: 2em;
     margin-right: 2em;
@@ -212,13 +221,12 @@ a:hover {
 }
 
 #home_video p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: white;
     padding: 2em;
     margin: 2em;
     margin-top: 0;
     line-height: 1.8em;
-    font-family: 'Poppins', sans-serif;
     color: white;
     padding: 2em;
     margin: 2em;
@@ -334,7 +342,7 @@ a:hover {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    background: #034a69;
+    background: #367dc1;
     margin: 1em;
     margin: 1em;
     padding: 2em;
@@ -346,7 +354,7 @@ a:hover {
 
 #info h1 {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #646363;
     padding-top: 40px;
     font-size: 2.5rem;
@@ -355,19 +363,19 @@ a:hover {
 
 #info h2 {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #ffffff;
 }
 
 #info h3 {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #646363;
 }
 
 .step {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -375,7 +383,7 @@ a:hover {
 
 #info p {
     color: #ffffff;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 1.3em;
 }
@@ -384,7 +392,7 @@ a:hover {
     font-size: 25px;
     padding: 0.5em;
     color: #434b59;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.4;
 }
 
@@ -404,13 +412,13 @@ a:hover {
 }
 
 .forside3 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: white;
 }
 
 .forside3 p {
     color: #ffffff;
-    font-family: 'Judson', serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.3em;
     font-size: 1.2rem;
 }
@@ -447,7 +455,7 @@ a:hover {
 #splash h1 {
     color: #ffffff;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     padding-top: 6.5rem;
     margin: 0;
 }
@@ -515,7 +523,7 @@ a:hover {
 
 #blog p {
     color: #363538;
-    font-family: 'Judson', serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.3em;
 }
 
@@ -663,7 +671,7 @@ a:hover {
 
 #kontakt,
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
 
 
 }
@@ -911,13 +919,13 @@ input[type=placeholder] {
 
 #footer h2 {
     color: #A2A7AE;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-bottom: 0;
 }
 
 #footer p {
     color: #A2A7AE;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 0.89rem;
 }
@@ -980,7 +988,7 @@ input[type=placeholder] {
 
 .om_jonas_tekst {
     padding: 40px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.3rem;
     margin-top: 90px;
 }
@@ -1100,8 +1108,8 @@ input[type=placeholder] {
 #splash_cykler {
     background-image: url(images/f.jpg);
     background-size: cover;
-    background-position: 100% 56%;
-    height: 100%;
+    background-position: 100% 44%;
+    height: 64vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -1124,11 +1132,11 @@ input[type=placeholder] {
 }
 
 .cykler_tekst_boks {
-    align-self: center;
+    margin-bottom: 0;
 }
 
-.cykler_tekst h1 {
-    margin: 20px;
+.cykler_h1 {
+    margin-left: 20px;
 }
 
 .cykler_tekst p {
