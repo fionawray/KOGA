@@ -12,6 +12,7 @@ body {
     justify-content: flex-end;
     position: fixed;
     background-color: rgba(23, 35, 52, 0.42);
+
 }
 
 .valgt {
@@ -168,8 +169,10 @@ a:hover {
 /*menu færdig*/
 
 /*FORSIDE */
+
+
 #home_video {
-    height: 600px;
+    height: 750px;
     width: 100%;
     overflow: hidden;
 }
@@ -212,47 +215,40 @@ a:hover {
 }
 
 /* pil på forside der indikerer scroll */
-.box {
+#animation2 {
     position: absolute;
-    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.box span {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-    margin: -25px;
-    animation: animate 2s infinite;
-    transform: rotate(45deg);
+
+
+#animation2 img {
+    width: 50px;
+
 }
 
-.box span:nth-child(2) {
-    animation-delay: -0.2s;
+#animation2 {
+    animation-name: bounce_arrow_kf;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
 }
 
-.box span:nth-child(3) {
-    animation-delay: -0.4s;
-}
-
-@keyframes animate {
+@keyframes bounce_arrow_kf {
     0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
-    }
+        top: 47vw;
 
-    50% {
-        opacity: 1;
     }
 
     100% {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px, 20px);
+        top: 48vw;
+
     }
 }
+
+
 
 /* scroll slut */
 
@@ -451,7 +447,7 @@ a:hover {
 
 .hr_col {
     flex-grow: 1;
-    padding-top: 1.3rem;
+    padding-top: 1.6rem;
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -461,13 +457,17 @@ a:hover {
 }
 
 .hr_txt {
-    width: 20%;
+    width: 38%;
     text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: grey;
 }
 
 .hr_txt h1 {
     margin: 0;
 }
+
+
 
 .blog_post {
     display: flex;
@@ -507,9 +507,8 @@ a:hover {
 }
 
 #blog h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #000000;
-    font-family: 'Judson', serif;
     line-height: 1.3em;
 }
 
@@ -523,7 +522,7 @@ a:hover {
 .button {
     background-color: #172334;
     color: #ffffff;
-    border: 2px solid #3e4c60;
+    border: 2px solid #cecece;
     padding: 12px 75px;
     text-decoration: none;
     display: inline-block;
@@ -533,30 +532,53 @@ a:hover {
 }
 
 .button:hover {
-    background-color: #2f445d;
+    background-color: #5f5f5f;
+}
+
+@media only screen and (max-width: 600px) {
+    .hr_col hr {
+        border: none;
+    }
+
+    .hr_txt {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
-    #splash {}
+    #splash {
+        width: 100vw;
+        height: 35vw;
+        background-position: 120% 40%;
+    }
 
     .blog_txt {
         margin-left: 3rem;
         margin-right: 3rem;
         padding-right: 16rem;
     }
+
+    .button {
+        margin-top: 0.8rem;
+        margin-bottom: 0;
+    }
 }
+
+
 
 /* Blog end */
 
 /*Kontakt side start */
 #kontakt {
-    background-color: black;
+
+    background-color: #e3e3e3;
 }
 
 #kontakt .sectionwrapper {
-    background-color: black;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 #kontakt .col {
@@ -574,6 +596,46 @@ a:hover {
 
 #kontakt li {
     color: white;
+
+
+}
+
+#kontakt,
+p {
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+#kontakt,
+h1,
+h2 {
+    font-family: 'Lato', sans-serif;
+
+
+}
+
+#kontakt .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#kontakt .col {
+    flex-basis: 200px;
+    flex-grow: 1;
+    color: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+    color: black;
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin-top: 10vw;
+    padding: 2vw;
+}
+
+#kontakt li {
+    color: black;
+
 }
 
 
@@ -582,52 +644,59 @@ a:hover {
 input[type=text],
 select,
 textarea {
+
     width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    background-color: #b6b8ba;
 }
 
-input[type=send] {
-    background-color: #000;
-    color: white;
-    padding: 12px 0px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-}
-
-input[type=send]:hover {
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-}
 
 input[type=submit]:hover {
     background-color: grey;
-    width: 100%;
+
+}
+
+input[type=submit] {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
+    background-color: #b6b8ba;
+    color: white;
     resize: vertical;
 }
 
+
+
+input[type=submit]:hover {
+    background-color: #2f445d;
+
+}
+
 input[type=submit] {
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
+    background-color: #172334;
+    color: #ffffff;
+    border: 2px solid #3e4c60;
+    padding: 12px 60px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
     cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: grey;
+input[type=placeholder] {
+    color: white;
 }
+
 
 /* Style the container/contact section */
 .container {
@@ -829,67 +898,138 @@ input[type=submit]:hover {
 
 /*	Om os start*/
 
-#om_os {
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#om_os_top {
+    display: flex;
+    background-color: black;
+    margin-top: 30px;
+}
+
+.om_jonas {
     background-image: url(images/chepe-nicoli-if0K7iBBDxw-unsplash.jpg);
     background-size: cover;
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
 }
 
-.om_os_tekst {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.58);
-    height: 250px;
-    background-color: #434b59;
-    width: 400px;
-    color: white;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 30px;
+.om_jonas_tekst {
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.3rem;
+}
+
+@media screen and (min-width: 680px) {
+    .om_jonas_tekst {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .om_jonas_tekst {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .om_jonas_tekst {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+}
+
+.tekst_boks_om {
+    background-color: rgba(0, 0, 0, 0.46);
+    padding: 30px;
+}
+
+.om_jonas h1 {
+    font-size: 2rem;
+    color: #e5e5e5;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.om_jonas h2 {
+    font-size: 1rem;
+    color: #e5e5e5;
+    font-style: italic;
+    text-align: center;
     margin-bottom: 30px;
-    vertical-align: center;
 }
 
-.om_os_tekst1 {
+.om_jonas p {
+    font-size: 0.9rem;
+    color: #e5e5e5;
+}
+
+.om_jonas img {
+    width: 230px;
+    height: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/**/
+
+
+#om_os_bund {
+    background-color: #525252;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.58);
-    height: 250px;
-    width: 400px;
-    color: white;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    vertical-align: center;
-}
-
-.om_os_tekst_boks {
-    align-self: center;
-}
-
-.om_os_tekst h1 {
-    margin: 20px;
-}
-
-.om_os_tekst p {
-    margin: 20px;
-    line-height: 1.4rem;
+    flex-direction: column;
+    padding-bottom: 80px;
 }
 
 .om_os_tekst1 h1 {
-    margin: 20px;
+    font-size: 2rem;
 }
 
 .om_os_tekst1 p {
-    margin: 20px;
-    line-height: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.2;
 }
+
+.om_nicolai {
+    padding: 40px;
+}
+
+.om_nicolai_billede {
+    filter: grayscale(100%);
+}
+
+.om_os_tekst2 {
+
+    /*    flex-direction: column-reverse;*/
+}
+
+.om_koga {
+    padding: 40px;
+}
+
+.om_koga_billede {
+    filter: grayscale(100%);
+}
+
+.om_os_billeder {
+    width: 350px;
+    height: 210px;
+}
+
+.center1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+
 
 /* Cykler start */
 
