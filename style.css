@@ -1,5 +1,4 @@
 body {
-    background-color: black;
     margin: 0;
 }
 
@@ -11,12 +10,26 @@ body {
     z-index: 2;
     justify-content: flex-end;
     position: fixed;
-    background-color: rgba(23, 35, 52, 0.42);
+<<<<<<< HEAD
+    <<<<<<< HEAD background-color: rgba(54, 125, 193, 0.47);
+    font-family: 'Lato', sans-serif;
+    ;
+    =======background-color: rgba(23, 35, 52, 0.42);
 
+=======
+    background-color: rgba(54, 125, 193, 0.47);
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(23, 35, 52, 0.42);
+>>>>>>> origin/master
 }
 
 .valgt {
     background-color: #f1f1f1;
+    color: black;
+<<<<<<< HEAD
+    > > > > > > > origin/master
+=======
+>>>>>>> origin/master
 }
 
 @media only screen and (max-width: 600px) {
@@ -27,7 +40,16 @@ body {
 
 @media only screen and (min-width: 871px) {
     header {
-        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 3%, rgba(0, 0, 0, 0) 100%);
+        /*        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 20%, rgba(0, 0, 0, 0.52) 36%, rgba(0, 0, 0, 0) 100%);*/
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,e5e5e5+100&1+0,0+100 */
+        background: -moz-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(229, 229, 229, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(229, 229, 229, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(30, 87, 153, 1) 0%, rgba(229, 229, 229, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#00e5e5e5', GradientType=0);
+        /* IE6-9 */
     }
 }
 
@@ -189,7 +211,7 @@ a:hover {
 }
 
 #home_video h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'lato', sans-serif;
     color: white;
     padding: 2em;
     margin-right: 2em;
@@ -199,13 +221,12 @@ a:hover {
 }
 
 #home_video p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: white;
     padding: 2em;
     margin: 2em;
     margin-top: 0;
     line-height: 1.8em;
-    font-family: 'Poppins', sans-serif;
     color: white;
     padding: 2em;
     margin: 2em;
@@ -321,7 +342,7 @@ a:hover {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    background: #034a69;
+    background: #367dc1;
     margin: 1em;
     margin: 1em;
     padding: 2em;
@@ -333,7 +354,7 @@ a:hover {
 
 #info h1 {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #646363;
     padding-top: 40px;
     font-size: 2.5rem;
@@ -342,19 +363,19 @@ a:hover {
 
 #info h2 {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #ffffff;
 }
 
 #info h3 {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #646363;
 }
 
 .step {
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #ffffff;
     margin: 0;
     padding: 0;
@@ -362,7 +383,7 @@ a:hover {
 
 #info p {
     color: #ffffff;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 1.3em;
 }
@@ -371,7 +392,7 @@ a:hover {
     font-size: 25px;
     padding: 0.5em;
     color: #434b59;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.4;
 }
 
@@ -391,13 +412,13 @@ a:hover {
 }
 
 .forside3 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: white;
 }
 
 .forside3 p {
     color: #ffffff;
-    font-family: 'Judson', serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.3em;
     font-size: 1.2rem;
 }
@@ -434,7 +455,7 @@ a:hover {
 #splash h1 {
     color: #ffffff;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     padding-top: 6.5rem;
     margin: 0;
 }
@@ -453,7 +474,7 @@ a:hover {
 }
 
 .hr_col hr {
-    border: 1px solid rgba(185, 185, 185, 0.39);
+    border: 1px solid rgb(185, 185, 185);
 }
 
 .hr_txt {
@@ -501,14 +522,14 @@ a:hover {
 }
 
 #blog p {
-    color: #000000;
-    font-family: 'Judson', serif;
+    color: #363538;
+    font-family: 'Lato', sans-serif;
     line-height: 1.3em;
 }
 
 #blog h1 {
     font-family: 'Lato', sans-serif;
-    color: #000000;
+    color: #363538;
     line-height: 1.3em;
 }
 
@@ -520,7 +541,7 @@ a:hover {
 
 
 .button {
-    background-color: #172334;
+    background-color: #367dc1;
     color: #ffffff;
     border: 2px solid #cecece;
     padding: 12px 75px;
@@ -574,6 +595,54 @@ a:hover {
     background-color: #e3e3e3;
 }
 
+.hr_flex_contact {
+    display: flex;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.hr_col_contact {
+    flex-grow: 1;
+    padding-top: 1.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hr_col_contact hr {
+    border: 1px solid rgba(185, 185, 185, 0.39);
+}
+
+.hr_txt_contact {
+    width: 38%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: grey;
+}
+
+.hr_txt h1_contact {
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .hr_col hr_contact {
+        border: none;
+    }
+
+    .hr_txt_contact {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .hr_txt_contact {
+        width: 20%;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        color: grey;
+    }
+}
+
+
 #kontakt .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -602,7 +671,7 @@ a:hover {
 
 #kontakt,
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
 
 
 }
@@ -850,13 +919,13 @@ input[type=placeholder] {
 
 #footer h2 {
     color: #A2A7AE;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lato', sans-serif;
     margin-bottom: 0;
 }
 
 #footer p {
     color: #A2A7AE;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     line-height: 0.89rem;
 }
@@ -925,7 +994,7 @@ input[type=placeholder] {
 
 .om_jonas_tekst {
     padding: 40px;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     line-height: 1.3rem;
     margin-top: 90px;
 }
@@ -1114,8 +1183,8 @@ input[type=placeholder] {
 #splash_cykler {
     background-image: url(images/f.jpg);
     background-size: cover;
-    background-position: 100% 56%;
-    height: 100%;
+    background-position: 100% 44%;
+    height: 64vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -1138,11 +1207,11 @@ input[type=placeholder] {
 }
 
 .cykler_tekst_boks {
-    align-self: center;
+    margin-bottom: 0;
 }
 
-.cykler_tekst h1 {
-    margin: 20px;
+.cykler_h1 {
+    margin-left: 20px;
 }
 
 .cykler_tekst p {
@@ -1223,14 +1292,6 @@ input[type=placeholder] {
     color: white;
     cursor: pointer;
 }
-
-#filternavbar button:hover {
-    background-color: #f1f1f1;
-    color: black;
-}
-
-
-
 
 /* Singlesite */
 

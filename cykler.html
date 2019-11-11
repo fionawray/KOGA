@@ -30,7 +30,7 @@
     <section id="splash_cykler">
         <div class="cykler_tekst">
             <div class="cykler_tekst_boks">
-                <h1>Cykler</h1>
+                <h1 class="cykler_h1">Cykler</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus molestias blanditiis deleniti minus veritatis, nam, quisquam est provident porro, ullam nostrum error reprehenderit, omnis ex dicta nisi totam impedit illo.</p>
             </div>
         </div>
@@ -47,6 +47,7 @@
                 <button class="filter" data-kategori="Race">Race</button>
                 <button class="filter" data-kategori="City Tour">City Tour</button>
                 <button class="filter" data-kategori="Trekking">Trekking</button>
+                <button class="filter" data-kategori="Mountain bike">Mountain bike</button>
             </div>
         </nav>
     </div>
@@ -201,6 +202,7 @@
             //Hvis pris knapperne ".filter-prisklasse" bliver trykket på, bliver filtreringPrisklasse () kaldt.
             document.querySelectorAll(".filter").forEach(elm => {
                 elm.addEventListener("click", filtrering);
+                elm.addEventListener("mouseenter", enterfunction);
             })
         }
 
@@ -211,12 +213,29 @@
             console.log();
             document.querySelectorAll(".filter").forEach(elm => {
                 elm.classList.remove("valgt");
+                elm.style.backgroundColor = "#172334";
+                elm.style.color = "white";
             });
             this.classList.add("valgt");
-
+            this.style.backgroundColor = "#f1f1f1";
+            this.style.color = "black";
             //vis () kaldes.
             vis();
         }
+
+        function enterfunction() {
+
+            document.querySelectorAll(".filter").forEach(elm => {
+                console.log();
+                if (!elm.classList.contains("valgt")) {
+                    elm.style.backgroundColor = "#172334";
+                    elm.style.color = "white";
+                }
+            });
+            this.style.backgroundColor = "#f1f1f1";
+            this.style.color = "black";
+        }
+
     </script>
 
 </body>
