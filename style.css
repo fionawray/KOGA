@@ -10,8 +10,7 @@ body {
     z-index: 2;
     justify-content: flex-end;
     position: fixed;
-<<<<<<< HEAD
-    <<<<<<< HEAD <<<<<<< HEAD background-color: rgba(54, 125, 193, 0.47);
+    <<<<<<< HEAD <<<<<<< HEAD <<<<<<< HEAD background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     ;
     =======background-color: rgba(23, 35, 52, 0.42);
@@ -19,25 +18,20 @@ body {
     =======background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
-    > > > > > > > origin/master
-=======
-    background-color: rgba(54, 125, 193, 0.47);
+    > > > > > > > origin/master=======background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
     background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
 
->>>>>>> origin/master
+    > > > > > > > origin/master
 }
 
 <<<<<<< HEAD=======.valgt {
     background-color: #f1f1f1;
     color: black;
-<<<<<<< HEAD
-    <<<<<<< HEAD > > > > > > > origin/master======= > > > > > > > origin/master
-=======
->>>>>>> origin/master
+    <<<<<<< HEAD <<<<<<< HEAD > > > > > > > origin/master======= > > > > > > > origin/master======= > > > > > > > origin/master
 }
 
 > > > > > > > origin/master @media only screen and (max-width: 600px) {
@@ -1034,6 +1028,14 @@ input[type=placeholder] {
     .om_jonas {
         height: 100vh;
     }
+
+    .om_jonas_tekst {
+        margin-top: 20px;
+    }
+
+    .tekst_boks_om {
+        height: 300px;
+    }
 }
 
 .om_jonas_tekst {
@@ -1065,9 +1067,8 @@ input[type=placeholder] {
 }
 
 .tekst_boks_om {
-    background-color: rgba(255, 255, 255, 0.63);
+    background-color: rgba(255, 255, 255, 0.68);
     padding: 30px;
-    margin-top: 30px;
 }
 
 .om_jonas h1 {
