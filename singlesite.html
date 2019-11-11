@@ -39,10 +39,14 @@
             <h2 class="navn"></h2>
             <p class="lang"></p>
             <p class="pris"></p>
-            <img class="billede_1" src="">
-            <img class="billede_2" src="">
-            <img class="billede_3" src="">
+            <div class="bb">
+            </div>
         </article>
+    </template>
+
+
+    <template id="b">
+        <img src="" alt="">
     </template>
 
 
@@ -77,16 +81,19 @@
             const skabelon = document.querySelector("#temp");
 
             const klon = skabelon.cloneNode(true).content;
+
             klon.querySelector(".navn").textContent = cykler.title.rendered;
             klon.querySelector(".lang").innerHTML = cykler.beskrivelse;
             klon.querySelector(".pris").textContent = cykler.pris;
-            klon.querySelector(".billede_1").src = cykler.billede_1.guid;
-            klon.querySelector(".billede_2").src = cykler.billede_2.guid;
-            klon.querySelector(".billede_3").src = cykler.billede_3.guid;
+
+            cykler.billeder.forEach(b => {
+                const bklon = document.querySelector("#b").cloneNode(true).content;
+                bklon.querySelector("img").src = b.guid;
+                klon.querySelector(".bb").appendChild(bklon);
+            });
 
             data.appendChild(klon);
         }
-
     </script>
 
 </body>
