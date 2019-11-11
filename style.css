@@ -552,6 +552,9 @@ a:hover {
 /*Kontakt side start */
 #kontakt {
     background-color: #e3e3e3;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
 }
 
 #kontakt .sectionwrapper {
@@ -586,27 +589,12 @@ textarea {
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
+    background-color: #b6b8ba;
+    color: white;
     resize: vertical;
 }
 
-/*
-input[type=send] {
-    background-color: #000;
-    color: white;
-    padding: 12px 0px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-}
 
-input[type=send]:hover {
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-}
-*/
 
 input[type=submit]:hover {
     background-color: #2f445d;
@@ -617,7 +605,7 @@ input[type=submit] {
     background-color: #172334;
     color: #ffffff;
     border: 2px solid #3e4c60;
-    padding: 12px 75px;
+    padding: 12px 60px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -625,9 +613,10 @@ input[type=submit] {
     cursor: pointer;
 }
 
+/*
 input[type=submit]:hover {
     background-color: grey;
-}
+}*/
 
 /* Style the container/contact section */
 .container {
