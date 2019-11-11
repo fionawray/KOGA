@@ -10,6 +10,7 @@ body {
     z-index: 2;
     justify-content: flex-end;
     position: fixed;
+<<<<<<< HEAD
     <<<<<<< HEAD <<<<<<< HEAD background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     ;
@@ -19,12 +20,24 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
     > > > > > > > origin/master
+=======
+    background-color: rgba(54, 125, 193, 0.47);
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(23, 35, 52, 0.42);
+    background-color: rgba(54, 125, 193, 0.47);
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(23, 35, 52, 0.42);
+
+>>>>>>> origin/master
 }
 
 <<<<<<< HEAD=======.valgt {
     background-color: #f1f1f1;
     color: black;
+<<<<<<< HEAD
     <<<<<<< HEAD > > > > > > > origin/master======= > > > > > > > origin/master
+=======
+>>>>>>> origin/master
 }
 
 > > > > > > > origin/master @media only screen and (max-width: 600px) {
@@ -285,15 +298,13 @@ a:hover {
     /* background-image: url(images/bike_info.jpg);
     background-size: cover;
     background-attachment: fixed;*/
-    background-color: white;
+    background-color: #e3e3e3;
 }
 
 #info .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    background-color: white;
-    padding: 4rem;
-    padding-top: 2rem;
+    background-color: #e3e3e3;
     /*  background-image: url(images/bike_info.jpg);
     background-size: cover;
     background-attachment: fixed;*/
@@ -304,6 +315,44 @@ a:hover {
     padding-top: 20px;
     padding-bottom: -10px;
     opacity: 0.4;
+}
+
+.hr_flex_forside {
+    display: flex;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.hr_col_forside {
+    flex-grow: 1;
+    padding-top: 1.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hr_col_forside hr {
+    border: 1px solid rgb(185, 185, 185);
+}
+
+.hr_txt_forside {
+    width: 38%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: grey;
+}
+
+.hr_txt_forside h1 {
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .hr_col_forside hr {
+        border: none;
+    }
+
+    .hr_txt_forside {
+        width: 100%;
+    }
 }
 
 .button_forside {
@@ -337,7 +386,6 @@ a:hover {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    background: #367dc1;
     margin: 1em;
     margin: 1em;
     padding: 2em;
@@ -356,16 +404,16 @@ a:hover {
     margin-bottom: 10px;
 }
 
-#info h2 {
+.h2_boks {
     text-align: center;
     font-family: 'Lato', sans-serif;
-    color: #ffffff;
+    color: #363538;
 }
 
 #info h3 {
     text-align: center;
     font-family: 'Lato', sans-serif;
-    color: #646363;
+    color: grey;
 }
 
 .step {
@@ -377,10 +425,11 @@ a:hover {
 }
 
 #info p {
-    color: #ffffff;
+    color: #363538;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    line-height: 1.3em;
+    line-height: 1.5em;
+    padding-left: 3rem;
 }
 
 #info .icons {
@@ -484,7 +533,6 @@ a:hover {
 }
 
 
-
 .blog_post {
     display: flex;
     flex-wrap: wrap;
@@ -518,14 +566,14 @@ a:hover {
 
 #blog p {
     color: #363538;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.3em;
 }
 
 #blog h1 {
     font-family: 'Lato', sans-serif;
     color: #363538;
-    line-height: 1.3em;
+    margin-top: 0;
 }
 
 .blog_post {
@@ -545,6 +593,7 @@ a:hover {
     font-size: 16px;
     margin: 4px 0px;
     cursor: pointer;
+    margin-top: 0;
 }
 
 .button:hover {
@@ -1198,12 +1247,7 @@ input[type=placeholder] {
     margin-right: 50px;
     margin-left: 50px;
     margin-top: 30px;
-    margin-bottom: 30px;
     vertical-align: center;
-}
-
-.cykler_tekst_boks {
-    margin-bottom: 0;
 }
 
 .cykler_h1 {
@@ -1212,7 +1256,7 @@ input[type=placeholder] {
 
 .cykler_tekst p {
     margin: 20px;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
 }
 
 .valgt {
