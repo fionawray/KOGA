@@ -454,7 +454,7 @@ a:hover {
 }
 
 .hr_col hr {
-    border: 1.5px solid #b9b9b9;
+    border: 1px solid rgba(185, 185, 185, 0.39);
 }
 
 .hr_txt {
@@ -534,10 +534,7 @@ a:hover {
 }
 
 @media only screen and (min-width: 600px) {
-    .splash_txt {
-        text-align: center;
-        font-size: 40px;
-    }
+    #splash {}
 
     .blog_txt {
         margin-left: 3rem;
