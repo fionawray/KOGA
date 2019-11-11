@@ -10,17 +10,14 @@ body {
     z-index: 2;
     justify-content: flex-end;
     position: fixed;
-<<<<<<< HEAD
-    <<<<<<< HEAD <<<<<<< HEAD background-color: rgba(54, 125, 193, 0.47);
+    background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     ;
-    =======background-color: rgba(23, 35, 52, 0.42);
+    background-color: rgba(23, 35, 52, 0.42);
 
-    =======background-color: rgba(54, 125, 193, 0.47);
+    background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
-    > > > > > > > origin/master
-=======
     background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
@@ -28,19 +25,14 @@ body {
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
 
->>>>>>> origin/master
 }
 
-<<<<<<< HEAD=======.valgt {
+.valgt {
     background-color: #f1f1f1;
     color: black;
-<<<<<<< HEAD
-    <<<<<<< HEAD > > > > > > > origin/master======= > > > > > > > origin/master
-=======
->>>>>>> origin/master
 }
 
-> > > > > > > origin/master @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     #side_menu {
         height: 4.5rem;
     }
@@ -577,7 +569,7 @@ a:hover {
 }
 
 .blog_post {
-    padding: 2em;
+    padding: 1.5em;
     margin: 2em;
     margin-top: 0;
 }
@@ -620,11 +612,11 @@ a:hover {
     .blog_txt {
         margin-left: 3rem;
         margin-right: 3rem;
-        padding-right: 16rem;
+        padding-right: 14rem;
     }
 
     .button {
-        margin-top: 0.8rem;
+        margin-top: 2rem;
         margin-bottom: 0;
     }
 }
