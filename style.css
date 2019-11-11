@@ -15,11 +15,6 @@ body {
     background-color: rgba(23, 35, 52, 0.42);
 }
 
-.valgt {
-    background-color: #f1f1f1;
-    color: black;
-}
-
 @media only screen and (max-width: 600px) {
     #side_menu {
         height: 4.5rem;
@@ -1129,6 +1124,11 @@ align-self: center;
 .cykler_tekst p {
     margin: 20px;
     line-height: 1.4rem;
+}
+
+.valgt {
+    background-color: #f1f1f1;
+    color: black;
 }
 
 /*De forskellige cykler vises*/
