@@ -1145,6 +1145,7 @@ input[type=placeholder] {
     background-color: #172334;
     transition: 0.5s;
     color: white;
+    cursor: pointer;
 }
 
 #filternavbar button:hover {
