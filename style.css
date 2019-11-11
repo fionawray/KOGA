@@ -12,8 +12,11 @@ body {
     justify-content: flex-end;
     position: fixed;
     background-color: rgba(23, 35, 52, 0.42);
-    font-family: 'Lato', sans-serif;
-    ;
+
+}
+
+.valgt {
+    background-color: #f1f1f1;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1074,10 +1077,6 @@ input[type=placeholder] {
 
 /*De forskellige cykler vises*/
 
-.liste {
-    background-color: #f1f1f1;
-}
-
 .article_cykel {
     transition-duration: 0.3s;
     transition-property: transform;
@@ -1123,11 +1122,40 @@ input[type=placeholder] {
     grid-template-columns: repeat(1, 1fr);
     column-count: 4;
     column-gap: 1em;
-    margin: 1.5em;
     padding: 0;
     column-gap: 1.5em;
     font-size: .85em;
+    background-color: #f1f1f1;
+    padding: 1rem;
 }
+
+#filternavbar {
+    display: flex;
+    justify-content: center;
+    background-color: #172334;
+}
+
+#filternavbar button {
+    font-size: 1rem;
+    text-decoration: uppercase;
+    border: none;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    font-family: 'lato', sans-serif;
+    height: 3.5rem;
+    background-color: #172334;
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+
+#filternavbar button:hover {
+    background-color: #f1f1f1;
+    color: black;
+}
+
+
+
 
 /* Singlesite */
 
@@ -1143,6 +1171,18 @@ input[type=placeholder] {
     position: absolute;
     left: 39px;
     top: 90px;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-count: 4;
+    column-gap: 1em;
+    padding: 0;
+    column-gap: 1.5em;
+    font-size: .85em;
+    background-color: #f1f1f1;
+    padding: 1rem;
 }
 
 

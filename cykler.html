@@ -36,6 +36,21 @@
         </div>
     </section>
 
+    <!--Filterknapperne der inddeler de forskellige møbler-->
+    <div id="filternavbar">
+        <nav class="filter_alle">
+            <button class="filter valgt" data-kategori="alle">Alle</button>
+        </nav>
+        <nav>
+            <div class="filter_cykler">
+                <button class="filter" data-kategori="E-Bike">E-Bike</button>
+                <button class="filter" data-kategori="Race">Race</button>
+                <button class="filter" data-kategori="City Tour">City Tour</button>
+                <button class="filter" data-kategori="Trekking">Trekking</button>
+            </div>
+        </nav>
+    </div>
+
     <main>
         <section class="liste">
         </section>
@@ -96,6 +111,7 @@
 
     <script>
         //Det er vigtigt at man sætter "?per_page=100" efter sit link. Det er nemlig default, at den kun viser 10 pr. Side.
+        let filterKategori = "alle";
         const url = "https://uwei.eu/kea/2_semester/tema9/koga/wordpress/wp-json/wp/v2/cykler?per_page=100";
         let cykler = [];
         document.addEventListener("DOMContentLoaded", start);
@@ -152,29 +168,57 @@
             cykler = await response.json();
             console.log(cykler);
             vis();
+            addEventListenersToButtons();
         }
 
         function vis() {
             const skabelon = document.querySelector("template");
             const liste = document.querySelector(".liste");
 
+            //containeren bliver tømt eller nulstillet.
+            liste.innerHTML = "";
+            console.log("filterKategori", filterKategori);
             cykler.forEach(cykel => {
-                console.log("loop okay");
-                const klon = skabelon.cloneNode(true).content;
-                klon.querySelector(".front_billede").src = cykel.front_billede.guid;
-                klon.querySelector(".navn").textContent = cykel.title.rendered;
-                klon.querySelector(".kort").textContent = cykel.kort;
-                klon.querySelector(".pris").textContent = cykel.pris;
 
-                klon.querySelector(".article_cykel").addEventListener("click", (() => {
+                if (filterKategori == "alle" || filterKategori == cykel.kategori) {
+                    const klon = skabelon.cloneNode(true).content;
+                    klon.querySelector(".navn").textContent = cykel.title.rendered;
+                    klon.querySelector(".kort").textContent = cykel.kort;
+                    klon.querySelector(".pris").textContent = cykel.pris;
+                    klon.querySelector(".front_billede").src = cykel.front_billede.guid;
+                    liste.appendChild(klon);
+
+                    liste.lastElementChild.addEventListener("click", () => {
+                        window.location.href = "singlesite.html?id=" + cykel.id;
+                    });
+                }
+            })
+        }
 
 
-                    window.location.href = "singlesite.html?id=" + cykel.id;
-                }))
+        function addEventListenersToButtons() {
+            //Hvis varer knapperne ".filter" bliver trykket på, bliver filtrering () kaldt.
+            //Hvis pris knapperne ".filter-prisklasse" bliver trykket på, bliver filtreringPrisklasse () kaldt.
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.addEventListener("click", filtrering);
+            })
+        }
 
-                liste.appendChild(klon);
+        function filtrering() {
+            filterKategori = this.dataset.kategori;
+            //Hvis filteret er "alle", så skal ".valgt" class'en være tilføjet til alle.
+            //Hvis filteret er et på sorteringsfilteret ".filter", bliver ".valgt" fjernet fra "alle" og sat på ".filter" istedet.
+            console.log();
+            document.querySelectorAll(".filter").forEach(elm => {
+                elm.classList.remove("valgt");
             });
+            this.classList.add("valgt");
+
+            //vis () kaldes.
+            vis();
         }
     </script>
 
-</body></html>
+</body>
+
+</html>
