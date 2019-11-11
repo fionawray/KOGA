@@ -10,7 +10,14 @@ body {
     z-index: 2;
     justify-content: flex-end;
     position: fixed;
+<<<<<<< HEAD
     background-color: rgba(54, 125, 193, 0.47);
+=======
+    <<<<<<< HEAD background-color: rgba(54, 125, 193, 0.47);
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(23, 35, 52, 0.42);
+    =======<<<<<<< HEAD <<<<<<< HEAD <<<<<<< HEAD background-color: rgba(54, 125, 193, 0.47);
+>>>>>>> origin/master
     font-family: 'Lato', sans-serif;
     ;
     background-color: rgba(23, 35, 52, 0.42);
@@ -18,18 +25,30 @@ body {
     background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
+<<<<<<< HEAD
     background-color: rgba(54, 125, 193, 0.47);
+=======
+    > > > > > > > origin/master=======background-color: rgba(54, 125, 193, 0.47);
+>>>>>>> origin/master
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
     background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
 
+<<<<<<< HEAD
+=======
+    > > > > > > > origin/master > > > > > > > origin/master
+>>>>>>> origin/master
 }
 
 .valgt {
     background-color: #f1f1f1;
     color: black;
+<<<<<<< HEAD
+=======
+    <<<<<<< HEAD=======<<<<<<< HEAD <<<<<<< HEAD > > > > > > > origin/master======= > > > > > > > origin/master======= > > > > > > > origin/master > > > > > > > origin/master
+>>>>>>> origin/master
 }
 
 @media only screen and (max-width: 600px) {
@@ -210,6 +229,18 @@ a:hover {
     z-index: -100;
 }
 
+.tekst_boks_forside {
+    background-color: rgba(0, 0, 0, 0.68);
+    padding: 30px;
+    z-index: 3;
+}
+
+@media screen and (min-width: 780px) {
+    .tekst_boks_forside {
+        height: 750px;
+    }
+}
+
 #home_video h1 {
     font-family: 'lato', sans-serif;
     color: white;
@@ -218,19 +249,19 @@ a:hover {
     margin-bottom: 0;
     margin-top: 3em;
     font-size: 2em;
+    z-index: 3;
 }
 
 #home_video p {
     font-family: 'Lato', sans-serif;
     color: white;
     padding: 2em;
-    margin: 2em;
-    margin-top: 0;
     line-height: 1.8em;
     color: white;
     padding: 2em;
     margin: 2em;
     margin-top: 0;
+    margin-left: 1.3em;
     line-height: 1.8em;
     font-size: 1.2rem;
 }
@@ -241,8 +272,6 @@ a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
 
 #animation2 img {
     width: 50px;
@@ -269,11 +298,43 @@ a:hover {
     }
 }
 
+@media only screen and (max-width: 600px) {
+    #home_video h1 {
+        padding-top: 0;
+    }
 
+    #home_video p {
+        padding-top: 0;
+    }
+
+    #animation2 {
+        padding-left: 35rem;
+        padding-right: 35rem;
+        padding-top: 55rem;
+    }
+
+    .tekst_boks_forside {
+        padding: 45px;
+    }
+
+}
 
 /* scroll slut */
 
 @media only screen and (min-width: 800px) {
+    .forside3 p {
+        padding-left: 8rem;
+        padding-right: 10rem;
+    }
+
+    .forside3 h1 {
+        padding-left: 10rem;
+        padding-right: 30rem;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
     .forside3 p {
         padding-left: 10rem;
         padding-right: 35rem;
@@ -438,7 +499,7 @@ a:hover {
 }
 
 .forside3 {
-    background-image: url(images/bike_info.jpg);
+    background-image: url(images/cykel-splash.jpg);
     background-size: cover;
     background-attachment: fixed;
 }
@@ -696,7 +757,7 @@ a:hover {
     flex-basis: 400px;
     flex-grow: 1;
     color: white;
-    margin-top: 10vw;
+    margin-top: 4vw;
 }
 
 #kontakt li {
@@ -734,8 +795,9 @@ h2 {
     color: black;
     flex-basis: 400px;
     flex-grow: 1;
-    margin-top: 10vw;
-    padding: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 4vw;
 }
 
 #kontakt li {
@@ -997,8 +1059,6 @@ input[type=placeholder] {
     padding-bottom: 2rem;
 }
 
-
-
 /* Footer end */
 
 /*	Om os start*/
@@ -1025,6 +1085,14 @@ input[type=placeholder] {
 @media screen and (min-width: 780px) {
     .om_jonas {
         height: 100vh;
+    }
+
+    .om_jonas_tekst {
+        margin-top: 20px;
+    }
+
+    .tekst_boks_om {
+        height: 300px;
     }
 }
 
@@ -1057,9 +1125,8 @@ input[type=placeholder] {
 }
 
 .tekst_boks_om {
-    background-color: rgba(255, 255, 255, 0.63);
+    background-color: rgba(255, 255, 255, 0.68);
     padding: 30px;
-    margin-top: 30px;
 }
 
 .om_jonas h1 {
