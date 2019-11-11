@@ -698,7 +698,7 @@ a:hover {
     flex-basis: 400px;
     flex-grow: 1;
     color: white;
-    margin-top: 10vw;
+    margin-top: 4vw;
 }
 
 #kontakt li {
@@ -736,8 +736,9 @@ h2 {
     color: black;
     flex-basis: 400px;
     flex-grow: 1;
-    margin-top: 10vw;
-    padding: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 4vw;
 }
 
 #kontakt li {
