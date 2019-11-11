@@ -10,11 +10,21 @@ body {
     width: 100%;
     z-index: 2;
     justify-content: flex-end;
+    position: fixed;
+    background-color: rgba(23, 35, 52, 0.42);
+    font-family: 'Lato', sans-serif;
+    ;
 }
 
 @media only screen and (max-width: 600px) {
     #side_menu {
-        height: 3rem;
+        height: 4.5rem;
+    }
+}
+
+@media only screen and (min-width: 871px) {
+    header {
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.65) 3%, rgba(0, 0, 0, 0) 100%);
     }
 }
 
@@ -159,8 +169,7 @@ a:hover {
 
 
 #home_video {
-    position: relative;
-    height: 600px;
+    height: 750px;
     width: 100%;
     overflow: hidden;
 }
@@ -170,7 +179,7 @@ a:hover {
     top: 0;
     left: 0;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 00%;
     height: auto;
     width: auto;
     z-index: -100;
@@ -202,26 +211,45 @@ a:hover {
     font-size: 1.2rem;
 }
 
-.navBottom a span.arrow {
-    background: url(https://d2zxu9tg022395.cloudfront.net/img/btnArrowDown.png) center center no-repeat;
-    background-size: 92px 47px;
-    width: 92px;
-    height: 47px;
-    text-align: center;
-    display: inline-block;
-    animation: arrowMove 3s infinite linear;
-    -webkit-animation: arrowMove 3s infinite linear;
-}
-
-#parallax .navBottom {
-    width: 100%;
+/* pil på forside der indikerer scroll */
+#animation2 {
     position: absolute;
-    bottom: 70px;
-    left: 0;
-    text-align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-@media only screen and (min-width: 1000px) {
+
+
+#animation2 img {
+    width: 50px;
+
+}
+
+#animation2 {
+    animation-name: bounce_arrow_kf;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes bounce_arrow_kf {
+    0% {
+        top: 47vw;
+
+    }
+
+    100% {
+        top: 48vw;
+
+    }
+}
+
+
+
+/* scroll slut */
+
+@media only screen and (min-width: 800px) {
     .forside3 p {
         padding-left: 10rem;
         padding-right: 35rem;
@@ -232,30 +260,57 @@ a:hover {
         padding-right: 30rem;
     }
 
-    .las_mere a {
-        padding-left: 10rem;
-        padding-right: 35rem;
-    }
 }
 
-
+#info {
+    /* background-image: url(images/bike_info.jpg);
+    background-size: cover;
+    background-attachment: fixed;*/
+    background-color: white;
+}
 
 #info .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
     background-color: white;
     padding: 4rem;
-    background-image: url(images/bike_info.jpg);
+    padding-top: 2rem;
+    /*  background-image: url(images/bike_info.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    padding: 4rem;
+    background-attachment: fixed;*/
 }
 
 .sectionwrapper img {
     padding-right: 10px;
     padding-top: 20px;
     padding-bottom: -10px;
-    opacity: 0.6;
+    opacity: 0.4;
+}
+
+.button_forside {
+    background-color: #ECEDEE;
+    border: 2px solid #b9b9b9;
+    padding: 12px 75px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: -90px 0px 20px 130px;
+}
+
+.button_forside a {
+    color: black;
+}
+
+.button_forside:hover {
+    background-color: #034a69;
+}
+
+@media only screen and (min-width: 600px) {
+    .button_forside {
+        justify-content: center;
+        margin: 0px 0px 25px 570px
+    }
 }
 
 #info .col {
@@ -263,9 +318,8 @@ a:hover {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    background: #ffffff;
+    background: #034a69;
     margin: 1em;
-    background: #ECEDEE;
     margin: 1em;
     padding: 2em;
 }
@@ -274,13 +328,37 @@ a:hover {
     flex-grow: 1;
 }
 
+#info h1 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #646363;
+    padding-top: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
 #info h2 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+
+#info h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #646363;
+}
+
+.step {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
 }
 
 #info p {
-    color: black;
+    color: #ffffff;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     line-height: 1.3em;
@@ -299,9 +377,14 @@ a:hover {
     height: 35px;
 }
 
+.forside3 {
+    background-image: url(images/bike_info.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .forside_om {
-    padding: 2em;
-    margin: 2em;
+    padding: 4em;
 }
 
 .forside3 h1 {
@@ -313,26 +396,34 @@ a:hover {
     color: #ffffff;
     font-family: 'Judson', serif;
     line-height: 1.3em;
+    font-size: 1.2rem;
 }
 
 .las_mere {
-    background-color: #000000;
     border: none;
     padding: 0;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 12px 75px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
 }
 
-.las_mere a {
-    padding: 0;
+.las_mere:hover {
+    background-color: #034a69;
 }
 
 /* Blog start */
 
 #splash {
     width: 100vw;
-    width: 100%;
     height: 50vw;
     background-image: url(images/john-gough-hiIa41IoVZs-unsplash.jpg);
     background-size: cover;
+    background-color: blue;
     background-repeat: no-repeat;
     filter: grayscale(70%);
 }
@@ -341,7 +432,39 @@ a:hover {
     color: #ffffff;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    padding-top: 6.5rem;
+    margin: 0;
 }
+
+.hr_flex {
+    display: flex;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.hr_col {
+    flex-grow: 1;
+    padding-top: 1.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hr_col hr {
+    border: 1px solid rgba(185, 185, 185, 0.39);
+}
+
+.hr_txt {
+    width: 38%;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: grey;
+}
+
+.hr_txt h1 {
+    margin: 0;
+}
+
+
 
 .blog_post {
     display: flex;
@@ -350,7 +473,6 @@ a:hover {
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     backface-visibility: hidden;
-    -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform;
 }
@@ -382,38 +504,49 @@ a:hover {
 }
 
 #blog h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lato', sans-serif;
     color: #000000;
-    font-family: 'Judson', serif;
     line-height: 1.3em;
 }
 
 .blog_post {
     padding: 2em;
     margin: 2em;
+    margin-top: 0;
 }
 
 
 .button {
-    background-color: #20384d;
+    background-color: #172334;
     color: #ffffff;
-    border: 2px solid #b9b9b9;
+    border: 2px solid #cecece;
     padding: 12px 75px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 0px;
     cursor: pointer;
 }
 
 .button:hover {
-    background-color: #859aa8;
+    background-color: #5f5f5f;
+}
+
+@media only screen and (max-width: 600px) {
+    .hr_col hr {
+        border: none;
+    }
+
+    .hr_txt {
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
-    .splash_txt {
-        text-align: center;
-        font-size: 40px;
+    #splash {
+        width: 100vw;
+        height: 35vw;
+        background-position: 120% 40%;
     }
 
     .blog_txt {
@@ -421,22 +554,28 @@ a:hover {
         margin-right: 3rem;
         padding-right: 16rem;
     }
+
+    .button {
+        margin-top: 0.8rem;
+        margin-bottom: 0;
+    }
 }
+
+
 
 /* Blog end */
 
 /*Kontakt side start */
 #kontakt {
-    background-color: black;
-    margin: 4vw;
+
+    background-color: #e3e3e3;
 }
 
-
 #kontakt .sectionwrapper {
-    background-color: black;
     display: flex;
     flex-wrap: wrap;
-
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 #kontakt .col {
@@ -449,11 +588,51 @@ a:hover {
     flex-basis: 400px;
     flex-grow: 1;
     color: white;
-    margin-top: 7vw;
+    margin-top: 10vw;
 }
 
 #kontakt li {
     color: white;
+
+
+}
+
+#kontakt,
+p {
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+#kontakt,
+h1,
+h2 {
+    font-family: 'Lato', sans-serif;
+
+
+}
+
+#kontakt .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#kontakt .col {
+    flex-basis: 200px;
+    flex-grow: 1;
+    color: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+    color: black;
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin-top: 10vw;
+    padding: 2vw;
+}
+
+#kontakt li {
+    color: black;
+
 }
 
 
@@ -462,52 +641,59 @@ a:hover {
 input[type=text],
 select,
 textarea {
+
     width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    background-color: #b6b8ba;
 }
 
-input[type=send] {
-    background-color: #000;
-    color: white;
-    padding: 12px 0px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-}
-
-input[type=send]:hover {
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-}
 
 input[type=submit]:hover {
     background-color: grey;
-    width: 100%;
+
+}
+
+input[type=submit] {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
+    background-color: #b6b8ba;
+    color: white;
     resize: vertical;
 }
 
+
+
+input[type=submit]:hover {
+    background-color: #2f445d;
+
+}
+
 input[type=submit] {
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
+    background-color: #172334;
+    color: #ffffff;
+    border: 2px solid #3e4c60;
+    padding: 12px 60px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
     cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: grey;
+input[type=placeholder] {
+    color: white;
 }
+
 
 /* Style the container/contact section */
 .container {
@@ -640,82 +826,67 @@ input[type=submit]:hover {
     }
 }
 
-/*Kontakt side start */
-#kontakt {
-    background-color: black;
-    margin: 4vw;
-}
-
-
-#kontakt .sectionwrapper {
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-#kontakt .col {
-    padding: 2vw;
-    margin-top: 0vw;
-
-}
-
-#kontakt li {
-    color: white;
-}
-
-
 /* Footer start */
 
 #footer .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
-    background-color: #ffffff;
-    padding: 4rem;
+    background-color: #172334;
 }
 
 #footer .col {
     flex-basis: 300px;
     flex-grow: 1;
-    display: flex;
     margin: 1em;
-    background: #ffffff;
+    background: #172334;
 }
 
-#footer .top {
-    flex-grow: 1;
+#footer .col_with_padding {
+    padding-left: 7rem;
 }
 
 #footer h2 {
-    color: #5f5f5f;
-    text-align: center;
+    color: #A2A7AE;
     font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0;
 }
 
 #footer p {
-    color: #525252;
+    color: #A2A7AE;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
     line-height: 0.89rem;
 }
 
 #footer .icons {
-    font-size: 60px;
     text-align: center;
+    font-size: 25px;
+    color: #A2A7AE;
 }
 
-#footer .icon_flex {
+#footer .icon_block {
     display: flex;
     vertical-align: middle;
 }
 
-#footer .icon_flex .align {
-    padding-top: 12px
+#footer .icon_block p {
+    padding-left: 30px;
 }
 
-.icons img {
-    width: 35px;
-    height: 35px;
+.fas {
+    color: #A2A7AE;
+    padding-top: 8px;
+    font-size: 30px;
+}
+
+.koga_logo {
+    text-align: center;
+}
+
+.koga_logo img {
+    width: 200px;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
 }
 
 
@@ -872,7 +1043,6 @@ input[type=submit]:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
 }
 
 .cykler_tekst {
