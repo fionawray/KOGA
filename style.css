@@ -17,6 +17,7 @@ body {
 
 .valgt {
     background-color: #f1f1f1;
+    color: black;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1147,14 +1148,6 @@ input[type=placeholder] {
     color: white;
     cursor: pointer;
 }
-
-#filternavbar button:hover {
-    background-color: #f1f1f1;
-    color: black;
-}
-
-
-
 
 /* Singlesite */
 
