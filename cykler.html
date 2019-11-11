@@ -202,6 +202,7 @@
             //Hvis pris knapperne ".filter-prisklasse" bliver trykket på, bliver filtreringPrisklasse () kaldt.
             document.querySelectorAll(".filter").forEach(elm => {
                 elm.addEventListener("click", filtrering);
+                elm.addEventListener("mouseenter", enterfunction);
             })
         }
 
@@ -212,12 +213,29 @@
             console.log();
             document.querySelectorAll(".filter").forEach(elm => {
                 elm.classList.remove("valgt");
+                elm.style.backgroundColor = "#172334";
+                elm.style.color = "white";
             });
             this.classList.add("valgt");
-
+            this.style.backgroundColor = "#f1f1f1";
+            this.style.color = "black";
             //vis () kaldes.
             vis();
         }
+
+        function enterfunction() {
+
+            document.querySelectorAll(".filter").forEach(elm => {
+                console.log();
+                if (!elm.classList.contains("valgt")) {
+                    elm.style.backgroundColor = "#172334";
+                    elm.style.color = "white";
+                }
+            });
+            this.style.backgroundColor = "#f1f1f1";
+            this.style.color = "black";
+        }
+
     </script>
 
 </body>
