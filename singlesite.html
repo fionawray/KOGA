@@ -25,41 +25,136 @@
 </head>
 
 <body>
+    <!--Filterknapperne der inddeler de forskellige møbler-->
+    <nav class="filter_alle">
+        <button class="filter valgt" data-kategori="alle">Alle</button>
+    </nav>
+    <nav>
+        <div class="filter_cykler">
+            <button class="filter" data-kategori="E-Bike">E-Bike</button>
+            <button class="filter" data-kategori="Race">Race</button>
+            <button class="filter" data-kategori="City Tour">City Tour</button>
+            <button class="filter" data-kategori="Trekking">Trekking</button>
+        </div>
+    </nav>
+
     <main>
-        <button class="luk">Tilbage</button>
-        <section class="liste">
-            <h1 class="overskrift"></h1>
+        <section class="data">
         </section>
     </main>
 
-    <template id="temp" class="singlesite">
-        <article class="article_cykel">
+    <template>
+        <article class="article_cykel cykelside">
             <h2 class="navn"></h2>
-            <p class="lang"></p>
+            <div class="kort"></div>
             <p class="pris"></p>
-            <img class="billede_1" src="">
-            <img class="billede_2" src="">
-            <img class="billede_3" src="">
-
+            <img class="front_billede" src="">
         </article>
-        <section class="liste"></section>
     </template>
 
+    <footer id="footer">
+        <div class="sectionwrapper">
+            <div class="col">
+                <div class="top">
+                    <h2>Kontakt</h2>
+                    <div class="icons icon_flex">
+                        <img src="icons/place.svg" alt="Location">
+                        <div>
+                            <p>Peter Bangsvej 18</p>
+                            <p>2000 Frederiksberg</p>
+                        </div>
+                    </div>
+                    <div class="icons icon_flex">
+                        <img src="icons/call-answer.svg" alt="Location">
+                        <p class="align">+45 38 86 43 25</p>
+                    </div>
+                    <div class="icons icon_flex">
+                        <img src="icons/email.svg" alt="Location">
+                        <p class="align">info@kogacenter.dk</p>
+                    </div>
+                    <p></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="top">
+                    <h2>KOGA</h2>
+                    <div class="icons">
+                        <img src="icons/facebook-logo.svg" alt="facebook">
+                        <img src="icons/instagram.svg" alt="instagram">
+                        <img src="icons/twitter.svg" alt="instagram">
+                        <img src="icons/youtube.svg" alt="instagram">
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="top">
+                    <h2>Andet info</h2>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <script>
-        let urlParams = new URLSearchParams(window.location.search);
-        let myID = urlParams.get("id");
-        console.log("myID", myID);
-        let cykler;
-        const liste = document.querySelector(".liste");
-        const url = "https://uwei.eu/kea/2_semester/tema9/koga/wordpress/wp-json/wp/v2/cykler/" + myID;
+        //"?per_page=100";" skal skrives efter linket. Ellers vises der kun 10, som er default
+        const url = "https://uwei.eu/kea/2_semester/tema9/koga/wordpress/wp-json/wp/v2/cykler?per_page=100";
+        let cykler = [];
+        //"Alle" i filterfunktionen skal vises som udgangspunkt.
+        let filterKategori = "alle";
 
         document.addEventListener("DOMContentLoaded", start);
 
+
         function start() {
             hentJson();
+            console.log("sidenVises");
+
+            document.querySelector("#menuknap").addEventListener("click", toggleMenu);
+            addEventListenersToButtons();
         }
+
+
+        /*  function toggleMenu() {
+            console.log("toggleMenu");
+            document.querySelector("#menu").classList.toggle("hidden");
+
+            let erSkjult =
+                document.querySelector("#menu").classList.contains("hidden");
+
+            if (erSkjult == true) {
+                document.querySelector("#menuknap").textContent = "☰";
+            } else {
+                document.querySelector("#menuknap").textContent = "X";
+            }
+        }
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {
+            fastHeader()
+        };
+
+        // Get the header
+        var header = document.getElementById("side_menu");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function fastHeader() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+*/
 
         async function hentJson() {
             const response = await fetch(url);
@@ -67,29 +162,56 @@
             cykler = await response.json();
             console.log(cykler);
             vis();
-
-            document.querySelector(".luk").addEventListener("click", () => {
-                history.back();
-            })
+            addEventListenersToButtons();
         }
 
         function vis() {
-            const skabelon = document.querySelector("#temp");
+            const skabelon = document.querySelector("template");
+            const data = document.querySelector(".data");
 
-            const klon = skabelon.cloneNode(true).content;
-            klon.querySelector(".navn").textContent = cykler.title.rendered;
-            klon.querySelector(".lang").innerHTML = cykler.beskrivelse;
-            klon.querySelector(".pris").textContent = cykler.pris;
-            klon.querySelector(".billede_1").src = cykler.billede_1.guid;
-            klon.querySelector(".billede_2").src = cykler.billede_2.guid;
-            klon.querySelector(".billede_3").src = cykler.billede_3.guid;
+            //containeren bliver tømt eller nulstillet.
+            data.innerHTML = "";
+
+            cykler.forEach(cykel => {
+                    //console.log("loop okay");
+                    if ((filterKategori == "alle" || filterKategori = cykel.kategori)) {
+                        const klon = skabelon.cloneNode(true).content;
+                        klon.querySelector(".navn").textContent = cykel.title.rendered;
+                        klon.querySelector(".kort").textContent = cykel.kort;
+                        klon.querySelector(".pris").textContent = cykel.pris;
+                        klon.querySelector(".front_billede").src = cykel.front_billede.guid;
+                        data.appendChild(klon);
+
+                        data.lastElementChild.addEventListener("click", (() => {
+                                window.location.href = "singlesite.html?id=" + cykel.id;
+                            });
+                        }
+                    })
+            }
 
 
+            function addEventListenersToButtons() {
+                //Hvis varer knapperne ".filter" bliver trykket på, bliver filtrering () kaldt.
+                //Hvis pris knapperne ".filter-prisklasse" bliver trykket på, bliver filtreringPrisklasse () kaldt.
+                document.querySelectorAll(".filter").forEach(elm => {
+                    elm.addEventListener("click", filtrering);
+                })
+            }
 
+            function filtrering() {
+                filterKategori = this.dataset.kategori;
+                //Hvis filteret er "alle", så skal ".valgt" class'en være tilføjet til alle.
+                //Hvis filteret er et på sorteringsfilteret ".filter", bliver ".valgt" fjernet fra "alle" og sat på ".filter" istedet.
+                document.querySelectorAll(".filter").forEach(elm => {
+                    elm.classList.remove("valgt");
+                });
+                this.classList.add("valgt");
 
-            liste.appendChild(klon);
-        }
-
+                //visVarer () kaldes.
+                visVarer();
+            }
     </script>
 
-</body></html>
+</body>
+
+</html>
