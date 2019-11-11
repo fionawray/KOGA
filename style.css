@@ -557,6 +557,19 @@ a:hover {
 
 }
 
+#kontakt,
+p {
+    font-family: 'Judson', serif;
+
+}
+
+#kontakt,
+h1,
+h2 {
+    font-family: 'Judson', serif;
+
+}
+
 #kontakt .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
@@ -572,6 +585,7 @@ a:hover {
     flex-basis: 400px;
     flex-grow: 1;
     margin-top: 10vw;
+    padding: 2vw;
 }
 
 #kontakt li {
