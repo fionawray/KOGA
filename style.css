@@ -21,16 +21,13 @@ body {
     > > > > > > > origin/master
 }
 
-<<<<<<< HEAD
-=======
-.valgt {
+<<<<<<< HEAD=======.valgt {
     background-color: #f1f1f1;
     color: black;
     <<<<<<< HEAD > > > > > > > origin/master======= > > > > > > > origin/master
 }
 
->>>>>>> origin/master
-@media only screen and (max-width: 600px) {
+> > > > > > > origin/master @media only screen and (max-width: 600px) {
     #side_menu {
         height: 4.5rem;
     }
@@ -978,15 +975,15 @@ input[type=placeholder] {
 }
 
 .om_jonas {
-    background-image: url(images/chepe-nicoli-if0K7iBBDxw-unsplash.jpg);
+    background-image: url(images/cykel-splash.jpg);
     background-size: cover;
     height: 120vh;
     width: 100%;
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 780px) {
     .om_jonas {
-        height: 80vh;
+        height: 100vh;
     }
 }
 
@@ -1004,7 +1001,7 @@ input[type=placeholder] {
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 680px) {
     .om_jonas_tekst {
         padding-left: 150px;
         padding-right: 150px;
