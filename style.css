@@ -10,11 +10,9 @@ body {
     z-index: 2;
     justify-content: flex-end;
     position: fixed;
-<<<<<<< HEAD
     background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
-    ;
-=======
+
     background-color: rgba(23, 35, 52, 0.42);
 
 }
@@ -22,7 +20,6 @@ body {
 .valgt {
     background-color: #f1f1f1;
     color: black;
->>>>>>> origin/master
 }
 
 @media only screen and (max-width: 600px) {
@@ -336,7 +333,7 @@ a:hover {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    background: #034a69;
+    background: #367dc1;
     margin: 1em;
     margin: 1em;
     padding: 2em;
@@ -1125,8 +1122,7 @@ input[type=placeholder] {
     vertical-align: center;
 }
 
-.cykler_tekst_boks {
-    align-self: center;
+align-self: center;
 }
 
 .cykler_tekst h1 {
