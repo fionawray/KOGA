@@ -25,9 +25,11 @@
 </head>
 
 <body>
+
+
     <main>
         <button class="luk">Tilbage</button>
-        <section class="liste">
+        <section class="data">
             <h1 class="overskrift"></h1>
         </section>
     </main>
@@ -40,9 +42,7 @@
             <img class="billede_1" src="">
             <img class="billede_2" src="">
             <img class="billede_3" src="">
-
         </article>
-        <section class="liste"></section>
     </template>
 
 
@@ -52,7 +52,7 @@
         let myID = urlParams.get("id");
         console.log("myID", myID);
         let cykler;
-        const liste = document.querySelector(".liste");
+        const data = document.querySelector(".data");
         const url = "https://uwei.eu/kea/2_semester/tema9/koga/wordpress/wp-json/wp/v2/cykler/" + myID;
 
         document.addEventListener("DOMContentLoaded", start);
@@ -84,12 +84,11 @@
             klon.querySelector(".billede_2").src = cykler.billede_2.guid;
             klon.querySelector(".billede_3").src = cykler.billede_3.guid;
 
-
-
-
-            liste.appendChild(klon);
+            data.appendChild(klon);
         }
 
     </script>
 
-</body></html>
+</body>
+
+</html>

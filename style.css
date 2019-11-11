@@ -10,9 +10,19 @@ body {
     z-index: 2;
     justify-content: flex-end;
     position: fixed;
+<<<<<<< HEAD
     background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     ;
+=======
+    background-color: rgba(23, 35, 52, 0.42);
+
+}
+
+.valgt {
+    background-color: #f1f1f1;
+    color: black;
+>>>>>>> origin/master
 }
 
 @media only screen and (max-width: 600px) {
@@ -951,67 +961,139 @@ input[type=placeholder] {
 
 /*	Om os start*/
 
-#om_os {
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#om_os_top {
+    display: flex;
+    background-color: black;
+}
+
+.om_jonas {
     background-image: url(images/chepe-nicoli-if0K7iBBDxw-unsplash.jpg);
     background-size: cover;
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
 }
 
-.om_os_tekst {
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.58);
-    height: 250px;
-    background-color: #434b59;
-    width: 400px;
-    color: white;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 30px;
+.om_jonas_tekst {
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.3rem;
+    margin-top: 90px;
+}
+
+@media screen and (min-width: 680px) {
+    .om_jonas_tekst {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .om_jonas_tekst {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .om_jonas_tekst {
+        padding-left: 350px;
+        padding-right: 350px;
+    }
+}
+
+.tekst_boks_om {
+    background-color: rgba(0, 0, 0, 0.46);
+    padding: 30px;
+}
+
+.om_jonas h1 {
+    font-size: 2rem;
+    color: #e5e5e5;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.om_jonas h2 {
+    font-size: 1rem;
+    color: #e5e5e5;
+    font-style: italic;
+    text-align: center;
     margin-bottom: 30px;
-    vertical-align: center;
 }
 
-.om_os_tekst1 {
+.om_jonas p {
+    font-size: 0.9rem;
+    color: #e5e5e5;
+}
+
+.om_jonas img {
+    width: 230px;
+    height: 60px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/**/
+
+
+#om_os_bund {
+    background-color: #525252;
     display: flex;
-    background-color: rgba(0, 0, 0, 0.58);
-    height: 250px;
-    width: 400px;
-    color: white;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    vertical-align: center;
-}
-
-.om_os_tekst_boks {
-    align-self: center;
-}
-
-.om_os_tekst h1 {
-    margin: 20px;
-}
-
-.om_os_tekst p {
-    margin: 20px;
-    line-height: 1.4rem;
+    flex-direction: column;
+    padding-bottom: 80px;
 }
 
 .om_os_tekst1 h1 {
-    margin: 20px;
+    font-size: 2rem;
 }
 
 .om_os_tekst1 p {
-    margin: 20px;
-    line-height: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.2;
 }
+
+.om_nicolai {
+    padding: 40px;
+}
+
+.om_nicolai_billede {
+    filter: grayscale(100%);
+}
+
+.om_os_tekst2 {
+
+    /*    flex-direction: column-reverse;*/
+}
+
+
+.om_koga {
+    padding: 40px;
+}
+
+.om_koga_billede {
+    filter: grayscale(100%);
+}
+
+.om_os_billeder {
+    width: 350px;
+    height: 210px;
+}
+
+.center1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+}
+
+
 
 /* Cykler start */
 
@@ -1058,10 +1140,6 @@ input[type=placeholder] {
 
 /*De forskellige cykler vises*/
 
-.liste {
-    background-color: #f1f1f1;
-}
-
 .article_cykel {
     transition-duration: 0.3s;
     transition-property: transform;
@@ -1107,10 +1185,31 @@ input[type=placeholder] {
     grid-template-columns: repeat(1, 1fr);
     column-count: 4;
     column-gap: 1em;
-    margin: 1.5em;
     padding: 0;
     column-gap: 1.5em;
     font-size: .85em;
+    background-color: #f1f1f1;
+    padding: 1rem;
+}
+
+#filternavbar {
+    display: flex;
+    justify-content: center;
+    background-color: #172334;
+}
+
+#filternavbar button {
+    font-size: 1rem;
+    text-decoration: uppercase;
+    border: none;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    font-family: 'lato', sans-serif;
+    height: 3.5rem;
+    background-color: #172334;
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
 }
 
 /* Singlesite */
@@ -1127,6 +1226,18 @@ input[type=placeholder] {
     position: absolute;
     left: 39px;
     top: 90px;
+}
+
+.data {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-count: 4;
+    column-gap: 1em;
+    padding: 0;
+    column-gap: 1.5em;
+    font-size: .85em;
+    background-color: #f1f1f1;
+    padding: 1rem;
 }
 
 
