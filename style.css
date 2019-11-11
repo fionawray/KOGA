@@ -5,7 +5,7 @@ body {
 /* header */
 
 a {
-    color: #363538;
+    color: white;
 }
 
 .header {
@@ -23,19 +23,18 @@ a {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
 }
 
 .header li a {
     display: block;
     padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
+    background-color: #367dc1;
     text-decoration: none;
 }
 
 .header li a:hover,
 .header .menu-btn:hover {
-    background-color: #f4f4f4;
+    background-color: #172334;
 }
 
 .header .logo {
