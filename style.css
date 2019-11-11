@@ -552,15 +552,12 @@ a:hover {
 /*Kontakt side start */
 #kontakt {
     background-color: black;
-    margin: 4vw;
 }
-
 
 #kontakt .sectionwrapper {
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 #kontakt .col {
@@ -764,31 +761,6 @@ input[type=submit]:hover {
     }
 }
 
-/*Kontakt side start */
-#kontakt {
-    background-color: black;
-    margin: 4vw;
-}
-
-
-#kontakt .sectionwrapper {
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-
-}
-
-#kontakt .col {
-    padding: 2vw;
-    margin-top: 0vw;
-
-}
-
-#kontakt li {
-    color: white;
-}
-
-
 /* Footer start */
 
 #footer .sectionwrapper {
@@ -935,7 +907,6 @@ input[type=submit]:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
 }
 
 .cykler_tekst {
