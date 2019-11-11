@@ -10,8 +10,7 @@ body {
     z-index: 2;
     justify-content: flex-end;
     position: fixed;
-<<<<<<< HEAD
-    <<<<<<< HEAD <<<<<<< HEAD background-color: rgba(54, 125, 193, 0.47);
+    <<<<<<< HEAD <<<<<<< HEAD <<<<<<< HEAD background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     ;
     =======background-color: rgba(23, 35, 52, 0.42);
@@ -19,25 +18,20 @@ body {
     =======background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
-    > > > > > > > origin/master
-=======
-    background-color: rgba(54, 125, 193, 0.47);
+    > > > > > > > origin/master=======background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
     background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     background-color: rgba(23, 35, 52, 0.42);
 
->>>>>>> origin/master
+    > > > > > > > origin/master
 }
 
 <<<<<<< HEAD=======.valgt {
     background-color: #f1f1f1;
     color: black;
-<<<<<<< HEAD
-    <<<<<<< HEAD > > > > > > > origin/master======= > > > > > > > origin/master
-=======
->>>>>>> origin/master
+    <<<<<<< HEAD <<<<<<< HEAD > > > > > > > origin/master======= > > > > > > > origin/master======= > > > > > > > origin/master
 }
 
 > > > > > > > origin/master @media only screen and (max-width: 600px) {
@@ -704,7 +698,7 @@ a:hover {
     flex-basis: 400px;
     flex-grow: 1;
     color: white;
-    margin-top: 10vw;
+    margin-top: 4vw;
 }
 
 #kontakt li {
@@ -742,8 +736,9 @@ h2 {
     color: black;
     flex-basis: 400px;
     flex-grow: 1;
-    margin-top: 10vw;
-    padding: 2vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    margin-bottom: 4vw;
 }
 
 #kontakt li {
