@@ -1119,11 +1119,12 @@ input[type=placeholder] {
     vertical-align: center;
 }
 
-align-self: center;
+.cykler_tekst_boks {
+    margin-bottom: 0;
 }
 
-.cykler_tekst h1 {
-    margin: 20px;
+.cykler_h1 {
+    margin-left: 20px;
 }
 
 .cykler_tekst p {
