@@ -905,7 +905,6 @@ input[type=placeholder] {
 #om_os_top {
     display: flex;
     background-color: black;
-    margin-top: 30px;
 }
 
 .om_jonas {
@@ -919,6 +918,7 @@ input[type=placeholder] {
     padding: 40px;
     font-family: 'Poppins', sans-serif;
     line-height: 1.3rem;
+    margin-top: 90px;
 }
 
 @media screen and (min-width: 680px) {
@@ -1005,6 +1005,7 @@ input[type=placeholder] {
 
     /*    flex-direction: column-reverse;*/
 }
+
 
 .om_koga {
     padding: 40px;
