@@ -10,19 +10,16 @@ body {
     z-index: 2;
     justify-content: flex-end;
     position: fixed;
-<<<<<<< HEAD
     background-color: rgba(54, 125, 193, 0.47);
     font-family: 'Lato', sans-serif;
     ;
-=======
     background-color: rgba(23, 35, 52, 0.42);
-
 }
 
 .valgt {
     background-color: #f1f1f1;
     color: black;
->>>>>>> origin/master
+
 }
 
 @media only screen and (max-width: 600px) {
