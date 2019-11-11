@@ -546,6 +546,7 @@ a:hover {
 
 /*Kontakt side start */
 #kontakt {
+<<<<<<< HEAD
 	background-color: black;
 }
 
@@ -570,6 +571,33 @@ a:hover {
 
 #kontakt li {
 	color: white;
+=======
+    background-color: #e3e3e3;
+    padding-left: 5vw;
+    padding-right: 5vw;
+
+}
+
+#kontakt .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#kontakt .col {
+    flex-basis: 200px;
+    flex-grow: 1;
+    color: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+    color: black;
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin-top: 10vw;
+}
+
+#kontakt li {
+    color: black;
+>>>>>>> origin/master
 }
 
 
@@ -578,6 +606,7 @@ a:hover {
 input[type=text],
 select,
 textarea {
+<<<<<<< HEAD
 	width: 90%;
 	padding: 12px;
 	border: 1px solid #ccc;
@@ -619,11 +648,46 @@ input[type=submit] {
 	padding: 12px 20px;
 	border: none;
 	cursor: pointer;
+=======
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: #b6b8ba;
+    color: white;
+    resize: vertical;
 }
 
+
+
 input[type=submit]:hover {
+    background-color: #2f445d;
+
+}
+
+input[type=submit] {
+    background-color: #172334;
+    color: #ffffff;
+    border: 2px solid #3e4c60;
+    padding: 12px 60px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+>>>>>>> origin/master
+}
+
+/*
+input[type=submit]:hover {
+<<<<<<< HEAD
 	background-color: grey;
 }
+=======
+    background-color: grey;
+}*/
+>>>>>>> origin/master
 
 /* Style the container/contact section */
 .container {
