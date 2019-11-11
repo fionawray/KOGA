@@ -166,8 +166,10 @@ a:hover {
 /*menu færdig*/
 
 /*FORSIDE */
+
+
 #home_video {
-    height: 600px;
+    height: 750px;
     width: 100%;
     overflow: hidden;
 }
@@ -210,47 +212,40 @@ a:hover {
 }
 
 /* pil på forside der indikerer scroll */
-.box {
+#animation2 {
     position: absolute;
-    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.box span {
-    display: block;
-    width: 40px;
-    height: 40px;
-    border-bottom: 2px solid #ffffff;
-    border-right: 2px solid #ffffff;
-    margin: -25px;
-    animation: animate 2s infinite;
-    transform: rotate(45deg);
+
+
+#animation2 img {
+    width: 50px;
+
 }
 
-.box span:nth-child(2) {
-    animation-delay: -0.2s;
+#animation2 {
+    animation-name: bounce_arrow_kf;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
 }
 
-.box span:nth-child(3) {
-    animation-delay: -0.4s;
-}
-
-@keyframes animate {
+@keyframes bounce_arrow_kf {
     0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
-    }
+        top: 47vw;
 
-    50% {
-        opacity: 1;
     }
 
     100% {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px, 20px);
+        top: 48vw;
+
     }
 }
+
+
 
 /* scroll slut */
 
@@ -572,13 +567,15 @@ a:hover {
 
 /*Kontakt side start */
 #kontakt {
-    background-color: black;
+
+    background-color: #e3e3e3;
 }
 
 #kontakt .sectionwrapper {
-    background-color: black;
     display: flex;
     flex-wrap: wrap;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 #kontakt .col {
@@ -596,6 +593,44 @@ a:hover {
 
 #kontakt li {
     color: white;
+
+
+}
+
+#kontakt,
+p {
+    font-family: 'Judson', serif;
+
+}
+
+#kontakt,
+h1,
+h2 {
+    font-family: 'Judson', serif;
+
+}
+
+#kontakt .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#kontakt .col {
+    flex-basis: 200px;
+    flex-grow: 1;
+    color: white;
+    flex-basis: 400px;
+    flex-grow: 1;
+    color: black;
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin-top: 10vw;
+    padding: 2vw;
+}
+
+#kontakt li {
+    color: black;
+
 }
 
 
@@ -604,52 +639,59 @@ a:hover {
 input[type=text],
 select,
 textarea {
+
     width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    background-color: #b6b8ba;
 }
 
-input[type=send] {
-    background-color: #000;
-    color: white;
-    padding: 12px 0px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
-}
-
-input[type=send]:hover {
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-}
 
 input[type=submit]:hover {
     background-color: grey;
-    width: 100%;
+
+}
+
+input[type=submit] {
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
+    background-color: #b6b8ba;
+    color: white;
     resize: vertical;
 }
 
+
+
+input[type=submit]:hover {
+    background-color: #2f445d;
+
+}
+
 input[type=submit] {
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: none;
+    background-color: #172334;
+    color: #ffffff;
+    border: 2px solid #3e4c60;
+    padding: 12px 60px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
     cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: grey;
+input[type=placeholder] {
+    color: white;
 }
+
 
 /* Style the container/contact section */
 .container {
