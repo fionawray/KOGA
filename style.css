@@ -1541,20 +1541,58 @@ input[type=placeholder] {
     align-items: center;
 }
 
-.cykler_tekst {
+.forsidecitat {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.58);
-    height: 250px;
-    width: 400px;
-    color: white;
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-top: 30px;
-    vertical-align: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 40px;
 }
 
-.cykler_h1 {
-    margin-left: 20px;
+.centered {
+    flex-grow: 1;
+    flex-basis: 100px;
+    padding: 2vw;
+    text-align: left;
+    line-height: 26px;
+    margin-left: 15vw;
+}
+
+.centered p,
+h2 {
+    color: white;
+}
+
+#citat {
+    flex-grow: 0.3;
+    padding: 2vw 2vw 2vw 0vw;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.47);
+    border-radius: 8px;
+    margin-right: 80px;
+}
+
+#citat p {
+    font-style: italic;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-left: 70px;
+    color: white;
+}
+
+svg {
+    position: absolute;
+    left: 50px;
+    top: 45px;
+    width: 35px;
+    height: 25px;
+}
+
+p.reviewer {
+    display: block;
+    text-align: right;
+    color: #a8a8a8;
+    font-size: 18px;
+    text-decoration: underline;
 }
 
 .cykler_tekst p {
