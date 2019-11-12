@@ -8,6 +8,33 @@ a {
     color: white;
 }
 
+#home_video {
+    height: 750px;
+    min-width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+#videobcg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 0%;
+    height: 750px;
+    width: auto;
+    z-index: 2;
+    filter: opacity(0.6);
+}
+
+.tekst_boks_forside {
+    padding: 20px;
+    z-index: 10;
+    position: absolute;
+    top: 58px;
+}
+
+
 .header {
     background-color: #367dc1;
     position: fixed;
@@ -306,9 +333,10 @@ a:hover {
 #menu {
     list-style-type: none;
     transition: transform .3s;
-    transform-origin: top left;
-*/
+transform-origin: top left;
 }
+*/
+
 
 /* visited link */
 /* #side_menu header nav a:visited {
@@ -371,28 +399,6 @@ a:hover {
 /*FORSIDE */
 
 
-#home_video {
-    height: 750px;
-    width: 100%;
-    overflow: hidden;
-}
-
-#videobcg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 00%;
-    height: auto;
-    width: auto;
-    z-index: -100;
-}
-
-.tekst_boks_forside {
-    background-color: rgba(0, 0, 0, 0.68);
-    padding: 30px;
-    z-index: 3;
-}
 
 @media screen and (min-width: 780px) {
     .tekst_boks_forside {
@@ -426,10 +432,12 @@ a:hover {
 }
 
 /* pil på forside der indikerer scroll */
+
 #animation2 {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 12;
 }
 
 #animation2 img {
@@ -460,6 +468,7 @@ a:hover {
 @media only screen and (max-width: 600px) {
     #home_video h1 {
         padding-top: 0;
+        margin-top: 10px;
     }
 
     #home_video p {
@@ -467,16 +476,16 @@ a:hover {
     }
 
     #animation2 {
-        padding-left: 35rem;
-        padding-right: 35rem;
+
         padding-top: 55rem;
     }
 
     .tekst_boks_forside {
         padding: 45px;
+        z-index: 10;
     }
-
 }
+
 
 /* scroll slut */
 
