@@ -23,7 +23,7 @@ a {
     height: 750px;
     width: auto;
     z-index: 2;
-    filter: opacity(0.6);
+    filter: opacity(0.4);
 }
 
 .tekst_boks_forside {
