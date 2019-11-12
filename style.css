@@ -39,7 +39,7 @@ a {
     background-color: #367dc1;
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 30;
     font-family: 'Lato', sans-serif;
 }
 
