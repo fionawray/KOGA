@@ -16,7 +16,6 @@ a {
 }
 
 #videobcg {
-    position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
@@ -39,7 +38,7 @@ a {
     background-color: #367dc1;
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 30;
     font-family: 'Lato', sans-serif;
 }
 
@@ -983,8 +982,6 @@ transform-origin: top left;
 #kontakt,
 p {
     font-family: 'Lato', sans-serif;
-
-
 }
 
 #kontakt,
