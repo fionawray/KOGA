@@ -503,7 +503,7 @@ transform-origin: top left;
 @media only screen and (min-width: 1200px) {
     .forside3 p {
         padding-left: 10rem;
-        padding-right: 35rem;
+        padding-right: 33rem;
     }
 
     .forside3 h1 {
@@ -694,6 +694,7 @@ transform-origin: top left;
 .forside3 h1 {
     font-family: 'Lato', sans-serif;
     color: white;
+    font-size: xx-large;
 }
 
 .forside3 p {
@@ -913,6 +914,24 @@ transform-origin: top left;
     background-color: #e3e3e3;
 }
 
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 223px;
+    width: 493px;
+    margin-bottom: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 223px;
+    width: 493px;
+}
+
 .hr_flex_contact {
     display: flex;
     padding-left: 10vw;
@@ -958,6 +977,11 @@ transform-origin: top left;
         font-family: 'Lato', sans-serif;
         color: grey;
     }
+
+    .mapouter {
+        margin-left: 100px;
+        margin-top: 0;
+    }
 }
 
 
@@ -969,35 +993,27 @@ transform-origin: top left;
 }
 
 #kontakt .col {
-    flex-basis: 200px;
-    flex-grow: 1;
-    color: white;
+    color: #676464;
     flex-basis: 400px;
     flex-grow: 1;
-    color: white;
-    flex-basis: 400px;
-    flex-grow: 1;
-    color: white;
-    margin-top: 4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 #kontakt li {
     color: white;
-
-
 }
 
 #kontakt,
 p {
     font-family: 'Lato', sans-serif;
+    color: #676464;
 }
 
 #kontakt,
 h1,
 h2 {
     font-family: 'Lato', sans-serif;
-
-
 }
 
 #kontakt .sectionwrapper {
@@ -1005,39 +1021,22 @@ h2 {
     flex-wrap: wrap;
 }
 
-#kontakt .col {
-    flex-basis: 200px;
-    flex-grow: 1;
-    color: white;
-    flex-basis: 400px;
-    flex-grow: 1;
-    color: black;
-    flex-basis: 400px;
-    flex-grow: 1;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    margin-bottom: 4vw;
-}
 
 #kontakt li {
     color: black;
-
 }
-
-
 
 /* Style inputs */
 input[type=text],
 select,
 textarea {
-
     width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-    background-color: #b6b8ba;
+    background-color: #d3d3d3;
 }
 
 
@@ -1532,8 +1531,8 @@ input[type=placeholder] {
 #splash_cykler {
     background-image: url(images/f.jpg);
     background-size: cover;
-    background-position: 100% 44%;
-    height: 64vh;
+    background-position: 100% 50%;
+    height: 45vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -1618,8 +1617,9 @@ input[type=placeholder] {
     padding: 0;
     column-gap: 1.5em;
     font-size: .85em;
-    background-color: #f1f1f1;
-    padding: 1rem;
+    background-color: rgba(241, 241, 241, 0.37);
+    padding-left: 7rem;
+    padding-right: 7rem;
 }
 
 #filternavbar {
