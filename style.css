@@ -10,7 +10,6 @@ a {
 
 .header {
     background-color: #367dc1;
-    box-shadow: 1px 1px 4px 0 rgb(72, 119, 160);
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -30,6 +29,7 @@ a {
     background-color: #367dc1;
     text-decoration: none;
     display: block;
+    text-align: center;
 
 }
 
@@ -853,12 +853,19 @@ a:hover {
     .blog_txt {
         margin-left: 3rem;
         margin-right: 3rem;
-        padding-right: 14rem;
+        padding-right: 12.2rem;
     }
 
     .button {
-        margin-top: 2rem;
+        margin-top: 2.2rem;
         margin-bottom: 0;
+    }
+
+    #blog p {
+        color: #363538;
+        font-family: 'Lato', sans-serif;
+        line-height: 1.3rem;
+        padding-right: 3rem;
     }
 }
 
