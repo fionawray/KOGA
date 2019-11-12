@@ -8,14 +8,39 @@ a {
     color: white;
 }
 
+#home_video {
+    height: 750px;
+    min-width: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+#videobcg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 0%;
+    height: 750px;
+    width: auto;
+    z-index: 2;
+    filter: opacity(0.6);
+}
+
+.tekst_boks_forside {
+    padding: 20px;
+    z-index: 10;
+    position: absolute;
+    top: 58px;
+}
+
+
 .header {
     background-color: #367dc1;
-    box-shadow: 1px 1px 4px 0 rgb(72, 119, 160);
     position: fixed;
     width: 100%;
     z-index: 3;
     font-family: 'Lato', sans-serif;
-
 }
 
 .header ul {
@@ -30,7 +55,12 @@ a {
     padding: 20px 20px;
     background-color: #367dc1;
     text-decoration: none;
+    display: block;
+    text-align: center;
+
 }
+
+
 
 .header li a:hover,
 .header .menu-btn:hover {
@@ -41,11 +71,55 @@ a {
     float: left;
     width: 30%;
     padding: 10px 20px;
+
+}
+
+@media only screen and (max-width: 600px) {
+    .header .logo {
+        width: 10rem;
+    }
 }
 
 @media only screen and (min-width: 600px) {
     .header .logo {
         width: 10rem;
+    }
+}
+
+
+@media only screen and (min-width: 600px) {
+    .header {
+        background-color: #367dc1;
+        position: fixed;
+        width: 100%;
+        z-index: 3;
+        font-family: 'Lato', sans-serif;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,e5e5e5+100&1+0,0+100 */
+        background: -moz-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(229, 229, 229, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(229, 229, 229, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(30, 87, 153, 1) 0%, rgba(229, 229, 229, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#00e5e5e5', GradientType=0);
+        /* IE6-9 */
+    }
+
+    .header li a {
+        display: block;
+        padding: 20px 20px;
+        background-color: #367dc1;
+        text-align: center;
+        text-decoration: none;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,e5e5e5+100&1+0,0+100 */
+        background: -moz-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(229, 229, 229, 0) 100%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(top, rgba(30, 87, 153, 1) 0%, rgba(229, 229, 229, 0) 100%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom, rgba(30, 87, 153, 1) 0%, rgba(229, 229, 229, 0) 100%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#00e5e5e5', GradientType=0);
+        /* IE6-9 */
     }
 }
 
@@ -70,6 +144,7 @@ a {
 
 .header .menu-icon .navicon {
     background: #333;
+    background: white;
     display: block;
     height: 2px;
     position: relative;
@@ -80,6 +155,7 @@ a {
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
     background: #333;
+    background: white;
     content: '';
     display: block;
     height: 100%;
@@ -257,9 +333,10 @@ a:hover {
 #menu {
     list-style-type: none;
     transition: transform .3s;
-    transform-origin: top left;
-*/
+transform-origin: top left;
 }
+*/
+
 
 /* visited link */
 /* #side_menu header nav a:visited {
@@ -322,28 +399,6 @@ a:hover {
 /*FORSIDE */
 
 
-#home_video {
-    height: 750px;
-    width: 100%;
-    overflow: hidden;
-}
-
-#videobcg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 00%;
-    height: auto;
-    width: auto;
-    z-index: -100;
-}
-
-.tekst_boks_forside {
-    background-color: rgba(0, 0, 0, 0.68);
-    padding: 30px;
-    z-index: 3;
-}
 
 @media screen and (min-width: 780px) {
     .tekst_boks_forside {
@@ -377,10 +432,12 @@ a:hover {
 }
 
 /* pil på forside der indikerer scroll */
+
 #animation2 {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 12;
 }
 
 #animation2 img {
@@ -411,6 +468,7 @@ a:hover {
 @media only screen and (max-width: 600px) {
     #home_video h1 {
         padding-top: 0;
+        margin-top: 10px;
     }
 
     #home_video p {
@@ -418,16 +476,16 @@ a:hover {
     }
 
     #animation2 {
-        padding-left: 35rem;
-        padding-right: 35rem;
+
         padding-top: 55rem;
     }
 
     .tekst_boks_forside {
         padding: 45px;
+        z-index: 10;
     }
-
 }
+
 
 /* scroll slut */
 
@@ -531,6 +589,8 @@ a:hover {
 
 .button_forside a {
     color: black;
+    text-decoration: none;
+
 }
 
 .button_forside:hover {
@@ -543,6 +603,13 @@ a:hover {
         margin: 0px 0px 25px 570px
     }
 }
+
+@media only screen and (max-width: 600px) {
+    #info .col {
+        padding: 0;
+    }
+}
+
 
 #info .col {
     flex-basis: 250px;
@@ -643,8 +710,20 @@ a:hover {
     cursor: pointer;
 }
 
+.las_mere a {
+    text-decoration: none;
+
+}
+
 .las_mere:hover {
     background-color: #034a69;
+}
+
+@media only screen and (min-width: 600px) {
+    .las_mere {
+        margin-left: 10em;
+
+    }
 }
 
 /* Blog start */
@@ -783,12 +862,19 @@ a:hover {
     .blog_txt {
         margin-left: 3rem;
         margin-right: 3rem;
-        padding-right: 14rem;
+        padding-right: 12.2rem;
     }
 
     .button {
-        margin-top: 2rem;
+        margin-top: 2.2rem;
         margin-bottom: 0;
+    }
+
+    #blog p {
+        color: #363538;
+        font-family: 'Lato', sans-serif;
+        line-height: 1.3rem;
+        padding-right: 3rem;
     }
 }
 
@@ -1255,7 +1341,22 @@ input[type=placeholder] {
 
 .tekst_boks_om {
     background-color: rgba(255, 255, 255, 0.68);
-    padding: 30px;
+    height: 23rem;
+}
+
+@media screen and (max-width: 600px) {
+    .om_jonas p {
+        line-height: 1.3;
+        color: #363538;
+        padding: 2rem;
+        padding-top: 0;
+    }
+
+    .tekst_boks_om {
+        background-color: rgba(255, 255, 255, 0.68);
+        height: 31rem;
+
+    }
 }
 
 .om_jonas h1 {
@@ -1263,6 +1364,7 @@ input[type=placeholder] {
     color: black;
     text-align: center;
     margin-bottom: 0;
+    padding-top: 2.2rem;
 }
 
 .om_jonas h2 {
@@ -1277,6 +1379,16 @@ input[type=placeholder] {
     font-size: 1rem;
     line-height: 1.3;
     color: #363538;
+}
+
+@media screen and (min-width: 600px) {
+    .om_jonas p {
+        font-size: 1rem;
+        line-height: 1.3;
+        color: #363538;
+        padding-left: 8rem;
+        padding-right: 8rem;
+    }
 }
 
 .om_jonas img {
@@ -1524,6 +1636,15 @@ input[type=placeholder] {
     transition: 0.5s;
     color: white;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #filternavbar button {
+        text-align: center;
+        padding-left: 35px;
+    }
+
 }
 
 /* Singlesite */
