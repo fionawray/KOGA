@@ -12,7 +12,28 @@ a {
     height: 750px;
     min-width: 100%;
     overflow: hidden;
+    background-color: black;
 }
+
+#videobcg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 0%;
+    height: 750px;
+    width: auto;
+    z-index: 2;
+    filter: opacity(0.6);
+}
+
+.tekst_boks_forside {
+    padding: 20px;
+    z-index: 10;
+    position: absolute;
+    top: 58px;
+}
+
 
 .header {
     background-color: #367dc1;
@@ -312,9 +333,10 @@ a:hover {
 #menu {
     list-style-type: none;
     transition: transform .3s;
-    transform-origin: top left;
-*/
+transform-origin: top left;
 }
+*/
+
 
 /* visited link */
 /* #side_menu header nav a:visited {
@@ -377,29 +399,6 @@ a:hover {
 /*FORSIDE */
 
 
-#videobcg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 0%;
-    height: 750px;
-    width: auto;
-    z-index: -10;
-}
-
-video {}
-
-
-
-.tekst_boks_forside {
-    /* background-color: rgba(0, 0, 0, 0.68);
-*/
-    padding: 20px;
-    z-index: 10;
-    position: absolute;
-    top: 58px;
-}
 
 @media screen and (min-width: 780px) {
     .tekst_boks_forside {
@@ -438,6 +437,7 @@ video {}
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 12;
 }
 
 #animation2 img {
