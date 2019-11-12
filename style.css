@@ -1526,6 +1526,14 @@ input[type=placeholder] {
     cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+
+    #filternavbar button {
+        text-align: center;
+        padding-left: 35px;
+    }
+}
+
 /* Singlesite */
 
 .singlesite h2 {
