@@ -26,10 +26,18 @@ a {
 }
 
 .header li a {
+<<<<<<< HEAD
 	display: block;
 	padding: 20px 20px;
 	background-color: #367dc1;
 	text-decoration: none;
+=======
+    display: block;
+    padding: 20px 20px;
+    background-color: #367dc1;
+    text-align: center;
+    text-decoration: none;
+>>>>>>> origin/master
 }
 
 .header li a:hover,
