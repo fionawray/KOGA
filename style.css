@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+.hide {
+    display: none;
+}
+
 /* header */
 
 a {
