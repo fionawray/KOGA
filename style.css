@@ -595,6 +595,7 @@ transform-origin: top left;
     background-color: #034a69;
 }
 
+
 @media only screen and (min-width: 600px) {
     .button_forside {
         justify-content: center;
@@ -602,21 +603,28 @@ transform-origin: top left;
     }
 }
 
-@media only screen and (max-width: 600px) {
-    #info .col {
-        padding: 0;
-    }
-}
-
-
 #info .col {
     flex-basis: 250px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     margin: 1em;
-    margin: 1em;
     padding: 2em;
+}
+
+@media only screen and (max-width: 600px) {
+    #info .col {
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+
+    .button_forside {
+        margin-top: 12px;
+    }
 }
 
 #info .top {
