@@ -38,8 +38,8 @@
             </ul>
         </nav>
     </header>
+    -->
 </head>
--->
 
 <body>
 
@@ -47,6 +47,11 @@
     <main>
         <section class="data">
         </section>
+
+        <section class="specList">
+            <dl class="spec"></dl>
+        </section>
+
     </main>
 
     <template id="temp" class="singlesite">
@@ -60,48 +65,54 @@
                 <p class="afbetaling_12"></p>
                 <p class="afbetaling_24"></p>
             </div>
-            <div class="cykel_details">
-                <p class="vaegt"></p>
-                <p class="stel"></p>
-                <p class="farve"></p>
-                <p class="gear"></p>
-                <p class="frontgaffel"></p>
-                <p class="bagbremse"></p>
-                <p class="bagbremse_sort"></p>
-                <p class="bagbremse_make"></p>
-                <p class="bagbremse_type"></p>
-                <p class="forbremse"></p>
-                <p class="forbremse_sort"></p>
-                <p class="forbremse_make"></p>
-                <p class="forbremse_type"></p>
-                <p class="hjul"></p>
-                <p class="hjul_make"></p>
-                <p class="hjul_type"></p>
-                <p class="navhjul"></p>
-                <p class="daek"></p>
-                <p class="daek_sort"></p>
-                <p class="daek_make"></p>
-                <p class="daek_type"></p>
-                <p class="forlygte"></p>
-                <p class="motor"></p>
-                <p class="motor_maerke"></p>
-                <p class="batteri"></p>
-                <p class="skaerm"></p>
-            </div>
+
         </article>
     </template>
-
+    <template id="tempSpec">
+        <div class="cykel_details">
+            <p class="vaegt">Vægt:</p>
+            <p class="stel"></p>
+            <p class="farve"></p>
+            <p class="gear"></p>
+            <p class="frontgaffel"></p>
+            <p class="bagbremse"></p>
+            <p class="bagbremse_sort"></p>
+            <p class="bagbremse_make"></p>
+            <p class="bagbremse_type"></p>
+            <p class="forbremse"></p>
+            <p class="forbremse_sort"></p>
+            <p class="forbremse_make"></p>
+            <p class="forbremse_type"></p>
+            <p class="hjul"></p>
+            <p class="hjul_make"></p>
+            <p class="hjul_type"></p>
+            <p class="navhjul"></p>
+            <p class="daek"></p>
+            <p class="daek_sort"></p>
+            <p class="daek_make"></p>
+            <p class="daek_type"></p>
+            <p class="forlygte"></p>
+            <p class="motor"></p>
+            <p class="motor_maerke"></p>
+            <p class="batteri"></p>
+            <p class="skaerm"></p>
+        </div>
+    </template>
 
     <template id="b">
         <img src="" alt="">
     </template>
 
+    <template id="s">
+        <dt></dt>
+        <dd></dd>
+        <dt></dt>
+        <dd></dd>
+    </template>
+
     <div>
         <button class="luk">Tilbage</button>
     </div>
-
-
-
 
 
     <script>
@@ -115,6 +126,10 @@
         document.addEventListener("DOMContentLoaded", start);
 
         function start() {
+            document.querySelector(".luk").addEventListener("click", () => {
+                history.back();
+            })
+
             hentJson();
         }
 
@@ -124,10 +139,9 @@
             cykler = await response.json();
             console.log(cykler);
             vis();
+            visSpec();
 
-            document.querySelector(".luk").addEventListener("click", () => {
-                history.back();
-            })
+
         }
 
         function vis() {
@@ -140,33 +154,6 @@
             klon.querySelector(".lang").innerHTML = cykler.beskrivelse;
             klon.querySelector(".afbetaling_12").textContent = cykler.afbetaling_12_mdr;
             klon.querySelector(".afbetaling_24").textContent = cykler.afbetaling_24_mdr;
-            klon.querySelector(".vaegt").textContent = cykler.vaegt;
-            klon.querySelector(".stel").textContent = cykler.stel_storrelser;
-            klon.querySelector(".farve").textContent = cykler.farve;
-            klon.querySelector(".gear").textContent = cykler.gear;
-            klon.querySelector(".frontgaffel").textContent = cykler.front_gaffel;
-            klon.querySelector(".bagbremse").textContent = cykler.bagbremse;
-            klon.querySelector(".bagbremse_sort").textContent = cykler.bagbremse_sort;
-            klon.querySelector(".bagbremse_make").textContent = cykler.bagbremse_make;
-            klon.querySelector(".bagbremse_type").textContent = cykler.bagbremse_make;
-            klon.querySelector(".forbremse").textContent = cykler.forbremse;
-            klon.querySelector(".forbremse_sort").textContent = cykler.forbremse_sort;
-            klon.querySelector(".forbremse_make").textContent = cykler.bagbremse_make;
-            klon.querySelector(".forbremse_type").textContent = cykler.bagbremse_make;
-            klon.querySelector(".hjul").textContent = cykler.hjul;
-            klon.querySelector(".hjul_make").textContent = cykler.hjul_make;
-            klon.querySelector(".hjul_type").textContent = cykler.hjulst_type;
-            klon.querySelector(".navhjul").textContent = cykler.navhjul;
-            klon.querySelector(".daek").textContent = cykler.daek;
-            klon.querySelector(".daek_sort").textContent = cykler.daek_sort;
-            klon.querySelector(".daek_make").textContent = cykler.daek_make;
-            klon.querySelector(".daek_type").textContent = cykler.dk_type;
-            klon.querySelector(".forlygte").textContent = cykler.forlygte;
-            klon.querySelector(".motor").textContent = cykler.motor;
-            klon.querySelector(".batteri").textContent = cykler.batterikapacitet;
-            klon.querySelector(".motor_maerke").textContent = cykler.motormrke;
-            klon.querySelector(".skaerm").textContent = cykler.skrm;
-
 
             cykler.billeder.forEach(b => {
                 const bklon = document.querySelector("#b").cloneNode(true).content;
@@ -176,6 +163,154 @@
 
             data.appendChild(klon);
         }
+
+        function visSpec() {
+
+
+            const skabelon = document.querySelector("#s");
+
+            const klon = skabelon.cloneNode(true).content;
+
+            if (cykler.vaegt != "") {
+                klon.querySelector("dt").addClass = "vaegt";
+                klon.querySelector("dt").textContent = "Vægt"
+                klon.querySelector("dd").textContent = cykler.vaegt;
+            }
+            if (cykler.stel_storrelser != "") {
+                klon.querySelector("dt").addClass = "stel_storrelser";
+                klon.querySelector("dt").textContent = "Stel størrelser:"
+                klon.querySelector("dd").textContent = cykler.stel_storrelser;
+            }
+            if (cykler.farve != "") {
+                klon.querySelector("dt").addClass = "farve";
+                klon.querySelector("dt").textContent = "Farver:"
+                klon.querySelector("dd").textContent = cykler.farve;
+            }
+            if (cykler.gear != "") {
+                klon.querySelector("dt").addClass = "gear";
+                klon.querySelector("dt").textContent = "Antal gear:"
+                klon.querySelector("dd").textContent = cykler.gear;
+            }
+            if (cykler.front_gaffel != "") {
+                klon.querySelector("dt").addClass = "front_gaffel";
+                klon.querySelector("dt").textContent = "Front gaffel:"
+                klon.querySelector("dd").textContent = cykler.front_gaffel;
+            }
+            if (cykler.bagbremse != "") {
+                klon.querySelector("dt").addClass = "bagbremse";
+                klon.querySelector("dt").textContent = "Bagbremse:"
+                klon.querySelector("dd").textContent = cykler.bagbremse;
+            }
+            if (cykler.bagbremse_sort != "") {
+                klon.querySelector("dt").addClass = "bagbremse_sort";
+                klon.querySelector("dt").textContent = "Bagbremse sortering:"
+                klon.querySelector("dd").textContent = cykler.bagbremse_sort;
+            }
+            if (cykler.bagbremse_make != "") {
+                klon.querySelector("dt").addClass = "bagbremse_make";
+                klon.querySelector("dt").textContent = "Bagbremse mærke:"
+                klon.querySelector("dd").textContent = cykler.bagbremse_make;
+            }
+            if (cykler.bagbremse_type != "") {
+                klon.querySelector("dt").addClass = "bagbremse_type";
+                klon.querySelector("dt").textContent = "Bagbremse type:"
+                klon.querySelector("dd").textContent = cykler.bagbremse_type;
+            }
+            if (cykler.forbremse != "") {
+                klon.querySelector("dt").addClass = "forbremse";
+                klon.querySelector("dt").textContent = "forbremse:"
+                klon.querySelector("dd").textContent = cykler.forbremse;
+            }
+            if (cykler.forbremse_sort != "") {
+                klon.querySelector("dt").addClass = "forbremse_sort";
+                klon.querySelector("dt").textContent = "Forbremse sortering:"
+                klon.querySelector("dd").textContent = cykler.forbremse_sort;
+            }
+            if (cykler.forbremse_make != "") {
+                klon.querySelector("dt").addClass = "forbremse_make";
+                klon.querySelector("dt").textContent = "Forbremse mærke:"
+                klon.querySelector("dd").textContent = cykler.forbremse_make;
+            }
+            if (cykler.forbremse_type != "") {
+                klon.querySelector("dt").addClass = "forbremse_type";
+                klon.querySelector("dt").textContent = "Forbremse type:"
+                klon.querySelector("dd").textContent = cykler.forbremse_type;
+            }
+            if (cykler.hjul != "") {
+                klon.querySelector("dt").addClass = "hjul";
+                klon.querySelector("dt").textContent = "Hjulsæt:"
+                klon.querySelector("dd").textContent = cykler.hjul;
+            }
+            if (cykler.hjul_make != "") {
+                klon.querySelector("dt").addClass = "hjul_make";
+                klon.querySelector("dt").textContent = "Hjulsæt mærke:"
+                klon.querySelector("dd").textContent = cykler.hjul_make;
+            }
+            if (cykler.hjulst_type != "") {
+                klon.querySelector("dt").addClass = "hjulst_type";
+                klon.querySelector("dt").textContent = "Hjulsæt type:"
+                klon.querySelector("dd").textContent = cykler.hjulst_type;
+            }
+            if (cykler.hjulst_type != "") {
+                klon.querySelector("dt").addClass = "hjulst_type";
+                klon.querySelector("dt").textContent = "Hjulsæt type:"
+                klon.querySelector("dd").textContent = cykler.hjulst_type;
+            }
+            if (cykler.navhjul != "") {
+                klon.querySelector("dt").addClass = "navhjul";
+                klon.querySelector("dt").textContent = "Navhjul:"
+                klon.querySelector("dd").textContent = cykler.navhjul;
+            }
+            if (cykler.daek != "") {
+                klon.querySelector("dt").addClass = "daek";
+                klon.querySelector("dt").textContent = "Dæk:"
+                klon.querySelector("dd").textContent = cykler.daek;
+            }
+            if (cykler.daek_sort != "") {
+                klon.querySelector("dt").addClass = "daek_sort";
+                klon.querySelector("dt").textContent = "Dæk sortering:"
+                klon.querySelector("dd").textContent = cykler.daek_sort;
+            }
+            if (cykler.daek_make != "") {
+                klon.querySelector("dt").addClass = "daek_make";
+                klon.querySelector("dt").textContent = "Dæk mærke:"
+                klon.querySelector("dd").textContent = cykler.daek_make;
+            }
+            if (cykler.dk_type != "") {
+                klon.querySelector("dt").addClass = "dk_type";
+                klon.querySelector("dt").textContent = "Dæk type:"
+                klon.querySelector("dd").textContent = cykler.dk_type;
+            }
+            if (cykler.forlygte != "") {
+                klon.querySelector("dt").addClass = "forlygte";
+                klon.querySelector("dt").textContent = "Forlygte:"
+                klon.querySelector("dd").textContent = cykler.forlygte;
+            }
+            if (cykler.motor != "") {
+                klon.querySelector("dt").addClass = "motor";
+                klon.querySelector("dt").textContent = "Cykelmotor:"
+                klon.querySelector("dd").textContent = cykler.motor;
+            }
+            if (cykler.batterikapacitet != "") {
+                klon.querySelector("dt").addClass = "batterikapacitet";
+                klon.querySelector("dt").textContent = "Batterikapacitet:"
+                klon.querySelector("dd").textContent = cykler.batterikapacitet;
+            }
+            if (cykler.motormrke != "") {
+                klon.querySelector("dt").addClass = "motormrke";
+                klon.querySelector("dt").textContent = "Motor mærke:"
+                klon.querySelector("dd").textContent = cykler.motormrke;
+            }
+            if (cykler.skrm != "") {
+                klon.querySelector("dt").addClass = "skrm";
+                klon.querySelector("dt").textContent = "Skærm:"
+                klon.querySelector("dd").textContent = cykler.skrm;
+            }
+
+            document.querySelector(".spec").appendChild(klon);
+
+        }
+
     </script>
 
 </body>
