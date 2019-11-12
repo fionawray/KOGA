@@ -10,14 +10,10 @@ a {
 
 .header {
     background-color: #367dc1;
-    box-shadow: 1px 1px 4px 0 rgb(72, 119, 160);
-    background-color: #367dc1;
     position: fixed;
     width: 100%;
     z-index: 3;
     font-family: 'Lato', sans-serif;
-    background-color: #367dc1;
-    box-shadow: 1px 1px 4px 0 rgb(72, 119, 160);
 }
 
 .header ul {
@@ -33,10 +29,6 @@ a {
     background-color: #367dc1;
     text-decoration: none;
     display: block;
-    padding: 20px 20px;
-    background-color: #367dc1;
-    text-align: center;
-    text-decoration: none;
 }
 
 
@@ -121,7 +113,7 @@ a {
 }
 
 .header .menu-icon .navicon {
-    background: #333;
+    background: white;
     display: block;
     height: 2px;
     position: relative;
@@ -131,7 +123,7 @@ a {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-    background: #333;
+    background: white;
     content: '';
     display: block;
     height: 100%;
