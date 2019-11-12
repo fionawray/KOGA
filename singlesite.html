@@ -7,6 +7,22 @@
     <title></title>
     <link rel="stylesheet" href="style.css">
 
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/KOGA_LYB_WHITE.svg" alt="KOGA Logo"></a>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="menu">
+            <li><a href="cykler.html">CYKLER</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="om_os.html">OM OS</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+        </ul>
+    </header>
+
+
+
+    <!--
     <header id="side_menu">
         <nav>
             <div id="menu_billede">
@@ -23,12 +39,12 @@
         </nav>
     </header>
 </head>
+-->
 
 <body>
 
 
     <main>
-        <button class="luk">Tilbage</button>
         <section class="data">
         </section>
     </main>
@@ -67,7 +83,8 @@
                 <p class="daek_make"></p>
                 <p class="daek_type"></p>
                 <p class="forlygte"></p>
-                <p class="moter"></p>
+                <p class="motor"></p>
+                <p class="motor_maerke"></p>
                 <p class="batteri"></p>
                 <p class="skaerm"></p>
             </div>
@@ -78,6 +95,10 @@
     <template id="b">
         <img src="" alt="">
     </template>
+
+    <div>
+        <button class="luk">Tilbage</button>
+    </div>
 
 
 
@@ -115,8 +136,37 @@
             const klon = skabelon.cloneNode(true).content;
 
             klon.querySelector(".navn").textContent = cykler.title.rendered;
-            klon.querySelector(".lang").innerHTML = cykler.beskrivelse;
             klon.querySelector(".pris").textContent = cykler.pris;
+            klon.querySelector(".lang").innerHTML = cykler.beskrivelse;
+            klon.querySelector(".afbetaling_12").textContent = cykler.afbetaling_12_mdr;
+            klon.querySelector(".afbetaling_24").textContent = cykler.afbetaling_24_mdr;
+            klon.querySelector(".vaegt").textContent = cykler.vaegt;
+            klon.querySelector(".stel").textContent = cykler.stel_storrelser;
+            klon.querySelector(".farve").textContent = cykler.farve;
+            klon.querySelector(".gear").textContent = cykler.gear;
+            klon.querySelector(".frontgaffel").textContent = cykler.front_gaffel;
+            klon.querySelector(".bagbremse").textContent = cykler.bagbremse;
+            klon.querySelector(".bagbremse_sort").textContent = cykler.bagbremse_sort;
+            klon.querySelector(".bagbremse_make").textContent = cykler.bagbremse_make;
+            klon.querySelector(".bagbremse_type").textContent = cykler.bagbremse_make;
+            klon.querySelector(".forbremse").textContent = cykler.forbremse;
+            klon.querySelector(".forbremse_sort").textContent = cykler.forbremse_sort;
+            klon.querySelector(".forbremse_make").textContent = cykler.bagbremse_make;
+            klon.querySelector(".forbremse_type").textContent = cykler.bagbremse_make;
+            klon.querySelector(".hjul").textContent = cykler.hjul;
+            klon.querySelector(".hjul_make").textContent = cykler.hjul_make;
+            klon.querySelector(".hjul_type").textContent = cykler.hjulst_type;
+            klon.querySelector(".navhjul").textContent = cykler.navhjul;
+            klon.querySelector(".daek").textContent = cykler.daek;
+            klon.querySelector(".daek_sort").textContent = cykler.daek_sort;
+            klon.querySelector(".daek_make").textContent = cykler.daek_make;
+            klon.querySelector(".daek_type").textContent = cykler.dk_type;
+            klon.querySelector(".forlygte").textContent = cykler.forlygte;
+            klon.querySelector(".motor").textContent = cykler.motor;
+            klon.querySelector(".batteri").textContent = cykler.batterikapacitet;
+            klon.querySelector(".motor_maerke").textContent = cykler.motormrke;
+            klon.querySelector(".skaerm").textContent = cykler.skrm;
+
 
             cykler.billeder.forEach(b => {
                 const bklon = document.querySelector("#b").cloneNode(true).content;
