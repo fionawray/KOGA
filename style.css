@@ -10,18 +10,11 @@ a {
 
 .header {
     background-color: #367dc1;
-<<<<<<< HEAD
     box-shadow: 1px 1px 4px 0 rgb(72, 119, 160);
-=======
->>>>>>> origin/master
     position: fixed;
     width: 100%;
     z-index: 3;
     font-family: 'Lato', sans-serif;
-<<<<<<< HEAD
-
-=======
->>>>>>> origin/master
 }
 
 .header ul {
@@ -36,10 +29,8 @@ a {
     padding: 20px 20px;
     background-color: #367dc1;
     text-decoration: none;
-<<<<<<< HEAD
-=======
     display: block;
->>>>>>> origin/master
+
 }
 
 
@@ -53,23 +44,19 @@ a {
     float: left;
     width: 30%;
     padding: 10px 20px;
-<<<<<<< HEAD
-=======
+
 }
 
 @media only screen and (max-width: 600px) {
     .header .logo {
         width: 10rem;
     }
->>>>>>> origin/master
 }
 
 @media only screen and (min-width: 600px) {
     .header .logo {
         width: 10rem;
     }
-<<<<<<< HEAD
-=======
 }
 
 
@@ -107,7 +94,6 @@ a {
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e5799', endColorstr='#00e5e5e5', GradientType=0);
         /* IE6-9 */
     }
->>>>>>> origin/master
 }
 
 /* menu */
@@ -130,11 +116,8 @@ a {
 }
 
 .header .menu-icon .navicon {
-<<<<<<< HEAD
     background: #333;
-=======
     background: white;
->>>>>>> origin/master
     display: block;
     height: 2px;
     position: relative;
@@ -144,11 +127,8 @@ a {
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-<<<<<<< HEAD
     background: #333;
-=======
     background: white;
->>>>>>> origin/master
     content: '';
     display: block;
     height: 100%;
@@ -600,10 +580,8 @@ a:hover {
 
 .button_forside a {
     color: black;
-<<<<<<< HEAD
-=======
     text-decoration: none;
->>>>>>> origin/master
+
 }
 
 .button_forside:hover {
@@ -630,10 +608,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     margin: 1em;
-<<<<<<< HEAD
     margin: 1em;
-=======
->>>>>>> origin/master
     padding: 2em;
 }
 
@@ -724,19 +699,15 @@ a:hover {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-<<<<<<< HEAD
-=======
 }
 
 .las_mere a {
     text-decoration: none;
->>>>>>> origin/master
+
 }
 
 .las_mere:hover {
     background-color: #034a69;
-<<<<<<< HEAD
-=======
 }
 
 @media only screen and (min-width: 600px) {
@@ -744,7 +715,6 @@ a:hover {
         margin-left: 10em;
 
     }
->>>>>>> origin/master
 }
 
 /* Blog start */
@@ -1369,7 +1339,7 @@ input[type=placeholder] {
     .tekst_boks_om {
         background-color: rgba(255, 255, 255, 0.68);
         height: 31rem;
-        padding-bottom: 3rem;
+
     }
 }
 
@@ -1650,8 +1620,6 @@ input[type=placeholder] {
     transition: 0.5s;
     color: white;
     cursor: pointer;
-<<<<<<< HEAD
-=======
 }
 
 @media only screen and (max-width: 600px) {
@@ -1660,7 +1628,7 @@ input[type=placeholder] {
         text-align: center;
         padding-left: 35px;
     }
->>>>>>> origin/master
+
 }
 
 /* Singlesite */
