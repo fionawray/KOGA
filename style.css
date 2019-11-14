@@ -12,6 +12,10 @@ a {
     color: white;
 }
 
+h4 {
+    font-family: 'Lato', sans-serif;
+}
+
 #home_video {
     height: 750px;
     min-width: 100%;
@@ -1668,15 +1672,25 @@ p.reviewer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 320px;
 }
 
 .billede_single {
     flex-grow: 0.5;
     flex-basis: 300px;
     padding: 2vw;
-    margin-left: 12vw;
+    /*margin-left: 12vw;*/
     padding-right: 0;
+}
+
+.bb {
+    display: flex;
+    cursor: pointer;
+}
+
+.bb img {
+    width: 12vw;
+    height: 15vh;
 }
 
 .single_tekst {
@@ -1699,11 +1713,6 @@ p.reviewer {
     padding-right: 7rem;
     font-size: 1.2rem;
     font-family: 'lato', sans-serif;
-}
-
-.specList {
-    background-color: #ededed;
-    color: grey;
 }
 
 .cykel_info .navn {
@@ -1744,6 +1753,7 @@ p.reviewer {
     background-color: rgba(241, 241, 241, 0.37);
     padding-left: 7rem;
     padding-right: 7rem;
+    padding-top: 1rem;
 }
 
 .liste h2 {
@@ -1770,14 +1780,39 @@ p.reviewer {
     cursor: pointer;
 }
 
-.specList {
-    border: dotted 1px red;
-    margin: 1rem;
-    font-family: 'Lato', sans-serif;
+#splash_singlesite {
+    background-image: url(images/f.jpg);
+    background-size: cover;
+    background-position: 100% 50%;
+    height: 45vh;
+    width: 100%;
 }
 
+.spec_top {
+    padding: 1rem;
+    margin: 0 0 0 1rem;
+    background-color: rgba(241, 241, 241, 0.37);
+    height: 2rem;
+    width: 10rem;
+}
+
+.spec_top h4 {
+    margin: 0;
+}
+
+.specList {
+    margin: 1rem;
+    padding: 0.2rem;
+    margin-top: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: rgba(241, 241, 241, 0.37);
+}
+
+
 .specList dt {
-    border: dotted 1px red;
+    margin: 1rem;
+    border-bottom: solid 1px;
+    border-bottom-color: lightgray;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1802,7 +1837,7 @@ p.reviewer {
 .luk {
     position: absolute;
     left: 39px;
-    top: 90px;
+    top: 360px;
 }
 
 .data {
@@ -1813,8 +1848,11 @@ p.reviewer {
     padding: 0;
     column-gap: 1.5em;
     font-size: .85em;
-    /* background-color: #f1f1f1;*/
     padding: 1rem;
+}
+
+.pris_wrapper {
+    display: flex;
 }
 
 

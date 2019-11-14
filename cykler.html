@@ -58,29 +58,42 @@
                 </p>
             </div>
 
-
         </section>
     </section>
 
-    <!--Filterknapperne der inddeler de forskellige møbler-->
-    <div id="filternavbar">
-        <nav class="filter_alle">
-            <button class="filter valgt" data-kategori="alle">Alle</button>
-        </nav>
-        <nav>
-            <div class="filter_cykler">
-                <button class="filter" data-kategori="E-Bike">E-Bike</button>
-                <button class="filter" data-kategori="Race">Race</button>
-                <button class="filter" data-kategori="City Tour">City Tour</button>
-                <button class="filter" data-kategori="Trekking">Trekking</button>
-                <button class="filter" data-kategori="Mountain bike">Mountain bike</button>
-            </div>
-        </nav>
+    <div class="hr_flex_contact">
+        <div class="hr_col_contact">
+            <hr>
+        </div>
+        <div class="hr_txt_contact">
+            <h2>CYKLER</h2>
+        </div>
+        <div class="hr_col_contact">
+            <hr>
+        </div>
     </div>
 
-    <main>
+
+
+    <main class="cykler_wrapper">
+        <div id="filternavbar">
+            <nav class="filter_alle">
+                <button class="filter valgt" data-kategori="alle">Alle</button>
+            </nav>
+            <nav>
+                <div class="filter_cykler">
+                    <button class="filter" data-kategori="E-Bike">E-Bike</button>
+                    <button class="filter" data-kategori="Race">Race</button>
+                    <button class="filter" data-kategori="City Tour">City Tour</button>
+                    <button class="filter" data-kategori="Trekking">Trekking</button>
+                    <button class="filter" data-kategori="Mountain bike">Mountain bike</button>
+                </div>
+            </nav>
+        </div>
+
         <section class="liste">
         </section>
+
     </main>
 
     <template id="temp">
@@ -261,6 +274,9 @@
             this.style.backgroundColor = "#f1f1f1";
             this.style.color = "black";
         }
+
     </script>
 
-</body></html>
+</body>
+
+</html>
