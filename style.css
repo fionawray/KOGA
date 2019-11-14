@@ -1664,6 +1664,10 @@ p.reviewer {
     padding-right: 7rem;
 }
 
+.liste h2 {
+    color: black;
+}
+
 #filternavbar {
     display: flex;
     justify-content: center;
@@ -1682,6 +1686,16 @@ p.reviewer {
     transition: 0.5s;
     color: white;
     cursor: pointer;
+}
+
+.specList {
+    border: dotted 1px red;
+    margin: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.specList dt {
+    border: dotted 1px red;
 }
 
 @media only screen and (max-width: 600px) {
