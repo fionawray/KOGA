@@ -125,6 +125,328 @@
                         <i class="fab fa-youtube"></i>
                     </div>
                 </div>
+<<<<<<< HEAD
+            </section>
+        </article>
+
+    </template>
+
+
+    <!--<template id="tempSpec">
+        <div class="cykel_details">
+            <p class="vaegt">Vægt:</p>
+            <p class="stel"></p>
+            <p class="farve"></p>
+            <p class="gear"></p>
+            <p class="frontgaffel"></p>
+            <p class="bagbremse"></p>
+            <p class="bagbremse_sort"></p>
+            <p class="bagbremse_make"></p>
+            <p class="bagbremse_type"></p>
+            <p class="forbremse"></p>
+            <p class="forbremse_sort"></p>
+            <p class="forbremse_make"></p>
+            <p class="forbremse_type"></p>
+            <p class="hjul"></p>
+            <p class="hjul_make"></p>
+            <p class="hjul_type"></p>
+            <p class="navhjul"></p>
+            <p class="daek"></p>
+            <p class="daek_sort"></p>
+            <p class="daek_make"></p>
+            <p class="daek_type"></p>
+            <p class="forlygte"></p>
+            <p class="motor"></p>
+            <p class="motor_maerke"></p>
+            <p class="batteri"></p>
+            <p class="skaerm"></p>
+        </div>
+    </template>-->
+
+    <template id="b">
+        <img src="" alt="">
+    </template>
+
+    <div>
+        <button class="luk">Tilbage</button>
+    </div>
+
+
+    <script>
+        let urlParams = new URLSearchParams(window.location.search);
+        let myID = urlParams.get("id");
+        console.log("myID", myID);
+        let cykler;
+        const data = document.querySelector(".data");
+        const specList = document.querySelector(".specList");
+        const url = "https://uwei.eu/kea/2_semester/tema9/koga/wordpress/wp-json/wp/v2/cykler/" + myID;
+
+        document.addEventListener("DOMContentLoaded", start);
+
+        function start() {
+            document.querySelector(".luk").addEventListener("click", () => {
+                history.back();
+            })
+
+            hentJson();
+        }
+
+        async function hentJson() {
+            const response = await fetch(url);
+            cykler = await response.json();
+            //console.log(cykler);
+            vis();
+            visSpec();
+
+
+        }
+
+        function vis() {
+            const skabelon = document.querySelector("#temp");
+
+            const klon = skabelon.cloneNode(true).content;
+
+            klon.querySelector(".navn").textContent = cykler.title.rendered;
+            klon.querySelector(".pris").textContent = cykler.pris;
+            klon.querySelector(".lang").innerHTML = cykler.beskrivelse;
+            klon.querySelector(".afbetaling_12").textContent = cykler.afbetaling_12_mdr;
+            klon.querySelector(".afbetaling_24").textContent = cykler.afbetaling_24_mdr;
+
+            cykler.billeder.forEach(b => {
+                const bklon = document.querySelector("#b").cloneNode(true).content;
+                bklon.querySelector("img").src = b.guid;
+                klon.querySelector(".bb").appendChild(bklon);
+            });
+
+            data.appendChild(klon);
+        }
+
+        /*function visSpecNy() {
+            let i = 0;
+            console.log(cykler);
+            for (let [key, value] of Object.entries(cykler)) {
+                i++;
+                if (i > 26 && value && value != "[object Object]") {
+                    //console.log(key, value);
+                    const p = document.createElement("p");
+                    p.textContent = key + ": " + value;
+                    specList.appendChild(p);
+                }
+            }
+        }*/
+
+        function visSpec() {
+
+            if (cykler.vaegt != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "vaegt";
+                dt.textContent = "Vægt: ";
+                dd.textContent += cykler.vaegt;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.stel_storrelser != "") {
+                //klon.querySelector("dt").addClass = "stel_storrelser";
+                //klon.querySelector("dt").textContent = "Stel størrelser:"
+                //klon.querySelector("dd").textContent = cykler.stel_storrelser;
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "stel_storrelser";
+                dt.textContent = "Stel størrelser: ";
+                dd.textContent += cykler.stel_storrelser;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.farve != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "farve";
+                dt.textContent = "Farver: ";
+                dd.textContent += cykler.farve;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.gear != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "gear";
+                dt.textContent = "Antal gear: ";
+                dd.textContent += cykler.gear;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.front_gaffel != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "front_gaffel";
+                dt.textContent = "Front gaffel: ";
+                dd.textContent += cykler.front_gaffel;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.bagbremse != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "bagbremse";
+                dt.textContent = "Bagbremse: ";
+                dd.textContent += cykler.bagbremse;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.bagbremse_sort != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "bagbremse_sort";
+                dt.textContent = "Bagbremse sortering: ";
+                dd.textContent += cykler.bagbremse_sort;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.bagbremse_make != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "bagbremse_make";
+                dt.textContent = "Bagbremse mærke: ";
+                dd.textContent += cykler.bagbremse_make;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.bagbremse_type != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "bagbremse_type";
+                dt.textContent = "Bagbremse type: ";
+                dd.textContent += cykler.bagbremse_type;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.forbremse != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "forbremse";
+                dt.textContent = "Forbremse: ";
+                dd.textContent += cykler.forbremse;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.forbremse_sort != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "forbremse_sort";
+                dt.textContent = "Forbremse sortering: ";
+                dd.textContent += cykler.forbremse_sort;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.forbremse_make != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "forbremse_make";
+                dt.textContent = "Forbremse mærke: ";
+                dd.textContent += cykler.forbremse_make;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.forbremse_type != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "forbremse_type";
+                dt.textContent = "Forbremse type: ";
+                dd.textContent += cykler.forbremse_type;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.hjul != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "hjul";
+                dt.textContent = "Hjulsæt: ";
+                dd.textContent += cykler.hjul;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.hjul_make != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "hjul_make";
+                dt.textContent = "Hjulsæt mærke: ";
+                dd.textContent += cykler.hjul_make;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.hjulst_type != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "hjulst_type";
+                dt.textContent = "Hjulsæt type: ";
+                dd.textContent += cykler.hjulst_type;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.navhjul != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "navhjul";
+                dt.textContent = "Navhjul: ";
+                dd.textContent += cykler.navhjul;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.daek != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "daek";
+                dt.textContent = "Dæk: ";
+                dd.textContent += cykler.daek;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.daek_sort != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "daek_sort";
+                dt.textContent = "Dæk sortering: ";
+                dd.textContent += cykler.daek_sort;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.daek_make != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "daek_make";
+                dt.textContent = "Dæk mærke: ";
+                dd.textContent += cykler.daek_make;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.dk_type != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "dk_type";
+                dt.textContent = "Dæk type: ";
+                dd.textContent += cykler.dk_type;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.forlygte != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "forlygte";
+                dt.textContent = "Forlygte: ";
+                dd.textContent += cykler.forlygte;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.motor != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "motor";
+                dt.textContent = "Cykelmotor: ";
+                dd.textContent += cykler.motor;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+=======
                 <div class="col col_with_padding">
                     <h2>Cykler</h2>
                     <p>Elcykler</p>
@@ -155,6 +477,7 @@
                 })
 
                 hentJson();
+>>>>>>> origin/master
             }
 
             async function hentJson() {
