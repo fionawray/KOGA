@@ -1661,7 +1661,53 @@ p.reviewer {
 }
 
 .article_cykel img {
-    width: 100%;
+    width: 65%;
+}
+
+.singlewrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.billede_single {
+    flex-grow: 0.5;
+    flex-basis: 300px;
+    padding: 2vw;
+    margin-left: 12vw;
+    padding-right: 0;
+}
+
+.single_tekst {
+    flex-grow: 1;
+    flex-basis: 200px;
+    padding: 2vw 2vw 2vw 0vw;
+    line-height: 26px;
+}
+
+.single_tekst .navn {
+    font-size: 2rem;
+}
+
+.single_tekst .pris {
+    font-size: 1.3rem;
+    color: #a29898;
+}
+
+.lang {
+    padding-right: 7rem;
+    font-size: 1.2rem;
+    font-family: 'lato', sans-serif;
+}
+
+.specList {
+    background-color: #ededed;
+    color: grey;
+}
+
+.cykel_info .navn {
+    top: 0;
 }
 
 .cykelside {
@@ -1753,7 +1799,7 @@ p.reviewer {
     padding: 0;
     column-gap: 1.5em;
     font-size: .85em;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1;*/
     padding: 1rem;
 }
 
