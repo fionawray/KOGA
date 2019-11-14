@@ -92,6 +92,7 @@
             <button class="luk">Tilbage</button>
         </div>
 
+
         <footer id="footer">
             <div class="sectionwrapper">
                 <div class="col col_with_padding">
@@ -163,7 +164,7 @@
                 vis();
                 visSpec();
 
-                document.querySelector(".bb").addEventListener("click", expandImage);
+                //document.querySelector(".bb").addEventListener("click", expandImage);
             }
 
             function vis() {
@@ -171,7 +172,7 @@
 
                 const klon = skabelon.cloneNode(true).content;
 
-                klon.querySelector(".navn").textContent = cykler.title.rendered;
+                klon.querySelector(".navn").textContent = cykler.model;
                 klon.querySelector(".pris").textContent = `Pris på cyklen: ` + cykler.pris;
                 klon.querySelector(".lang").innerHTML = cykler.beskrivelse;
                 klon.querySelector(".afb").textContent = `Afbetaling: ` +
@@ -201,7 +202,7 @@
                 }
             }*/
 
-            function expandImage() {
+            /*function expandImage() {
 
                 const slideshow = document.querySelector("#b_stort");
                 const slideKlon = slideshow.cloneNode(true).content;
@@ -210,7 +211,7 @@
 
                 expandImg.appendChild(slideKlon);
 
-            }
+            }*/
 
 
             function visSpec() {
@@ -379,7 +380,6 @@
                 }
 
             }
-
         </script>
 
 </body>
