@@ -66,7 +66,7 @@
             </section>
         </article>
         <div class="pop_wrapper">
-            <div class="pop_bb hide">
+            <div class="pop_bb skjul">
             </div>
         </div>
         <button class="luk hide">X</button>
@@ -194,7 +194,6 @@
 
             document.querySelector(".bb").addEventListener("click", popUp);
             document.querySelector(".billede_1").addEventListener("click", popUp);
-            console.log(document.querySelector(".luk"), document.querySelector(".luk").classList);
 
         }
 
@@ -203,29 +202,15 @@
             document.querySelector(".overlay_box").classList.remove("hide");
             document.querySelector(".pop_bb").classList.remove("hide");
             document.querySelector(".luk").classList.remove("hide");
-            console.log(document.querySelector(".luk"), document.querySelector(".luk").classList);
+            console.log(document.querySelector(".pop_bb"), document.querySelector(".pop_bb").classList);
 
-            /*menu.classList.toggle("hidden");
-
-            let erSkjult = menu.classList.contains("hidden");
-
-            if (erSkjult == true) {
-                console.log("Bruger icon vises")
-
-                burgerButton.classList.add("menu-toggle");
-                burgerButton.classList.remove("toggle");
-
-            } else {
-                console.log("burger icon gemmes")
-                burgerButton.classList.add("toggle");
-            }*/
 
             document.querySelector(".luk").addEventListener("click", lukPopup);
         }
 
         function lukPopup() {
             document.querySelector(".overlay_box").classList.add("hide");
-            document.querySelector(".pop_bb").classList.add("hide");
+            document.querySelector(".pop_bb").classList.add("skjul");
             document.querySelector(".luk").classList.add("hide");
         }
 
@@ -390,6 +375,7 @@
                 specList.appendChild(dt);
             }
         }
+
     </script>
 
 </body>
