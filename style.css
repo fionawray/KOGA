@@ -1575,11 +1575,6 @@ input[type=placeholder] {
     background-position: 100% 50%;
     height: 45vh;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .forsidecitat {
@@ -1674,6 +1669,10 @@ p.reviewer {
     flex-direction: row;
 }
 
+.billede_1 {
+    cursor: pointer;
+}
+
 .billede_single {
     flex-grow: 0.5;
     flex-basis: 300px;
@@ -1719,7 +1718,6 @@ p.reviewer {
 }
 
 .cykelside {
-    cursor: pointer;
     background-color: white;
     margin-left: 0.2rem;
     margin-bottom: 1.6rem;
@@ -1739,6 +1737,19 @@ p.reviewer {
 
 .cykelside img {
     width: 100%;
+}
+
+.mere_button {
+    margin-left: 2rem;
+    background-color: #367dc1;
+    color: #ffffff;
+    width: 100%;
+    display: inline-block;
+    padding: 12px;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+    bottom: 0;
 }
 
 .liste {
@@ -1825,6 +1836,10 @@ p.reviewer {
 
 /* Singlesite */
 
+.singlesite {
+    margin: 0;
+}
+
 .singlesite h2 {
     margin: 0;
 }
@@ -1833,7 +1848,7 @@ p.reviewer {
     margin: 1rem;
 }
 
-.luk {
+.tilbage {
     position: absolute;
     left: 39px;
     top: 360px;
@@ -1854,6 +1869,36 @@ p.reviewer {
     display: flex;
 }
 
+.pop_wrapper {
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.overlay_box {
+    background-color: black;
+    width: 100vw;
+    height: 1550px;
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    opacity: 0.5;
+}
+
+
+.pop_bb img {
+    width: 100%;
+}
+
+.luk {
+    position: absolute;
+    z-index: 9999;
+}
+
 
 /* Media */
 
@@ -1861,6 +1906,11 @@ p.reviewer {
     .liste {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .pop_bb {
+        max-width: 62%;
+    }
+
 }
 
 
