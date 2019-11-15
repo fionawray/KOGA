@@ -1897,6 +1897,16 @@ p.reviewer {
 .luk {
     position: absolute;
     z-index: 9999;
+    top: 6vh;
+    right: 10vw;
+    background-color: #367dc1;
+    color: #ffffff;
+    padding: 5px 10px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+    margin-top: 0;
 }
 
 
@@ -1909,6 +1919,11 @@ p.reviewer {
 
     .pop_bb {
         max-width: 62%;
+    }
+
+    .luk {
+        top: 5vh;
+        right: 23vw;
     }
 
 }
