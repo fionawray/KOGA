@@ -43,7 +43,7 @@
 
     <section id="splash_singlesite"></section>
 
-    <div class="overlay_box"></div>
+    <div class="overlay_box hide"></div>
 
     <template id="temp" class="singlesite">
         <article class="article_cykel overlay">
@@ -66,10 +66,10 @@
             </section>
         </article>
         <div class="pop_wrapper">
-            <div class="pop_bb">
+            <div class="pop_bb hide">
             </div>
         </div>
-        <button class="luk">X</button>
+        <button class="luk hide">X</button>
     </template>
 
     <template id="b">
@@ -179,20 +179,6 @@
             data.appendChild(klon);
         }
 
-        /*function visSpecNy() {
-            let i = 0;
-            console.log(cykler);
-            for (let [key, value] of Object.entries(cykler)) {
-                i++;
-                if (i > 26 && value && value != "[object Object]") {
-                    //console.log(key, value);
-                    const p = document.createElement("p");
-                    p.textContent = key + ": " + value;
-                    specList.appendChild(p);
-                }
-            }
-        }*/
-
         function expandImage() {
             const skabelon = document.querySelector("#temp");
 
@@ -206,11 +192,56 @@
 
             data.appendChild(klon);
 
-            document.querySelector(".bb").addEventListener("click", expandImage);
-            document.querySelector(".billede_1").addEventListener("click", expandImage);
+            document.querySelector(".bb").addEventListener("click", popUp);
+            document.querySelector(".billede_1").addEventListener("click", popUp);
+            console.log(document.querySelector(".luk"), document.querySelector(".luk").classList);
+
         }
 
 
+        function popUp() {
+            document.querySelector(".overlay_box").classList.remove("hide");
+            document.querySelector(".pop_bb").classList.remove("hide");
+            document.querySelector(".luk").classList.remove("hide");
+            console.log(document.querySelector(".luk"), document.querySelector(".luk").classList);
+
+            /*menu.classList.toggle("hidden");
+
+            let erSkjult = menu.classList.contains("hidden");
+
+            if (erSkjult == true) {
+                console.log("Bruger icon vises")
+
+                burgerButton.classList.add("menu-toggle");
+                burgerButton.classList.remove("toggle");
+
+            } else {
+                console.log("burger icon gemmes")
+                burgerButton.classList.add("toggle");
+            }*/
+
+            document.querySelector(".luk").addEventListener("click", lukPopup);
+        }
+
+        function lukPopup() {
+            document.querySelector(".overlay_box").classList.add("hide");
+            document.querySelector(".pop_bb").classList.add("hide");
+            document.querySelector(".luk").classList.add("hide");
+        }
+
+        /*function visSpecNy() {
+            let i = 0;
+            console.log(cykler);
+            for (let [key, value] of Object.entries(cykler)) {
+                i++;
+                if (i > 26 && value && value != "[object Object]") {
+                    //console.log(key, value);
+                    const p = document.createElement("p");
+                    p.textContent = key + ": " + value;
+                    specList.appendChild(p);
+                }
+            }
+        }*/
 
         function visSpec() {
 
@@ -359,7 +390,8 @@
                 specList.appendChild(dt);
             }
         }
-
     </script>
 
-</body></html>
+</body>
+
+</html>
