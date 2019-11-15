@@ -1323,6 +1323,10 @@ input[type=placeholder] {
 
 /*	Om os start*/
 
+#omos h1 {
+    font-size: 24px;
+}
+
 .center {
     display: block;
     margin-left: auto;
@@ -1628,7 +1632,6 @@ input[type=placeholder] {
 
 /*Video */
 #video {
-
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
@@ -1638,10 +1641,16 @@ input[type=placeholder] {
 }
 
 
-#video h3,
-h1 {
+#video h1 {
     font-family: 'Montserrat', sans-serif;
     color: #363538;
+    font-size: 24px;
+}
+
+#video h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #363538;
+    font-size: 15px;
 }
 
 
