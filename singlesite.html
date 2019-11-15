@@ -58,9 +58,9 @@
                 <div class="single_tekst">
                     <div class="cykel_info">
                         <h2 class="navn"></h2>
+                        <p class="lang"></p>
                         <p class="pris"></p>
                         <p class="afb"></p>
-                        <p class="lang"></p>
                     </div>
                 </div>
             </section>
@@ -201,7 +201,7 @@
 
         function popUp() {
             document.querySelector(".overlay_box").classList.remove("hide");
-            document.querySelector(".pop_bb").classList.remove("hide");
+            document.querySelector(".pop_bb").classList.remove("skjul");
             document.querySelector(".luk").classList.remove("hide");
             console.log(document.querySelector(".pop_bb"), document.querySelector(".pop_bb").classList);
 
@@ -211,8 +211,10 @@
 
         function lukPopup() {
             document.querySelector(".overlay_box").classList.add("hide");
+            //document.querySelector(".pop_bb").classList.add("skjul");
             document.querySelector(".pop_bb").classList.add("skjul");
             document.querySelector(".luk").classList.add("hide");
+            console.log(document.querySelector(".pop_bb"), document.querySelector(".pop_bb").classList);
         }
 
         /*function visSpecNy() {
