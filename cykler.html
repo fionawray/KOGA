@@ -50,7 +50,7 @@
                     <button class="filter" data-kategori="City Tour">City Tour</button>
                     <button class="filter" data-kategori="Trekking">Trekking</button>
                     <button class="filter" data-kategori="Mountain bike">Mountain bike</button>
-                    <a href="https://www.koga.com/en/koga-signature"><button>signature</button></a>
+                    <a href="https://www.koga.com/en/koga-signature"><button>KOGA Signature</button></a>
 
                 </div>
             </nav>
@@ -117,12 +117,27 @@
                 </div>
             </div>
             <div class="col col_with_padding">
-                <h2>Cykler</h2>
-                <p>Elcykler</p>
-                <p>City</p>
-                <p>Trekking</p>
-                <p>Rave</p>
-                <p>KOGA Signature</p>
+                <a href="cykler.html">
+                    <h2>Cykler</h2>
+                </a>
+                <a href="cykler.html">
+                    <p>E-bikes</p>
+                </a>
+                <a href="cykler.html">
+                    <p>Race</p>
+                </a>
+                <a href="cykler.html">
+                    <p>City Tour</p>
+                </a>
+                <a href="cykler.html">
+                    <p>Trekking</p>
+                </a>
+                <a href="cykler.html">
+                    <p>Mountain Bike</p>
+                </a>
+                <a href="https://www.koga.com/en/koga-signature">
+                    <p>KOGA Signature</p>
+                </a>
             </div>
         </div>
     </footer>
@@ -226,9 +241,9 @@
 
         function filtrering() {
             filterKategori = this.dataset.kategori;
+            const filter = document.querySelectorAll(".filter");
             //Hvis filteret er "alle", så skal ".valgt" class'en være tilføjet til alle.
             //Hvis filteret er et på sorteringsfilteret ".filter", bliver ".valgt" fjernet fra "alle" og sat på ".filter" istedet.
-            console.log();
             document.querySelectorAll(".filter").forEach(elm => {
                 elm.classList.remove("valgt");
                 elm.style.backgroundColor = "#172334";
@@ -237,6 +252,8 @@
             this.classList.add("valgt");
             this.style.backgroundColor = "#f1f1f1";
             this.style.color = "black";
+            console.log(filter);
+
             //vis () kaldes.
             vis();
         }
@@ -253,6 +270,7 @@
             this.style.backgroundColor = "#f1f1f1";
             this.style.color = "black";
         }
+
     </script>
 
 </body>

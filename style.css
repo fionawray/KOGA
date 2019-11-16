@@ -9,9 +9,11 @@ body {
 }
 
 .skjul {
-    position: absolute;
-    top: -9999px;
-    left: -9999px;
+    display: none;
+}
+
+.vis {
+    display: block;
 }
 
 /* header */
@@ -1275,6 +1277,14 @@ input[type=placeholder] {
     padding-left: 7rem;
 }
 
+#footer a {
+    text-decoration: none;
+}
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
 #footer h2 {
     color: #A2A7AE;
     font-family: 'Lato', sans-serif;
@@ -1790,18 +1800,22 @@ p.reviewer {
 .bb {
     display: flex;
     cursor: pointer;
+    width: 32%;
+    height: 2%;
 }
 
 .bb img {
-    width: 12vw;
-    height: 15vh;
+    width: 100%;
+    max-height: 120px;
+    margin-right: 2vw;
 }
 
 .single_tekst {
     flex-grow: 1;
     flex-basis: 200px;
-    padding: 2vw 2vw 2vw 0vw;
+    padding: 2vw;
     line-height: 26px;
+    margin-left: 1rem;
 }
 
 .single_tekst .navn {
@@ -1926,14 +1940,26 @@ p.reviewer {
     margin-top: 0;
     font-family: 'Lato', sans-serif;
     background-color: rgba(241, 241, 241, 0.37);
+    width: 95%;
 }
 
-
-.specList dt {
-    margin: 1rem;
+dt {
+    margin: 1rem 0 1rem 1rem;
+    display: inline-block;
+    width: 25%;
     border-bottom: solid 1px;
     border-bottom-color: lightgray;
 }
+
+dd {
+    margin: 1rem;
+    display: inline-block;
+    width: 60%;
+    border-bottom: solid 1px;
+    border-bottom-color: lightgray;
+    margin-left: 0;
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -1958,11 +1984,36 @@ p.reviewer {
     margin: 1rem;
 }
 
-.tilbage {
+.tilbage_knap {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #172334;
+}
+
+.tilbage_knap button {
+    font-size: 1rem;
+    text-decoration: uppercase;
+    border: none;
+    text-transform: uppercase;
+    margin-right: 1rem;
+    font-family: 'lato', sans-serif;
+    height: 3.5rem;
+    background-color: #172334;
+    transition: 0.5s;
+    color: white;
+    cursor: pointer;
+}
+
+.tilbage button:hover {
+    background-color: white;
+    color: black;
+}
+
+/*.tilbage {
     position: absolute;
     left: 39px;
     top: 360px;
-}
+}*/
 
 .data {
     display: grid;
