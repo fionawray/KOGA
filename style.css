@@ -1777,6 +1777,7 @@ p.reviewer {
     padding-left: 7rem;
     padding-right: 7rem;
     padding-top: 1rem;
+    align-items: flex-end;
 }
 
 .liste h2 {
