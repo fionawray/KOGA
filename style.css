@@ -1065,6 +1065,10 @@ h2 {
     font-family: 'Lato', sans-serif;
 }
 
+.col_h2 {
+    margin-left: 1rem;
+}
+
 #kontakt .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
