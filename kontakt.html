@@ -22,6 +22,12 @@
     <title>Kontakt Koga</title>
 
 </head>
+<style>
+    h1 {
+        color: black;
+    }
+
+</style>
 <header class="header">
     <a href="index.html" class="logo">
         <img src="images/KOGA_LYB_WHITE.svg" alt="KOGA Logo"></a>
@@ -43,6 +49,10 @@
         <div class="splash_txt">
         </div>
     </section>
+    <div class="border_line">
+
+    </div>
+
     <div class="hr_flex_contact">
         <div class="hr_col_contact">
             <hr>
@@ -54,10 +64,10 @@
             <hr>
         </div>
     </div>
-
     <section id="kontakt">
         <div class="sectionwrapper">
             <div class="col">
+
 
                 <h3>Kontakt Oplysninger</h3>
 
@@ -92,7 +102,43 @@
             <div class="col">
                 <h1>Kontakt KogaCenter - Copenhagen</h1>
 
-                <form action="mailto:info@kogacenter.dk" method="post" enctype="text/plain">
+                <div class="kontakt_boks">
+                    <h1>Kontakt Oplysninger</h1>
+
+                    <ul>
+                        <li>
+                            <p><b>Vores adresse:</b>Peter Bangsvej 18, 2000 Frederiksberg</p>
+                        </li>
+                        <li>
+                            <p><b>Tlf.:</b> +45 38 86 43 25</p>
+                        </li>
+                        <li>
+                            <p><b>Email: </b>info@kogacenter.dk</p>
+                        </li>
+                    </ul>
+                    <h3>
+                        Åbningstider:</h3>
+                    <ul>
+                        <li>
+                            <p><b>Man-Fre: </b> 11.00 - 18.00</p>
+                        </li>
+                        <li>
+                            <p><b>Lør:</b>09.00 - 14.00</p>
+                        </li>
+
+                    </ul>
+                    <p>
+
+                        Vi ligger i hjertet af Frederiksberg, få kilometer fra Københavns Rådhus og lige overfor den gamle Diakonissestiftelsen.</p>
+                    <!--                <img src="/w3images/map.jpg" style="width:100%">-->
+                </div>
+            </div>
+
+            <div class="col">
+                <!--                <h1>Kontakt Koga Center</h1>-->
+
+
+                <form action="mail.php" method="post">
 
                     <input type="text" id="name" name="firstname" placeholder="Navn">
 
@@ -106,12 +152,23 @@
         </div>
 
     </section>
+
     <h2 class="col_h2">Find vej til KogaCenter Copenhagen:</h2>
     <div class="mapouter">
         <div class="gmap_canvas"><iframe width="493" height="223" id="gmap_canvas" src="https://maps.google.com/maps?q=Peter%20Bangsvej%2018%202000%20Frederiksberg&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a></div>
 
     </div>
 
+    <section id="map">
+        <div class="col">
+            <h2 class="col_h2">Find vej til Koga Center:</h2>
+            <div class="mapouter">
+                <div class="gmap_canvas"><iframe width="200%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Peter%20Bangsvej%2018%202000%20Frederiksberg&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.whatismyip-address.com"></a></div>
+
+
+            </div>
+        </div>
+    </section>
     <footer id="footer">
         <div class="sectionwrapper">
             <div class="col col_with_padding">
