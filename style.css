@@ -1887,10 +1887,6 @@ p.reviewer {
     flex-direction: row;
 }
 
-.billede_1 img {
-    width: 100%;
-}
-
 .billede_single {
     flex-grow: 0.5;
     flex-basis: 300px;
