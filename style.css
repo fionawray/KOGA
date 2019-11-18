@@ -546,6 +546,10 @@ transform-origin: top left;
         padding-right: 30rem;
     }
 
+    .tekst_boks_om {
+        height: 20rem;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -1445,7 +1449,7 @@ input[type=placeholder] {
 
 .tekst_boks_om {
     background-color: rgba(255, 255, 255, 0.68);
-    height: 23rem;
+    height: 30rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -1458,7 +1462,7 @@ input[type=placeholder] {
 
     .tekst_boks_om {
         background-color: rgba(255, 255, 255, 0.68);
-        height: 31rem;
+        height: 40rem;
 
     }
 }
@@ -1490,8 +1494,8 @@ input[type=placeholder] {
         font-size: 1rem;
         line-height: 1.3;
         color: #363538;
-        padding-left: 8rem;
-        padding-right: 8rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
     }
 }
 
@@ -1600,6 +1604,7 @@ input[type=placeholder] {
     margin-bottom: 30px;
     padding-top: 40px;
     padding-bottom: 40px;
+    padding: 20px;
 }
 
 .om_koga {
