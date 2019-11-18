@@ -200,13 +200,13 @@
         }
 
         function vis() {
-            const enkeltCykel = document.querySelector(".article_cykel");
+            const cykel = document.querySelector(".article_cykel");
 
-            enkeltCykel.querySelector(".navn").textContent = enkeltCykel.title.rendered;
-            enkeltCykel.querySelector(".pris").textContent = `Pris på cyklen: ` + cykler.pris;
-            enkeltCykel.querySelector(".lang").innerHTML = enkeltCykel.beskrivelse;
-            enkeltCykel.querySelector(".afb").textContent = `Afbetaling: ` + cykler.afbetaling_12_mdr + ` over 12 mdr. el. ` + cykler.afbetaling_24_mdr + ` over 24 mdr.`;
-            enkeltCykel.querySelector(".billede_1").src = cykler.front_billede.guid;
+            cykel.querySelector(".navn").textContent = cykler.title.rendered;
+            cykel.querySelector(".pris").textContent = `Pris på cyklen: ` + cykler.pris;
+            cykel.querySelector(".lang").innerHTML = cykler.beskrivelse;
+            cykel.querySelector(".afb").textContent = `Afbetaling: ` + cykler.afbetaling_12_mdr + ` over 12 mdr. el. ` + cykler.afbetaling_24_mdr + ` over 24 mdr.`;
+            cykel.querySelector(".billede_1").src = cykler.front_billede.guid;
 
             cykler.billeder.forEach(b => {
                 const bklon = document.querySelector("#b").cloneNode(true).content;
@@ -214,52 +214,16 @@
                 bklon.querySelector("img").addEventListener("click", () => {
                     console.log("hej hej");
                     //document.querySelector(".billede_1").src = bklon.querySelector("img").src;
-                    enkeltCykel.querySelector(".billede_1").src = b.guid;
+                    cykel.querySelector(".billede_1").src = b.guid;
                 });
 
-                enkeltCykel.querySelector(".bb").appendChild(bklon);
+                cykel.querySelector(".bb").appendChild(bklon);
             });
 
-            data.appendChild(enkeltCykel);
+            data.appendChild(cykel);
 
         }
 
-        /*function expandImage() {
-            const skabelon = document.querySelector("#temp");
-
-            const klon = skabelon.cloneNode(true).content;
-
-            cykler.billeder.forEach(b => {
-                const bklon = document.querySelector("#b").cloneNode(true).content;
-                bklon.querySelector("img").src = b.guid;
-                klon.querySelector(".pop_bb").appendChild(bklon);
-            });
-
-            data.appendChild(klon);
-
-            document.querySelector(".bb").addEventListener("click", popUp);
-            document.querySelector(".billede_1").addEventListener("click", popUp);
-
-        }
-
-
-        function popUp() {
-            document.querySelector(".overlay_box").classList.remove("hide");
-            document.querySelector(".pop_bb").classList.remove("skjul");
-            document.querySelector(".luk").classList.remove("hide");
-            console.log(document.querySelector(".pop_bb"), document.querySelector(".pop_bb").classList);
-
-
-            document.querySelector(".luk").addEventListener("click", lukPopup);
-        }
-
-        function lukPopup() {
-            document.querySelector(".overlay_box").classList.add("hide");
-            //document.querySelector(".pop_bb").classList.add("skjul");
-            document.querySelector(".pop_bb").classList.add("skjul");
-            document.querySelector(".luk").classList.add("hide");
-            console.log(document.querySelector(".pop_bb"), document.querySelector(".pop_bb").classList);
-        }*/
 
         /*function visSpecNy() {
             let i = 0;
@@ -465,7 +429,7 @@
                 const dd = document.createElement("dd");
                 dt.addClass = "dk_type";
                 dt.textContent = "Dæk type: ";
-                dd.textContent += cykler.dk_type;
+                dd.textContent += cykler.daek_type;
                 specList.appendChild(dt);
                 specList.appendChild(dd);
             }
@@ -487,7 +451,53 @@
                 specList.appendChild(dt);
                 specList.appendChild(dd);
             }
+            if (cykler.batterikapacitet != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "batterikapacitet";
+                dt.textContent = "Batterikapacitet: ";
+                dd.textContent += cykler.batterikapacitet;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.motor_placering != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "motor_placering";
+                dt.textContent = "Motorens placering: ";
+                dd.textContent += cykler.motor_placering;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.motor_make != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "motor_make";
+                dt.textContent = "Motor mærke: ";
+                dd.textContent += cykler.motor_make;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.motor_type != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "motor_type";
+                dt.textContent = "Motor type: ";
+                dd.textContent += cykler.motor_type;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
+            if (cykler.display != "") {
+                const dt = document.createElement("dt");
+                const dd = document.createElement("dd");
+                dt.addClass = "display";
+                dt.textContent = "Motor display: ";
+                dd.textContent += cykler.display;
+                specList.appendChild(dt);
+                specList.appendChild(dd);
+            }
         }
+
     </script>
 
 </body>
