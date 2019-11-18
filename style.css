@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
 }
 
 .hide {
@@ -12,9 +13,7 @@ body {
     display: none;
 }
 
-.vis {
-    display: block;
-}
+
 
 /* header */
 
@@ -41,14 +40,32 @@ h4 {
     height: 750px;
     width: auto;
     z-index: 2;
-    filter: opacity(0.5);
+    filter: opacity(0.7);
 }
 
-.tekst_boks_forside {
+/*.tekst_boks_forside {
     padding: 20px;
     z-index: 10;
     position: absolute;
     top: 58px;
+    z-index: 2;
+}*/
+
+.logo_wrapper {
+    position: absolute;
+    top: 300px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo_forside {
+    z-index: 10;
+}
+
+.logo_forside img {
+    width: 90%;
+    max-width: 650px;
 }
 
 .hr_flex_video {
@@ -64,7 +81,8 @@ h4 {
 }
 
 .hr_col_video hr {
-    border: 1px solid rgb(255, 255, 255);
+    /*border: 1px solid rgb(255, 255, 255);*/
+    border: 1px solid black;
 }
 
 .hr_txt_video {
@@ -92,6 +110,42 @@ h4 {
 
 }
 
+@media only screen and (min-width: 690px) {
+    .logo_forside {}
+
+}
+
+/*velkommen tekst*/
+
+#velkommen {
+    background-color: rgba(241, 241, 241, 0.37);
+    color: black;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.velkommen_tekst {
+    padding: 3rem;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+#velkommen h2 {
+    color: black;
+    text-align: center;
+}
+
+#velkommen h1 {
+    color: black;
+    text-align: center;
+}
+
+#velkommen p {
+    color: black;
+    max-width: 900px;
+}
 
 .header {
     background-color: #367dc1;
@@ -177,6 +231,7 @@ h4 {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
+    z-index: 9999;
 }
 
 /* menu icon */
@@ -448,11 +503,13 @@ transform-origin: top left;
 
 
 
+/*
 @media screen and (min-width: 780px) {
     .tekst_boks_forside {
         height: 750px;
     }
 }
+*/
 
 #home_video h1 {
     font-family: 'lato', sans-serif;
@@ -526,10 +583,10 @@ transform-origin: top left;
         padding-top: 55rem;
     }
 
-    .tekst_boks_forside {
+    /*.tekst_boks_forside {
         padding: 45px;
         z-index: 10;
-    }
+    }*/
 }
 
 
@@ -1835,8 +1892,8 @@ p.reviewer {
     flex-direction: row;
 }
 
-.billede_1 {
-    cursor: pointer;
+.billede_1 img {
+    width: 100%;
 }
 
 .billede_single {
@@ -2084,47 +2141,6 @@ dd {
     margin-top: 0;
 }
 
-
-
-.pop_wrapper {
-    padding: 20px;
-    position: absolute;
-    top: 0;
-    z-index: 9999;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.overlay_box {
-    background-color: black;
-    width: 100vw;
-    height: 1550px;
-    position: absolute;
-    top: 0;
-    z-index: 9999;
-    opacity: 0.5;
-}
-
-
-.pop_bb img {
-    width: 100%;
-}
-
-.luk {
-    position: absolute;
-    z-index: 9999;
-    top: 6vh;
-    right: 10vw;
-    background-color: #367dc1;
-    color: #ffffff;
-    padding: 5px 10px;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 0px;
-    cursor: pointer;
-    margin-top: 0;
-}
 
 
 /* Media */

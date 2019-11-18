@@ -209,11 +209,11 @@
             const skabelon = document.querySelector("template");
             const liste = document.querySelector(".liste");
 
+
+
             //containeren bliver tømt eller nulstillet.
             liste.innerHTML = "";
-            console.log("filterKategori", filterKategori);
             cykler.forEach(cykel => {
-
                 if (filterKategori == "alle" || filterKategori == cykel.kategori) {
                     const klon = skabelon.cloneNode(true).content;
                     klon.querySelector(".navn").textContent = cykel.title.rendered;
@@ -270,7 +270,6 @@
             this.style.backgroundColor = "#f1f1f1";
             this.style.color = "black";
         }
-
     </script>
 
 </body>
