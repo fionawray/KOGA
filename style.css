@@ -674,6 +674,23 @@ transform-origin: top left;
     margin: 0;
 }
 
+/*
+.mapouter {
+
+
+    position: relative;
+    text-align: right;
+
+    height: 223px;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin: auto;
+}
+*/
+
 @media only screen and (max-width: 600px) {
     .hr_col_forside hr {
         border: none;
@@ -1049,9 +1066,11 @@ transform-origin: top left;
     padding-right: 5vw;
 }
 
+/*
 .mapouter {
     width: 100vw;
 }
+*/
 
 #splash_kontakt h1 {
     color: #ffffff;
@@ -1061,7 +1080,9 @@ transform-origin: top left;
     margin: 0;
 }
 
+/*
 .mapouter {
+
     position: relative;
     text-align: right;
     height: 223px;
@@ -1070,14 +1091,17 @@ transform-origin: top left;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 20px;
+
+    margin: auto;
 }
+*/
 
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
     height: 223px;
-    width: 493px;
-}
+/*    width: 100vw;
+    */}
 
 .hr_flex_contact {
     display: flex;
@@ -1126,10 +1150,12 @@ transform-origin: top left;
         color: grey;
     }
 
-    .mapouter {
+    /*map
+  map
         margin-left: 100px;
         margin-top: 0;
     }
+*/
 }
 
 
