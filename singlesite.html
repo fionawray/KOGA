@@ -68,7 +68,7 @@
         <section class="article_cykel">
             <article class="singlewrapper">
                 <div class="billede_single">
-                    <img class="billede_1" src="" alt="">
+                    <img class="billede_1" src="" alt="" style="width: 100%;">
                     <div class="tab_gallery">
                         <div class="bb">
                         </div>
@@ -424,10 +424,10 @@
                 specList.appendChild(dt);
                 specList.appendChild(dd);
             }
-            if (cykler.dk_type != "") {
+            if (cykler.daek_type != "") {
                 const dt = document.createElement("dt");
                 const dd = document.createElement("dd");
-                dt.addClass = "dk_type";
+                dt.addClass = "daek_type";
                 dt.textContent = "Dæk type: ";
                 dd.textContent += cykler.daek_type;
                 specList.appendChild(dt);

@@ -1,12 +1,11 @@
 <?php
-$name = $_POST['firstname'];
+$name = $_POST['name'];
 $email = $_POST['email'];
-$message = $_POST['subject'];
-$formcontent ="From $firstname \n Message:$subject";
-$recipient ="info@kogacenter.dk";
+$message = $_POST['message'];
+$formcontent ="From: $name \n Message: $message";
+$recipient ="info@pindbodesign.dk";
 $subject = "contact Form";
-$mailheader="From $email \r\n";
-mail($recipient, $subject, $formcontent,$mailheader or die ("Error");
-echo "Thank You";
-     ?>
-<!---->
+$mailheader="Hej fra info@pindbodesign.dk";
+mail($recipient, $subject, $formcontent) or die ("Error!");
+echo "Thank You!";
+?>
