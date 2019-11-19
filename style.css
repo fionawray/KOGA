@@ -921,7 +921,7 @@ transform-origin: top left;
 .blog_post {
     display: flex;
     flex-wrap: wrap;
-    background-color: #b6b8ba;
+    background-color: #ffffff;
     transform: translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     backface-visibility: hidden;
