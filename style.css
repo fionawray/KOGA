@@ -1913,10 +1913,21 @@ p.reviewer {
     width: 65%;
 }
 
+.nethandel {
+    font-style: italic;
+    font-weight: normal;
+    margin: 1rem 0;
+}
+
+.nethandel p {
+    margin: 0;
+}
+
 .singlewrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
 .billede_single {
@@ -2118,6 +2129,19 @@ dd {
     display: flex;
     justify-content: flex-start;
     background-color: #172334;
+}
+
+.kontaktKoga {
+    margin-left: 2rem;
+    background-color: #367dc1;
+    color: #ffffff;
+    display: inline-block;
+    padding: 12px;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+    bottom: 0;
+    border: none;
 }
 
 .tilbage_knap button {
