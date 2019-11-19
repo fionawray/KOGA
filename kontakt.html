@@ -66,38 +66,7 @@
     </div>
     <section id="kontakt">
         <div class="sectionwrapper">
-            <div class="col">
 
-
-                <h3>Kontakt Oplysninger</h3>
-
-                <ul>
-                    <li>
-                        <p>Vores adresse: Peter Bangsvej 18, 2000 Frederiksberg</p>
-                    </li>
-                    <li>
-                        <p>Tlf.: +45 38 86 43 25</p>
-                    </li>
-                    <li>
-                        <p>Email: info@kogacenter.dk</p>
-                    </li>
-                </ul>
-                <h3>
-                    Åbningstider:</h3>
-                <ul>
-                    <li>
-                        <p>Man-Fre: 11.00 - 18.00</p>
-                    </li>
-                    <li>
-                        <p>Lør: 09.00 - 14.00</p>
-                    </li>
-
-                </ul>
-                <p>
-                    Vi ligger i hjertet af Frederiksberg, få kilometer fra Københavns Rådhus og lige overfor den gamle Diakonissestiftelsen.</p>
-                <!--                <img src="/w3images/map.jpg" style="width:100%">-->
-
-            </div>
 
             <div class="col">
                 <h1>Kontakt KogaCenter - Copenhagen</h1>
@@ -138,15 +107,16 @@
                 <!--                <h1>Kontakt Koga Center</h1>-->
 
 
-                <form action="mail.php" method="post">
+                <form action="mail.php" method="POST">
 
-                    <input type="text" id="name" name="firstname" placeholder="Navn">
+                    <input type="text" id="name" name="name" placeholder="Navn">
 
                     <input type="text" id="email" name="email" placeholder="Email">
 
-                    <textarea id="subject" name="subject" placeholder="Dit spørgmål til Koga.." style="height:200px"></textarea>
+                    <textarea id="subject" name="message" placeholder="Dit spørgmål til Koga.." style="height:200px"></textarea>
 
                     <input type="submit" value="Send">
+                    <input type="reset" value="Clear">
                 </form>
             </div>
         </div>
