@@ -674,6 +674,23 @@ transform-origin: top left;
     margin: 0;
 }
 
+/*
+.mapouter {
+
+
+    position: relative;
+    text-align: right;
+
+    height: 223px;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+    margin: auto;
+}
+*/
+
 @media only screen and (max-width: 600px) {
     .hr_col_forside hr {
         border: none;
@@ -1020,6 +1037,15 @@ transform-origin: top left;
     height: 30vh;
 }
 
+#map {
+    background-color: rgba(241, 241, 241, 0.37);
+}
+
+#map h2 {
+    margin-top: 0vw;
+    padding: 3vw;
+}
+
 #kontakt .col {
     background-color: white;
     padding: 3vw;
@@ -1046,9 +1072,11 @@ transform-origin: top left;
     padding-right: 5vw;
 }
 
+/*
 .mapouter {
     width: 100vw;
 }
+*/
 
 #splash_kontakt h1 {
     color: #ffffff;
@@ -1058,7 +1086,9 @@ transform-origin: top left;
     margin: 0;
 }
 
+/*
 .mapouter {
+
     position: relative;
     text-align: right;
     height: 223px;
@@ -1067,14 +1097,17 @@ transform-origin: top left;
     margin-left: 5px;
     margin-right: 5px;
     margin-top: 20px;
+
+    margin: auto;
 }
+*/
 
 .gmap_canvas {
     overflow: hidden;
     background: none !important;
     height: 223px;
-    width: 493px;
-}
+/*    width: 100vw;
+    */}
 
 .hr_flex_contact {
     display: flex;
@@ -1123,10 +1156,12 @@ transform-origin: top left;
         color: grey;
     }
 
-    .mapouter {
+    /*map
+  map
         margin-left: 100px;
         margin-top: 0;
     }
+*/
 }
 
 
@@ -1207,7 +1242,6 @@ input[type=submit] {
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
-    background-color: #b6b8ba;
     color: white;
     resize: vertical;
 }
@@ -1219,7 +1253,24 @@ input[type=submit]:hover {
 
 }
 
+input[type=reset]:hover {
+    background-color: #2f445d;
+
+}
+
 input[type=submit] {
+    background-color: #367dc1;
+    color: #ffffff;
+    border: 2px solid #fff;
+    padding: 12px 60px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+}
+
+input[type=reset] {
     background-color: #367dc1;
     color: #ffffff;
     border: 2px solid #fff;
@@ -1306,6 +1357,7 @@ input[type=placeholder] {
     }
 */
 
+    /*
     input[type=submit] {
         background-color: black;
         color: white;
@@ -1313,6 +1365,7 @@ input[type=placeholder] {
         border: none;
         cursor: pointer;
     }
+*/
 
     input[type=submit]:hover {
         background-color: #5f5f5f;
@@ -1892,10 +1945,21 @@ p.reviewer {
     width: 65%;
 }
 
+.nethandel {
+    font-style: italic;
+    font-weight: normal;
+    margin: 1rem 0;
+}
+
+.nethandel p {
+    margin: 0;
+}
+
 .singlewrapper {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
 }
 
 .billede_single {
@@ -2097,6 +2161,19 @@ dd {
     display: flex;
     justify-content: flex-start;
     background-color: #172334;
+}
+
+.kontaktKoga {
+    margin-left: 2rem;
+    background-color: #367dc1;
+    color: #ffffff;
+    display: inline-block;
+    padding: 12px;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+    bottom: 0;
+    border: none;
 }
 
 .tilbage_knap button {
