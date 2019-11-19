@@ -1106,8 +1106,9 @@ transform-origin: top left;
     overflow: hidden;
     background: none !important;
     height: 223px;
-/*    width: 100vw;
-    */}
+    /*    width: 100vw;
+    */
+}
 
 .hr_flex_contact {
     display: flex;
