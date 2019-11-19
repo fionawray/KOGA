@@ -685,14 +685,18 @@ transform-origin: top left;
 }
 
 .button_forside {
-    background-color: #ECEDEE;
-    border: 2px solid #b9b9b9;
+    background-color: #367dc1;
+    color: #ffffff;
+    border: 2px solid #cecece;
     padding: 12px 75px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    margin: 4px;
+    margin-left: 140px;
+    margin-bottom: 2rem;
     cursor: pointer;
-    margin: -90px 0px 20px 130px;
+    margin-top: 0;
 }
 
 .button_forside a {
@@ -706,12 +710,14 @@ transform-origin: top left;
 }
 
 
+/*
 @media only screen and (min-width: 600px) {
     .button_forside {
         justify-content: center;
         margin: 0px 0px 25px 570px
     }
 }
+*/
 
 #info .col {
     flex-basis: 250px;
