@@ -1014,6 +1014,15 @@ transform-origin: top left;
     height: 30vh;
 }
 
+#map {
+    background-color: rgba(241, 241, 241, 0.37);
+}
+
+#map h2 {
+    margin-top: 0vw;
+    padding: 3vw;
+}
+
 #kontakt .col {
     background-color: white;
     padding: 3vw;
@@ -1201,7 +1210,6 @@ input[type=submit] {
     border: 1px solid #ccc;
     margin-top: 6px;
     margin-bottom: 16px;
-    background-color: #b6b8ba;
     color: white;
     resize: vertical;
 }
@@ -1213,7 +1221,24 @@ input[type=submit]:hover {
 
 }
 
+input[type=reset]:hover {
+    background-color: #2f445d;
+
+}
+
 input[type=submit] {
+    background-color: #367dc1;
+    color: #ffffff;
+    border: 2px solid #fff;
+    padding: 12px 60px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+}
+
+input[type=reset] {
     background-color: #367dc1;
     color: #ffffff;
     border: 2px solid #fff;
@@ -1300,6 +1325,7 @@ input[type=placeholder] {
     }
 */
 
+    /*
     input[type=submit] {
         background-color: black;
         color: white;
@@ -1307,6 +1333,7 @@ input[type=placeholder] {
         border: none;
         cursor: pointer;
     }
+*/
 
     input[type=submit]:hover {
         background-color: #5f5f5f;
