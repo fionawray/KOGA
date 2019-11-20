@@ -701,6 +701,11 @@ transform-origin: top left;
     }
 }
 
+.button_div {
+    width: 100%;
+    text-align: center;
+}
+
 .button_forside {
     background-color: #367dc1;
     color: #ffffff;
@@ -710,7 +715,6 @@ transform-origin: top left;
     display: inline-block;
     font-size: 16px;
     margin: 4px;
-    margin-left: 140px;
     margin-bottom: 2rem;
     cursor: pointer;
     margin-top: 0;
