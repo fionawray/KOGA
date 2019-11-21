@@ -2070,8 +2070,8 @@ p.reviewer {
     column-gap: 1.5em;
     font-size: .85em;
     background-color: rgba(241, 241, 241, 0.37);
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 3em;
+    padding-right: 3rem;
     padding-top: 1rem;
     align-items: flex-end;
 }
